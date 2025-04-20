@@ -1,0 +1,1 @@
+start cmd /k "mitmweb --mode wireguard --ssl-insecure --listen-port 8081" 

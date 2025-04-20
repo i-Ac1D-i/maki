@@ -1,0 +1,891 @@
+POST https://2144.playfabapi.com/Client/LoginWithCustomID?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 570
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CreateAccount": true,
+    "CustomId": "7a7d41699e54d178",
+    "CustomTags": null,
+    "EncryptedRequest": null,
+    "InfoRequestParameters": {
+        "GetCharacterInventories": false,
+        "GetCharacterList": false,
+        "GetPlayerProfile": false,
+        "GetPlayerStatistics": false,
+        "GetTitleData": false,
+        "GetUserAccountInfo": true,
+        "GetUserData": false,
+        "GetUserInventory": false,
+        "GetUserReadOnlyData": false,
+        "GetUserVirtualCurrency": false,
+        "PlayerStatisticNames": null,
+        "ProfileConstraints": null,
+        "TitleDataKeys": null,
+        "UserDataKeys": null,
+        "UserReadOnlyDataKeys": null
+    },
+    "PlayerSecret": null,
+    "TitleId": "2144"
+}
+
+HTTP/1.1 200 OK
+content-length: 838
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:33 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 9d3ac4a164c340c09ada737272a16416
+x-tracecontext-traceid: f272c9a08402c1de0be639b0197e2e04
+x-envoy-upstream-service-time: 282
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "EntityToken": {
+            "Entity": {
+                "Id": "7E47ED63F9F1AC0A",
+                "Type": "title_player_account",
+                "TypeString": "title_player_account"
+            },
+            "EntityToken": "NHxYckgvRkZVNlFZR2x5TVZiZDh3eGl0NXpSRS9hVE1OR0tZRE40cEVZa0lRPXx7ImkiOiIyMDI1LTA0LTEyVDE3OjE5OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTEzVDE3OjE5OjMzWiIsImZpIjoiMjAyNS0wNC0xMlQxNzoxOTozM1oiLCJ0aWQiOiJlbUl3OTBLR3BhcyIsImlkaSI6IjdhN2Q0MTY5OWU1NGQxNzgiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0LzdDQzRCQTUwRjlBNTZFMEMvN0U0N0VENjNGOUYxQUMwQS8iLCJlaSI6IjdFNDdFRDYzRjlGMUFDMEEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=",
+            "TokenExpiration": "2025-04-13T17:19:33Z"
+        },
+        "InfoResultPayload": {
+            "AccountInfo": {
+                "Created": "2025-04-12T17:19:33.895Z",
+                "CustomIdInfo": {
+                    "CustomId": "7a7d41699e54d178"
+                },
+                "PlayFabId": "7CC4BA50F9A56E0C",
+                "PrivateInfo": {},
+                "TitleInfo": {
+                    "Created": "2025-04-12T17:19:33.895Z",
+                    "FirstLogin": "2025-04-12T17:19:33.895Z",
+                    "LastLogin": "2025-04-12T17:19:33.895Z",
+                    "Origination": "CustomId",
+                    "TitlePlayerAccount": {
+                        "Id": "7E47ED63F9F1AC0A",
+                        "Type": "title_player_account",
+                        "TypeString": "title_player_account"
+                    },
+                    "isBanned": false
+                }
+            },
+            "CharacterInventories": [],
+            "UserDataVersion": 0,
+            "UserInventory": [],
+            "UserReadOnlyDataVersion": 0
+        },
+        "NewlyCreated": true,
+        "PlayFabId": "7CC4BA50F9A56E0C",
+        "SessionTicket": "7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=",
+        "SettingsForUser": {
+            "GatherDeviceInfo": true,
+            "GatherFocusInfo": false,
+            "NeedsAttribution": false
+        },
+        "TreatmentAssignment": {
+            "Variables": [],
+            "Variants": []
+        }
+    },
+    "status": "OK"
+}
+
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxYckgvRkZVNlFZR2x5TVZiZDh3eGl0NXpSRS9hVE1OR0tZRE40cEVZa0lRPXx7ImkiOiIyMDI1LTA0LTEyVDE3OjE5OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTEzVDE3OjE5OjMzWiIsImZpIjoiMjAyNS0wNC0xMlQxNzoxOTozM1oiLCJ0aWQiOiJlbUl3OTBLR3BhcyIsImlkaSI6IjdhN2Q0MTY5OWU1NGQxNzgiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0LzdDQzRCQTUwRjlBNTZFMEMvN0U0N0VENjNGOUYxQUMwQS8iLCJlaSI6IjdFNDdFRDYzRjlGMUFDMEEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 489
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "LOGIN_AUTH",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=",
+        "build": 297,
+        "callName": "LOGIN_AUTH",
+        "id": "2ac03186ba3cec6997762f80e280235f"
+    },
+    "GeneratePlayStreamEvent": false
+}
+
+HTTP/1.1 200 OK
+content-length: 171
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:35 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: c24d89a2eecf48ab81b3c63b95b78ece
+x-tracecontext-traceid: 8fa98c512633bb8ce7bfc71b98cca725
+x-envoy-upstream-service-time: 1301
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 1263,
+        "FunctionName": "LOGIN_AUTH",
+        "FunctionResult": {
+            "KITTYCLOCK": "2025-04-12T17:19:36.255Z",
+            "UserDataClaims": {
+                "_TokenCheck": "L7r4ltqvQ="
+            }
+        }
+    },
+    "status": "OK"
+}
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxYckgvRkZVNlFZR2x5TVZiZDh3eGl0NXpSRS9hVE1OR0tZRE40cEVZa0lRPXx7ImkiOiIyMDI1LTA0LTEyVDE3OjE5OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTEzVDE3OjE5OjMzWiIsImZpIjoiMjAyNS0wNC0xMlQxNzoxOTozM1oiLCJ0aWQiOiJlbUl3OTBLR3BhcyIsImlkaSI6IjdhN2Q0MTY5OWU1NGQxNzgiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0LzdDQzRCQTUwRjlBNTZFMEMvN0U0N0VENjNGOUYxQUMwQS8iLCJlaSI6IjdFNDdFRDYzRjlGMUFDMEEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 491
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "LOGIN_CHECK",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=",
+        "build": 297,
+        "callName": "LOGIN_CHECK",
+        "id": "2ac03186ba3cec6997762f80e280235f"
+    },
+    "GeneratePlayStreamEvent": false
+}
+
+HTTP/1.1 200 OK
+content-length: 1333
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:36 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 12138d641f754f1b93ce409a04b90eb5
+x-tracecontext-traceid: cedae3e7122f29aca5a4f115963f66c2
+x-envoy-upstream-service-time: 988
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 943,
+        "FunctionName": "LOGIN_CHECK",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_Tavern": [
+                100,
+                8,
+                0,
+                300,
+                8,
+                0,
+                6,
+                209
+            ],
+            "CURRENT_DAY_INDEX": 1928,
+            "CloudData": {
+                "Achievements_VipCut": 20,
+                "ArenaDivisions": [
+                    101,
+                    200,
+                    300,
+                    400,
+                    500,
+                    600,
+                    700,
+                    800,
+                    900,
+                    1000,
+                    1200,
+                    1400,
+                    1600,
+                    1800,
+                    2000,
+                    2200,
+                    2400,
+                    2600,
+                    2800,
+                    3000,
+                    3200,
+                    3500,
+                    4000
+                ],
+                "ArenaRefreshiesCap": 5,
+                "ArenaTicketRefillInHours": 12,
+                "ArtifactAscensionReq": 5,
+                "AutoEquipXpLock": 50,
+                "CandleFirstReward": 50,
+                "ClubSmashClubReleaseWeek": 999,
+                "DailyRewardsOrder": [
+                    "Daily_FreeGems",
+                    "Daily_FreeHeroShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeChips",
+                    "Daily_FreeGems",
+                    "Daily_FreeHeroShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeScrolls",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeOrbs",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeChips",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeScrolls",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeOrbs",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeShardsPurple"
+                ],
+                "DesertCooldown": 1100,
+                "EventBundleMisc": 3,
+                "EventBundleOrbs": 4,
+                "EventBundlePoker": 2,
+                "EventBundleScrolls": 3,
+                "EventWeek_MaxLoops": 3,
+                "EventsHeroFusionAscIndexRequired": 3,
+                "FirstPurchaseHeroAny": 45,
+                "FirstPurchaseHeroPremium": 88,
+                "FriendsMax": 20,
+                "GuildMax": 30,
+                "GuildModsMax": 3,
+                "GuildQuitCooldownMins": 60,
+                "GuildRotatingBarCycle": 50,
+                "Hero_BaseStatPercentage_Attack": 5,
+                "Hero_BaseStatPercentage_Hp": 15,
+                "Hero_BaseStatPercentage_Speed": 30,
+                "HolidayGiftGems": 250,
+                "HourlyRewardsOrder": [
+                    "Hourly_GemsAmounts",
+                    "Hourly_GoldAmounts",
+                    "Hourly_OozeAmounts",
+                    "Hourly_PokerChipAmounts"
+                ],
+                "LimitedSale_Limit": 3,
+                "MaxCurrencyBoxes": 5,
+                "MaxDragons": 80,
+                "MutagensCost": 500,
+                "PremiumGoldPackageMin": 250000,
+                "PriceTier_AscensionCard": 4,
+                "PriceTier_AscensionCardPremium": 6,
+                "PriceTier_BiWeeklyCard": 2,
+                "PriceTier_CapsuleWeek": 2,
+                "PriceTier_DiamondFund": 3,
+                "PriceTier_GamePass": 2,
+                "PriceTier_GuildBundle1": 0,
+                "PriceTier_GuildBundle2": 2,
+                "PriceTier_GuildBundle3": 4,
+                "PriceTier_HolidayBundle1": 2,
+                "PriceTier_HolidayBundle2": 5,
+                "PriceTier_HolidayWeek": 4,
+                "PriceTier_QuestSale": 2,
+                "PriceTier_TechnoBundle1": 2,
+                "PriceTier_TechnoBundle2": 4,
+                "PriceTier_TechnoBundle3": 5,
+                "Relic_PromoDiscount": 90,
+                "Relic_PurchaseLimit": 2,
+                "SeasonDays": [
+                    2188,
+                    1906,
+                    2000,
+                    2094
+                ],
+                "ServerUTC": "2025-04-12T17:19:37.111Z",
+                "SummonVipUnlock": 4,
+                "TicketCollectionTime": 25,
+                "TicketPerRefill": 5,
+                "UnmergeDragonCost": 2000,
+                "UsernameGemCost": 300,
+                "WelcomeBack_DiminishedReturns": 50,
+                "WelcomeBack_MaxDays": 30
+            },
+            "CurrencyClaims": {
+                "TI": 40
+            },
+            "KITTYCLOCK": "2025-04-12T17:19:37.502Z",
+            "MyFriendsData": [],
+            "PizzaRefill": 20,
+            "StatisticsClaims": {
+                "ArenaPoints": 100,
+                "ArenaPointsEven": 276000100,
+                "AvatarIndex": 17,
+                "BuildVersion": 297,
+                "EventCarSmash": 276000000,
+                "LastLoginInMinutes": 2777359,
+                "XpLevel": 1
+            },
+            "TITLE_DATA_VERSION": "297_010",
+            "TitleEventsPayload": {
+                "ClubSmashHeroes": [],
+                "Event_OneTimeOnlyCustomSale": {
+                    "EndingWeekId": 276,
+                    "IsDefaultWeek": true,
+                    "PriceTier": 2,
+                    "Rewards": {
+                        "EventHammers": 80,
+                        "Gems": 3000,
+                        "PokerChips": 100,
+                        "Relics": 10
+                    }
+                },
+                "TechnoHeroes": [
+                    91,
+                    90,
+                    89,
+                    76,
+                    71
+                ]
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxYckgvRkZVNlFZR2x5TVZiZDh3eGl0NXpSRS9hVE1OR0tZRE40cEVZa0lRPXx7ImkiOiIyMDI1LTA0LTEyVDE3OjE5OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTEzVDE3OjE5OjMzWiIsImZpIjoiMjAyNS0wNC0xMlQxNzoxOTozM1oiLCJ0aWQiOiJlbUl3OTBLR3BhcyIsImlkaSI6IjdhN2Q0MTY5OWU1NGQxNzgiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0LzdDQzRCQTUwRjlBNTZFMEMvN0U0N0VENjNGOUYxQUMwQS8iLCJlaSI6IjdFNDdFRDYzRjlGMUFDMEEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 470
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "GUILD_CHECK",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=",
+        "build": 297,
+        "callName": "GUILD_CHECK",
+        "msg": "GuildLogIn"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 160
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:37 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: d70e118976634f8c87ba8f4c5b013e9e
+x-tracecontext-traceid: 5e21e2e1454af238e5408ad2d09dca08
+x-envoy-upstream-service-time: 198
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 169,
+        "FunctionName": "GUILD_CHECK",
+        "FunctionResult": {
+            "KITTYCLOCK": "2025-04-12T17:19:37.898Z",
+            "TITLE_DATA_VERSION": "297_010"
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetTitleData?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: 7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 95
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "Keys": [
+        "_PANIC_",
+        "BUILD_REQUIRED_VERSION"
+    ],
+    "OverrideLabel": null
+}
+HTTP/1.1 200 OK
+content-length: 70
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:37 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 0f8ccdefb066486b97b183d5d06d8954
+x-tracecontext-traceid: d7953d0c5374d35a3d1292db14febac4
+x-envoy-upstream-service-time: 3
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "Data": {
+            "BUILD_REQUIRED_VERSION": "297"
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: 7CC4BA50F9A56E0C-3D7EA51AE24C4BC-7E47ED63F9F1AC0A-2144-8DD79E631A72B9A-wylq+kj1yW7jKwZM/aCToHpuKV7U4aFAuTL7r4ltqvQ=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 1551
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "InfoRequestParameters": {
+        "GetCharacterInventories": false,
+        "GetCharacterList": false,
+        "GetPlayerProfile": true,
+        "GetPlayerStatistics": true,
+        "GetTitleData": true,
+        "GetUserAccountInfo": true,
+        "GetUserData": true,
+        "GetUserInventory": true,
+        "GetUserReadOnlyData": false,
+        "GetUserVirtualCurrency": true,
+        "PlayerStatisticNames": null,
+        "ProfileConstraints": null,
+        "TitleDataKeys": null,
+        "UserDataKeys": [
+            "Achievements",
+            "ArenaMatches",
+            "ArenaLog",
+            "ArenaLogDefense",
+            "ArenaData_v2",
+            "AvatarsData",
+            "CollectionData",
+            "DragonsData",
+            "FriendsData",
+            "Teams",
+            "Stalls",
+            "ZoneDrops",
+            "Materials",
+            "TimeStamps",
+            "HeroSlotsData",
+            "DailyGiftData",
+            "HourlyGiftData",
+            "BountiesDataNew",
+            "DailyGrants",
+            "TavernData_v2",
+            "MarketData",
+            "GuildSoloBoss",
+            "GuildAchievements",
+            "GuildMarketPurchases",
+            "SettingsData",
+            "EventsData",
+            "PurchaseData",
+            "MailData",
+            "QuestsDaily",
+            "QuestsWeekly",
+            "FlashSaleData",
+            "WeaponsFormation_v2",
+            "RelicData",
+            "HeroCardData",
+            "ScrollRecords",
+            "TechTreeData",
+            "KittyStats",
+            "KittyRolls",
+            "TechnoArena",
+            "TechnoMatches",
+            "HallOfFame",
+            "RecruitMissions",
+            "HardBoosts",
+            "HardModeData",
+            "BingoData",
+            "SlotsData",
+            "RevokedHeroes",
+            "ClubSmashLocal",
+            "AttackTeamData",
+            "ScrollRecords_Internal",
+            "BattleshipBoard_Internal",
+            "PendantsData",
+            "CharmsData",
+            "CharmsPerks",
+            "_BestTeamRed",
+            "_BestTeamGreen",
+            "_BestTeamYellow",
+            "_BestTeamBlue",
+            "_BestTeamPurpleAndWhite",
+            "_TokenCheck",
+            "_GuildResultsCache",
+            "_ChatStamps",
+            "_GuildId",
+            "_RefreshMe_",
+            "_TEST_HERO_TIERS",
+            "_TEST_WEAPON_TIERS",
+            "_TEST_DRAGON_TIERS",
+            "_TEST_HARDMINIONS_TIERS"
+        ],
+        "UserReadOnlyDataKeys": null
+    },
+    "PlayFabId": "7CC4BA50F9A56E0C"
+}
+HTTP/1.1 200 OK
+content-length: 81816
+content-type: application/json
+date: Sat, 12 Apr 2025 17:19:37 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: afd6ea0a9e684e1b9c2b9b0743935724
+x-tracecontext-traceid: a019d4674ebc92662f39340a91f50f4c
+x-envoy-upstream-service-time: 136
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "InfoResultPayload": {
+            "AccountInfo": {
+                "Created": "2025-04-12T17:19:33.895Z",
+                "CustomIdInfo": {
+                    "CustomId": "7a7d41699e54d178"
+                },
+                "PlayFabId": "7CC4BA50F9A56E0C",
+                "PrivateInfo": {},
+                "TitleInfo": {
+                    "Created": "2025-04-12T17:19:33.895Z",
+                    "FirstLogin": "2025-04-12T17:19:33.895Z",
+                    "LastLogin": "2025-04-12T17:19:33.895Z",
+                    "Origination": "CustomId",
+                    "TitlePlayerAccount": {
+                        "Id": "7E47ED63F9F1AC0A",
+                        "Type": "title_player_account",
+                        "TypeString": "title_player_account"
+                    },
+                    "isBanned": false
+                }
+            },
+            "CharacterInventories": [],
+            "PlayerProfile": {
+                "PlayerId": "7CC4BA50F9A56E0C",
+                "PublisherId": "3D7EA51AE24C4BC",
+                "TitleId": "2144"
+            },
+            "PlayerStatistics": [
+                {
+                    "StatisticName": "XpLevel",
+                    "Value": 1,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "ArenaPoints",
+                    "Value": 100,
+                    "Version": 3
+                },
+                {
+                    "StatisticName": "ArenaPointsEven",
+                    "Value": 276000100,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "BuildVersion",
+                    "Value": 297,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "AvatarIndex",
+                    "Value": 17,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "EventCarSmash",
+                    "Value": 276000000,
+                    "Version": 1
+                },
+                {
+                    "StatisticName": "LastLoginInMinutes",
+                    "Value": 2777359,
+                    "Version": 0
+                }
+            ],
+            "TitleData": {
+                "297_ArtifactDB": "[omitted due to unnecessary length]",
+                "297_HeroDB": "[omitted due to unnecessary length]",
+                "297_HeroSkillDB": "[omitted due to unnecessary length]",
+                "297_LevelDB": "[omitted due to unnecessary length]",
+                "297_SewerDB": "[omitted due to unnecessary length]",
+                "297_StallDB": "[omitted due to unnecessary length]",
+                "297_TuningDB": "[omitted due to unnecessary length]",
+                "BUILD_REQUIRED_VERSION": "297",
+                "BUILD_SUGGEST_ANDROID": "297",
+                "BUILD_SUGGEST_IOS": "297",
+                "BingoWeek": "268",
+                "Event_OneTimeOnlyCustomSale": "{\"ScrollsWeek\":{\"Rewards\":{\"Relics\":15,\"SummonScrolls\":30,\"Gems\":5000,\"EventRockets\":50},\"PriceTier\":3},\"PokerWeek\":{\"Rewards\":{\"Relics\":10,\"PokerChips\":100,\"Gems\":3000,\"EventHammers\":80},\"PriceTier\":2},\"MiscWeek\":{\"Rewards\":{\"ShardsArtifactUltra\":10,\"ShardsArtifactPurple\":50,\"ArtifactDust\":5000,\"SlotsTickets\":25},\"PriceTier\":3},\"OrbsWeek\":{\"Rewards\":{\"Relics\":25,\"Orbs\":15,\"Gems\":4000,\"EventDiceDust\":1500},\"PriceTier\":4},\"Week35\":{\"Rewards\":{\"Orbs\":20,\"Gems\":3000,\"HeroIndex\":44},\"PriceTier\":0}}",
+                "HolidayGifts": "1871",
+                "HolidayWeek": "261",
+                "Links": "{\"Reddit\":\"https://www.reddit.com/r/TapForce\",\"Twitter\":\"https://twitter.com/racecatgames\",\"Discord\":\"https://discord.gg/tap-force\",\"StorePageIOS\":\"https://apps.apple.com/ca/app/tap-force-rpg/id1459276435\",\"StorePageAndroid\":\"https://play.google.com/store/apps/details?id=com.racecat.fight\",\"TermsAndConditions\":\"https://www.tapforcegame.com/terms-conditions\",\"EmailFeedback\":\"racecatgames@gmail.com\"}",
+                "OneDaySale": "{\"rewards\":{\"HeroCard\":1,\"Relics\":40,\"SummonScrolls\":100},\"requirements\":{\"XpLevel\":20},\"priceTierDiscount\":1,\"priceTier\":2,\"dayIndex\":1910,\"value\":1600,\"vendor\":\"bingo_vendor2_valentines\",\"title\":\"spring_sale\",\"bg\":\"spring_splash_bg\"}",
+                "TechnoHeroes": "{\"271\":[75,84,83,81,80],\"275\":[91,90,89,76,71]}",
+                "_Version": "297_010"
+            },
+            "UserData": {
+                "ArenaMatches": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "[]"
+                },
+                "AvatarsData": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "[17]"
+                },
+                "ClubSmashLocal": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{\"WeekId\":276,\"Defeats\":0,\"Refreshies\":5,\"BossTickets\":0,\"SmashTickets\":0,\"MilestoneBoss\":0,\"MilestoneLocal\":0,\"BossAttackBonus\":0,\"PurchasedSmashTickets\":0,\"CollectionDailyTickets\":0,\"CollectionDailyTicketsBoss\":0,\"DailyResultCollections\":[],\"_clubSmashPointsProxy\":0,\"_smashTotalPointsProxy\":0,\"Wins\":[0,0,0,0]}"
+                },
+                "CollectionData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{}"
+                },
+                "DailyGiftData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"DayStreak\":1,\"EventWelcomeLastCollected\":0,\"EventDailyGiftRollTomorrow\":7,\"EventDailyGiftRoll\":1,\"EventDailyGiftLastCollected\":0,\"DailyLast\":0,\"DailyMilestone\":0,\"XpMilestone\":0}"
+                },
+                "EventsData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"MonthlyOrbs\":{\"StartedWith\":0,\"EndingWeekId\":279,\"Collections\":[]},\"MonthlySummons\":{\"StartedWith\":0,\"EndingWeekId\":277,\"Collections\":[]},\"MonthlyPokerChips\":{\"StartedWith\":0,\"EndingWeekId\":276,\"Collections\":[]},\"MonthlyMiscArena\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscFusion\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscShops\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscTavern4Stars\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscTavern5Stars\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscAll\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"ValuePackagePoker\":{\"StartedWith\":0,\"EndingWeekId\":276,\"Collections\":[]},\"OneTimeOnlyCustomSale\":{\"StartedWith\":0,\"EndingWeekId\":276,\"Collections\":[]},\"CarSmash\":{\"StartedWith\":0,\"EndingWeekId\":276,\"Collections\":[],\"ExtraData\":{\"DailyRewardIndex\":0,\"CollectedGifts\":[],\"RewardRolls\":[0,0,2,3],\"CritRolls\":[2,4,8,14,16,19],\"CarRolls\":[9,6,3],\"HammersSent\":[],\"HammersCollected\":[],\"PerkIndex\":0,\"Index\":0,\"Hp\":100,\"RollCount\":0,\"MilestoneCollected\":false,\"NextRollData\":{\"RewardRolls\":[2,0,0,3],\"CritRolls\":[0,7,8],\"CarRolls\":[6,3,8]}}}}"
+                },
+                "FriendsData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"CurrentWeek\":276,\"Searchees\":[{\"PlayFabId\":\"C80F26B8CE39DE49\",\"UserName\":\"GenesisVII\",\"XpLevel\":2,\"Position\":1653516,\"LastLogin\":\"2022-07-20T10:46:20.470Z\",\"ArenaPoints\":100,\"AttackTeamPower\":171,\"AvatarIndex\":25,\"StatValue\":1341286,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"D6475051F2022E8\",\"UserName\":\"j84j7jr2hz\",\"XpLevel\":11,\"Position\":1653530,\"LastLogin\":\"2022-07-18T05:40:15.669Z\",\"ArenaPoints\":95,\"AttackTeamPower\":1106,\"AvatarIndex\":31,\"StatValue\":1338100,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"6FE2D1F24808A8EC\",\"UserName\":\"toto\",\"XpLevel\":7,\"Position\":1653541,\"LastLogin\":\"2022-07-13T09:46:11.535Z\",\"ArenaPoints\":66,\"AttackTeamPower\":167,\"AvatarIndex\":13,\"StatValue\":1331146,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"BC7811CDFABE80EA\",\"UserName\":\"coffee\",\"XpLevel\":8,\"Position\":1653545,\"LastLogin\":\"2022-07-12T08:28:15.196Z\",\"ArenaPoints\":-6,\"AttackTeamPower\":1384,\"AvatarIndex\":3,\"StatValue\":1329628,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"E825D335B33FE916\",\"UserName\":\"Slips_9829\",\"XpLevel\":5,\"Position\":1653552,\"LastLogin\":\"2022-07-07T04:02:20.938Z\",\"ArenaPoints\":40,\"AttackTeamPower\":167,\"AvatarIndex\":8,\"StatValue\":1322162,\"FriendCount\":4,\"FriendTag\":\"None\"},{\"PlayFabId\":\"2596443DFAB3AF31\",\"UserName\":\"[guest_298137983]\",\"XpLevel\":0,\"Position\":1653560,\"LastLogin\":\"2022-07-31T03:22:55.963Z\",\"ArenaPoints\":5,\"AttackTeamPower\":0,\"AvatarIndex\":0,\"StatValue\":0,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"E4187DEF436EFC89\",\"UserName\":\"[guest_2983420]\",\"XpLevel\":0,\"Position\":1653561,\"LastLogin\":\"2022-08-03T14:31:38.227Z\",\"ArenaPoints\":0,\"AttackTeamPower\":0,\"AvatarIndex\":0,\"StatValue\":0,\"FriendCount\":2,\"FriendTag\":\"None\"},{\"PlayFabId\":\"CF426BB89FCF8723\",\"UserName\":\"[guest_324839]\",\"XpLevel\":0,\"Position\":1653562,\"LastLogin\":\"2022-07-31T03:14:42.689Z\",\"ArenaPoints\":0,\"AttackTeamPower\":0,\"AvatarIndex\":0,\"StatValue\":0,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"C35A3DBF8F320237\",\"UserName\":\"[guest_238423948]\",\"XpLevel\":20,\"Position\":1653563,\"LastLogin\":\"2022-07-31T02:54:03.245Z\",\"ArenaPoints\":5,\"AttackTeamPower\":0,\"AvatarIndex\":0,\"StatValue\":0,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"A52245164248AC69\",\"UserName\":\"[guest_384923234]\",\"XpLevel\":0,\"Position\":1653564,\"LastLogin\":\"2022-07-31T02:51:22.277Z\",\"ArenaPoints\":9,\"AttackTeamPower\":0,\"AvatarIndex\":0,\"StatValue\":0,\"FriendCount\":0,\"FriendTag\":\"None\"}],\"CollectionFriends\":[]}"
+                },
+                "GuildAchievements": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{}"
+                },
+                "GuildSoloBoss": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{\"hp\":600000,\"hpCap\":600000,\"weekId\":276,\"level\":0,\"typeIndex\":2,\"result\":null,\"minionIndex\":11,\"soloMilestoneCollection\":0,\"bossMilestoneCollection\":0,\"purchaseIndex\":0,\"collectedBosses\":[]}"
+                },
+                "HeroCardData": {
+                    "LastUpdated": "2025-04-12T17:19:37.356Z",
+                    "Permission": "Private",
+                    "Value": "[69,86,72,80]"
+                },
+                "HeroSlotsData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"Slots\":100,\"Purchases\":0}"
+                },
+                "KittyRolls": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{\"RecruitScrolls\":[1,3,17,9,8,5,5,14,8,8,4,25,3,27,9,12,10,7,16,19,6,4,18,6,13,5,3,5,29,24,6,60,11,13,8,11,7,3,31,6,6,1,13,10,3,26,0,8,0,8,2,10,5,11,29,9,11,64,2,0,3,10,0,6,0,15,13,3,2,9,3,5,29,7,20,24,4,11,7,0,11,6,7,0,1,7,5,12,6,10,16,4,7,9,8,26,2,21,13,10,2,4,12,30,8,16,4,0,10,18,30,2,5,4,7,1,11,86,81,2,8,0,6,1,1,10,11,8,1,18,26,23,7,8,4,20,13,7,3,7,21,3,4,25,6,8,7,11,10,17,25,0,9,0,10,10,42,1,18,8,7,8,7,7,16,7,12,17,15,2,6,22,2,15,8,18,3,29,37,20,10,11,11,1,11,19,17,18,29,2,8,9,0,3,25,6,19,8,5,9],\"RecruitShardsBlue\":[19,28,18,20,27,19,15,15,12,15,13,26,13,19,29,23,21,24,13,27,20,21,15,21,17,17,12,16,22,24,22,22,22,17,29,24,14,16,18,18,22,25,20,21,13,12,13,23,31,21],\"RecruitShardsPurple\":[86,37,34,74,40,90,25,20,32,61,60,25,17,38,45,19,47,25,76,61,76,13,23,75,68,17,61,57,16,21,87,24,68,17,86,33,22,29,37,54,61,91,30,38,54,30,27,21,25,70],\"Tavern\":[209,6,8,201,0,106,106,7,0,0,6,8,8,0,300,6,208,0,0,6,6,203,0,106,6,7,107,7,106,303,0,8,108,208,107,0,0,6,107,209,0,6,6,8,8,8,106,8,6,100,6,8,100,0,6,107,0,8,6,6,8,300,107,106,0,7,209,106,8,7,300,304,8,304,8,106,0,0,7,0,7,7,200,7,8,108,6,107,0,7,6,6,100,8,0,300,8,0,6,209],\"DojoSpin\":[4,4,7,5,1,2,6,0,6,0,4,0,0,4,4,4,4,4,1,7,2,4,1,7,7,4,3,4,0,4,6,4,0,7,6,1,6,4,3,6,4,4,2,4,7,7,6,0,8,0,4,4,6,4,0,7,0,7,0,4,8,4,7,6,4,4,6,2,3,4,6,7,7,0,7,7,7,0,7,4,0,0,7,6,2,4,4,4,5,4,0,4,6,4,6,2,4,0,2,2],\"CasinoSpin\":[2,2,2,3,8,8,8,1,2,1,0,4,3,3,3,1,0,4,1,0,0,0,0,2,5,0,1,0,4,2,0,0,5,3,3,2,2,2,0,2,0,3,0,1,4,0,2,4,0,0,0,3,1,0,1,8,0,3,2,0,8,0,2,1,1,1,0,4,0,8,1,4,1,0,3,0,1,2,0,1,2,2,0,1,3,0,0,1,0,1,2,1,0,1,2,0,2,3,8,9],\"EventMonopoly\":[50,7,12,6,6,9,17,51,0,44,41,41,15,13,59,11,23,2,55,27,8,4,46,45,37,5,32,26,53,37,25,47,50,15,12,27,39,37,18,40,4,4,32,17,51,54,20,15,10,53],\"EventMonopolyCave\":[2,2,7,0,7],\"Materials\":[4,7,8,5,10,7,5,1,3,4,5,5,7,4,7,8,8,12,1,10,0,13,3,0,10,13,7,6,5,1,1,13,2,4,3,10,1,10,8,2,5,8,4,1,1,4,1,6,7,12],\"ArtifactsPurple\":[6,7,8,7,12,14,7,14,14,14],\"ArtifactsBlue\":[3,0,3,0,1,2,2,0,1,2,3,2,1,2,1,3,4,1,2,2,3,1,2,1,0,5,3,0,2,1,5,2,2,1,1,1,4,3,2,1,0,2,3,2,1,3,0,1,1,3],\"MutagenRolls\":[120305,123003,13207,301212,203109,312004,21305,320101,301205,310204,13206,201301,302101,203108,132010,321010,32103,312002,21301,32103,201302,301203,23104,132007,12301,123007,13211,213012,103204,302101,302103,23107,102303,31206,320101,210302,312007,210307,201301,231010,32101,310202,123003,231002,320104,231008,132002,32101,231001,203102,130207,230101,102308,321001,213001,230103,301202,320105,32102,32103,31201,201301,31202,231002,203102,310203,123004,312004,120301,301203,103201,320105,231001,21306,120307,23105,320101,23101,210314,32106,231003,213001,203101,132005,231008,102304,123004,32101,210302,310201,321001,302101,213011,231004,31203,203103,32102,123006,12304,132007],\"SuperMutagenRolls\":[32110,132011,310211,203111,13212,102312,230110,210315,32113,103215,230110,203111,302110,301213,31212,102314,130212,213010,213013,321011,301212,230111,321013,120315,201311,23111,12311,130210,231010,321011,103210,312013,321012,201314,213012,321012,210310,213013,320110,320114,21311,102314,203114,132014,231011,103210,231010,203110,23111,230111],\"SlotsSpins\":[24132253,415053024,320351350,413350324,435530304,140104251,32345143,203023205,402532124,423305350,102105234,542304410,324523215,213042421,243142234,234042150,541542123,241301542,340321512,105235025,235140145,452301204,205025403,130314403,53325231,132104250,250413530,240035534,421452403,214421054,235041210,421514203,324205142,542325201,142035430,325150041,14341251,43201034,431043053,301143413,301350341,120230510,140513412,245405520,140451130,23540254,235452405,435314425,130420215,435502104],\"ArtifactsUltra\":[11,11,16,11,11,10,16,13,15,10],\"ClubSmashRolls\":[17302,163240,666322,223034,622210,606233,216132,453340,874211,481324],\"SmashBossRolls\":[1,402,2,410,400,220,112,211,211,301],\"CharmShardsRolls\":[30,20,1,47000,40,100,2,4,40,2,4,5,3,1,3,2,30,200,4,5,4,20,5,1,3,83000,2,2,4,82000,4,1,5,4,4,4,4,63000,1,4,4,10,50,4,63000,40,200,3,2,2],\"RecruitOrbs\":[25,26,1,31,8,9,11,7,2,12,21,19,19,3,21,17,11,11,5,83,30,18,14,26,27,9,24,28,3,0,24,23,8,5,19,11,14,1,12,84,26,15,14,0,3,18,13,31,27,0,9,17,1,7,11,1,29,50,24,7,29,27,7,16,88,10,22,60,25,25,49,14,9,77,24,35,23,2,24,12,20,19,25,16,1,83,16,7,3,18,30,0,83,13,7,5,21,6,1,23],\"CharmSpins\":[2,1,0,12,0,0,0,0,1,1,1,2,1,10,1,0,1,1,1,11]}"
+                },
+                "KittyStats": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{\"Count_Summon\":0,\"Count_Orbs\":0,\"Count_Poker\":0,\"Count_FriendCratesCollected\":0,\"Count_ShopCollections\":0,\"Count_ShopOpenings\":0,\"Count_Tavern3Stars\":0,\"Count_Tavern4Stars\":0,\"Count_Tavern5Stars\":0,\"Count_Fusions\":0,\"Count_FusionsElite\":0,\"Count_ArenaWins\":0,\"Count_ArenaTickets\":0,\"Count_GuildRolls\":0,\"Count_MarketPurchases\":0,\"Count_HeroSpawnPurple\":0,\"Count_ArtifactSpawnPurple\":0,\"Count_PurpleShards\":0,\"Count_PizzaSpent\":0,\"Count_Recruit\":0,\"Count_GlobePurchases\":0,\"BonusSummons\":0,\"BonusOrbs\":0,\"BonusShards\":0,\"Guild_SoloDefeat\":0,\"Guild_SoloDamage_v2\":0,\"Guild_SoloSpawn\":0,\"Guild_SoloLucky\":0,\"Guild_Defeat\":0,\"Guild_Slayer\":0,\"Guild_MVP\":0,\"Guild_RotatingCollections\":0,\"Guild_LastCollectedWeek\":0,\"Guild_DailyKeysData\":0,\"Guild_WeeklyKeysData\":0,\"GemsSpent\":0,\"DailyPoints\":0,\"DailyWelcomeBack\":0,\"QuestsDailyCompletions\":0,\"QuestsDailyCollections\":0,\"QuestsWeeklyCompletions\":0,\"QuestsWeeklyCollections\":0,\"AchievementMilestonePoints\":0,\"AchievementMilestoneProgress\":0,\"GamePassLastDay\":0,\"GamePassGranted\":0,\"GamePassClaimed\":0,\"PurchaseTier\":0,\"OrbSelection\":0,\"FreeValuePackageWeek\":0,\"BeginnersQuests\":0,\"VipDailyRoll\":4,\"FriendCrateRoll\":0,\"WeekIndex\":276,\"FlashSaleTier\":0,\"FirstLoginDay\":1928,\"KittyBools\":0,\"Unlocks\":0,\"GoldBillions\":0,\"HolidayCollection\":0,\"TechnoLastCollection\":0,\"TechnoRun\":0,\"TechnoEvent\":0,\"DesertCooldown\":0,\"ArenaRefreshies\":0,\"HardBoostSpins\":0,\"HardBoostTopCollections\":0,\"HardBoostTopCollectionsStart\":0,\"HardBoostTopCollectionsLastDay\":0,\"HardModeSpinsS\":0,\"HardModeSpinsA\":0,\"HardModeSpinsB\":0,\"HardModeSpinsC\":0,\"HardModeCardLastDay\":0,\"HardModeCardCollection\":0,\"HardModeCardLastDayPremium\":0,\"HardModeCardCollectionPremium\":0,\"HardModeUnlockDay\":0,\"AscensionUnlockDay\":0,\"ChatBadgeIndex\":0,\"ClubSmashFinaleCollection\":0,\"ClubSmashTotalTickets\":0,\"ClubSmashTotalVulnerable\":0,\"ClubSmashTotalEarnPoints\":0,\"ClubSmashTotalBossTickets\":0,\"OneDaySalePurchased\":0,\"Best_GuildBossDamageTotal\":0,\"Best_GuildSoloLevel\":0,\"Best_GuildSoloDamage\":0,\"Best_EventBattleship\":0,\"Best_EventMonopoly\":0,\"Best_EventCarSmash\":0,\"Best_ArenaPoints\":0,\"Best_TechnoPoints\":0,\"Best_SlotsPoints\":0,\"Best_GuildBossDmgOneFight\":0,\"Best_SmashPoints\":0,\"Best_GuildSoloLevel_NEW\":0,\"Best_ClubSmashDamageTotal\":0,\"Best_ClubSmashDmgOneFight\":0,\"Guild_Best_CS_DamageFaction\":0,\"Guild_CS_FactionWins_Red\":0,\"Guild_CS_FactionWins_Green\":0,\"Guild_CS_FactionWins_Yellow\":0,\"Guild_CS_FactionWins_Blue\":0,\"Guild_CS_FactionWins_Purple\":0,\"SummonBadLuckCounter\":21,\"OrbsBadLuckCounter\":7,\"Guild_LastCollectedWeekRank\":0,\"CampaignStuckDay\":0,\"HardModeStuckDay\":0,\"OrbsRecordElite\":0,\"OrbsRecordUsed\":0,\"BattleshipHits\":0,\"BattleshipMisses\":0,\"KittyRollLastCheck\":1091,\"KittyRollLastCheckArti\":16,\"LastUpdate\":297,\"ArenaSize\":165354,\"BestScoreDayIdCheck\":1928,\"CALL_ID\":0,\"DEV_WEEKOFFSET\":0,\"ERROR_CHECK_WEEK\":0,\"BuggyFixWeek\":275,\"_bt64\":0,\"_bd64\":0,\"_sd64\":0,\"_bs64\":0,\"_dm64\":0,\"_bb64\":0,\"_cd64\":0,\"_bc64\":0,\"_cx64\":0,\"_bx64\":0,\"_d_64\":0}"
+                },
+                "MarketData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "[{\"type\":\"Ooze\",\"amount\":1000,\"cost\":500,\"index\":-1,\"isPurchased\":false},{\"type\":\"PokerChips\",\"amount\":10,\"cost\":750,\"index\":-1,\"isPurchased\":false},{\"type\":\"ShardsHeroPurple\",\"amount\":5,\"cost\":800,\"index\":-1,\"isPurchased\":false},{\"type\":\"Orbs\",\"amount\":1,\"cost\":900,\"index\":-1,\"isPurchased\":false},{\"type\":\"Gold\",\"amount\":4000,\"cost\":0,\"index\":-1,\"isPurchased\":false},{\"type\":\"Tickets\",\"amount\":100,\"cost\":125,\"index\":-1,\"isPurchased\":false},{\"type\":\"ShardsMaterialBlue\",\"amount\":80,\"cost\":200,\"index\":-1,\"isPurchased\":false},{\"type\":\"TavernRolls\",\"amount\":50,\"cost\":450,\"index\":-1,\"isPurchased\":false}]"
+                },
+                "QuestsDaily": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "[{\"Type\":\"OpenShops\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":5},{\"Type\":\"UseClawMachine\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":2},{\"Type\":\"GetTavern3Star\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"UseSummon\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"HeroSpawnBlue\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"SpendArenaTickets\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":3},{\"Type\":\"MarketPurchase\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"LevelUpHero\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"BattleSewer\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"BattleCampaign\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"GuildShopRoll\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1}]"
+                },
+                "QuestsWeekly": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "[{\"Type\":\"MarketPurchase\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":5},{\"Type\":\"ZoneShopPurchase\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"ArenaWins\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":15},{\"Type\":\"HeroFusion\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":2},{\"Type\":\"UseSummon\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":20},{\"Type\":\"HeroSpawnPurple\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"GetTavern4Star\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"GuildShopRoll\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":10},{\"Type\":\"GuildSoloBoss\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"GuildBoss\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"UseOrbs\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":3}]"
+                },
+                "RelicData": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"Purchases\":[],\"PromoHeroes\":[47,39,38,48,46,41,79,56,80,37,59,60,36,35,42]}"
+                },
+                "ScrollRecords": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{}"
+                },
+                "Stalls": {
+                    "LastUpdated": "2025-04-12T17:19:37.128Z",
+                    "Permission": "Private",
+                    "Value": "{\"0\":{\"Stars\":-1}}"
+                },
+                "TavernData_v2": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "[6,8,6,300,8,209,0,6]"
+                },
+                "TechTreeData": {
+                    "LastUpdated": "2025-04-12T17:19:37.356Z",
+                    "Permission": "Private",
+                    "Value": "{}"
+                },
+                "TimeStamps": {
+                    "LastUpdated": "2025-04-12T17:19:37.247Z",
+                    "Permission": "Private",
+                    "Value": "{\"ArenaTicket\":\"2025-04-13T05:19:36.734Z\",\"LastTicketCollection\":\"2025-04-12T17:19:36.734Z\",\"BeginnerSale\":\"2025-04-19T17:19:36.844Z\",\"DailyRefresh\":\"2025-04-13T00:00:00.000Z\",\"Monthly\":\"2025-05-12T00:00:00.000Z\"}"
+                },
+                "_TokenCheck": {
+                    "LastUpdated": "2025-04-12T17:19:36.223Z",
+                    "Permission": "Private",
+                    "Value": "L7r4ltqvQ="
+                }
+            },
+            "UserDataVersion": 4,
+            "UserInventory": [],
+            "UserReadOnlyDataVersion": 0,
+            "UserVirtualCurrency": {
+                "A0": 0,
+                "A1": 0,
+                "A2": 0,
+                "AC": 0,
+                "AD": 0,
+                "AS": 0,
+                "AT": 10,
+                "BH": 0,
+                "BS": 0,
+                "BT": 0,
+                "C0": 0,
+                "C2": 0,
+                "CB": 0,
+                "CS": 0,
+                "DI": 0,
+                "EH": 0,
+                "FB": 0,
+                "GC": 0,
+                "GE": 500,
+                "GK": 0,
+                "GM": 0,
+                "GO": 5000,
+                "GS": 0,
+                "GX": 0,
+                "H0": 0,
+                "H1": 0,
+                "HC": 0,
+                "IA": 0,
+                "M0": 0,
+                "OR": 0,
+                "OZ": 100,
+                "PC": 5,
+                "RE": 0,
+                "RO": 0,
+                "SC": 5,
+                "SI": 5000,
+                "SM": 0,
+                "ST": 0,
+                "T1": 0,
+                "T2": 0,
+                "TC": 0,
+                "TI": 40,
+                "TR": 10,
+                "TT": 0,
+                "TY": 0,
+                "VI": 0,
+                "XP": 0
+            },
+            "UserVirtualCurrencyRechargeTimes": {}
+        },
+        "PlayFabId": "7CC4BA50F9A56E0C"
+    },
+    "status": "OK"
+}

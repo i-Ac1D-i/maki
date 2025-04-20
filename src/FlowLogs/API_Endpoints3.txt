@@ -1,0 +1,1279 @@
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 470
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "CASINO_LOOT",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "attemptList": [
+            10
+        ],
+        "build": 297,
+        "callName": "CASINO_LOOT"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 254
+content-type: application/json
+date: Thu, 10 Apr 2025 17:00:19 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 40edbe8249fc4a448ad0e5731272e5bb
+x-tracecontext-traceid: 3b27d1783a0afca393ee57beca24a595
+x-envoy-upstream-service-time: 313
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 254,
+        "FunctionName": "CASINO_LOOT",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_CasinoSpin": [
+                3,
+                4,
+                2,
+                3,
+                4,
+                2,
+                3,
+                8,
+                2,
+                7
+            ],
+            "CurrencyClaims": {
+                "C0": 1,
+                "GE": 1825,
+                "GO": 52900,
+                "H0": 80,
+                "M0": 5,
+                "OZ": 950,
+                "PC": 3
+            },
+            "KITTYCLOCK": "2025-04-10T17:00:19.095Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 492
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SHARDS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "attempts": 4,
+        "build": 297,
+        "callName": "SUMMON_SHARDS",
+        "type": "ShardsHeroBlue"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 396
+content-type: application/json
+date: Thu, 10 Apr 2025 17:01:17 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 401d6cec4f9546cf8f2d0b1d7d8bfb0e
+x-tracecontext-traceid: d58fec488baf2ef7413b51aa3508e0d2
+x-envoy-upstream-service-time: 372
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 326,
+        "FunctionName": "SUMMON_SHARDS",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_RecruitShardsBlue": [
+                12,
+                24,
+                22,
+                19
+            ],
+            "CurrencyClaims": {
+                "H0": 0
+            },
+            "KITTYCLOCK": "2025-04-10T17:01:17.964Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "AvatarsData": "[3,1,17,9,8,20,5,24,21,30,19,28,16,13]"
+            },
+            "grantItemsToUserResult": [
+                {
+                    "customData": null,
+                    "itemId": "hero_Zen",
+                    "itemInstanceId": "7897B5F641A2A725"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Natsu",
+                    "itemInstanceId": "75A80AEB67E4F409"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Pixie",
+                    "itemInstanceId": "92D03024CBD4A2C1"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Cooper",
+                    "itemInstanceId": "3BB0E600AF59DB16"
+                }
+            ]
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 483
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SHARDS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "SUMMON_SHARDS",
+        "name": "SaveHeroCardReveal"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 175
+content-type: application/json
+date: Thu, 10 Apr 2025 17:01:20 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: eab979244af04b14b38a30898915364b
+x-tracecontext-traceid: 612992441fcd406aa7764cd9d2732bef
+x-envoy-upstream-service-time: 231
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 185,
+        "FunctionName": "SUMMON_SHARDS",
+        "FunctionResult": {
+            "KITTYCLOCK": "2025-04-10T17:01:20.605Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 483
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SHARDS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "SUMMON_SHARDS",
+        "index": 3,
+        "type": "HeroCard"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 308
+content-type: application/json
+date: Thu, 10 Apr 2025 17:01:25 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 75fc3698a57c4204b9a155773a62782e
+x-tracecontext-traceid: 2f09d6d24bb1774fca9f3eeb9b415c3c
+x-envoy-upstream-service-time: 274
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 223,
+        "FunctionName": "SUMMON_SHARDS",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "C0": 0
+            },
+            "KITTYCLOCK": "2025-04-10T17:01:25.363Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "AvatarsData": "[3,1,17,9,8,20,5,24,21,30,19,28,16,13,89]",
+                "HeroCardData": "[81,69,43,37]"
+            },
+            "grantItemsToUserResult": [
+                {
+                    "customData": null,
+                    "itemId": "hero_Lily",
+                    "itemInstanceId": "A59EDF28F65759E4"
+                }
+            ]
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 451
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "XP_LEVEL_UP",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "XP_LEVEL_UP"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 213
+content-type: application/json
+date: Thu, 10 Apr 2025 17:02:33 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 6f562920c32c433398975c03e440d2cf
+x-tracecontext-traceid: 88752b042d68bf19f45dfca7631d67be
+x-envoy-upstream-service-time: 215
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 166,
+        "FunctionName": "XP_LEVEL_UP",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GE": 1975,
+                "TI": 158,
+                "XP": 80
+            },
+            "KITTYCLOCK": "2025-04-10T17:02:33.801Z",
+            "StatisticsClaims": {
+                "XpLevel": 4
+            },
+            "TITLE_DATA_VERSION": "297_009"
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 473
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "MAIL_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "MAIL_ACTION",
+        "indexes": [
+            166462596
+        ]
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 315
+content-type: application/json
+date: Thu, 10 Apr 2025 17:03:59 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 31b1dededb754df5af2f67954fe95aa9
+x-tracecontext-traceid: 266f5548df451297792bc3be52f47c7b
+x-envoy-upstream-service-time: 290
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 233,
+        "FunctionName": "MAIL_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GO": 119900
+            },
+            "KITTYCLOCK": "2025-04-10T17:04:00.031Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "MailData": "[{\"Rewards\":{\"Gold\":21500},\"TimeStamp\":\"2025-04-10T15:36:36.855Z\",\"Message\":\"mail_event_ended_info\",\"Title\":\"event_ended\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":166462596}]"
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 496
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SHARDS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "attempts": 1,
+        "build": 297,
+        "callName": "SUMMON_SHARDS",
+        "type": "ShardsArtifactBlue"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 263
+content-type: application/json
+date: Thu, 10 Apr 2025 17:04:05 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 3f730ad8f6504c258998196df8e560f3
+x-tracecontext-traceid: e71d0e6b1396a0f5b322c869ff7709d2
+x-envoy-upstream-service-time: 268
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 214,
+        "FunctionName": "SUMMON_SHARDS",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_ArtifactsBlue": [
+                4
+            ],
+            "CurrencyClaims": {
+                "A0": 10
+            },
+            "KITTYCLOCK": "2025-04-10T17:04:05.459Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {},
+            "dragonShardsResults": {
+                "2": [
+                    "629defef37d941b9b71e93ae368c1972"
+                ]
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 548
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "ASCEND_HEROES",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "ascensions": [
+            {
+                "fodders": [
+                    "F6AA531867EE5DDD",
+                    "7CA720D94BCAABCA"
+                ],
+                "hero": "262B9E2ED12FF858"
+            }
+        ],
+        "build": 297,
+        "callName": "ASCEND_HEROES"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 174
+content-type: application/json
+date: Thu, 10 Apr 2025 17:05:33 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: eae781bcd964412c89545843c39d5c18
+x-tracecontext-traceid: 6def289c5573a3ca74c9e0300f23eed5
+x-envoy-upstream-service-time: 268
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 217,
+        "FunctionName": "ASCEND_HEROES",
+        "FunctionResult": {
+            "KITTYCLOCK": "2025-04-10T17:05:34.293Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 513
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "EVENTS_CAR_SMASH_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "attemptList": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "attempts": 12,
+        "build": 297,
+        "callName": "EVENTS_CAR_SMASH_ACTION"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 592
+content-type: application/json
+date: Thu, 10 Apr 2025 17:07:49 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 2d91ae6a64bd4fc68b299e1f5da4a4bb
+x-tracecontext-traceid: a1934cc39a99b58670a17ed81ec3c006
+x-envoy-upstream-service-time: 286
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 238,
+        "FunctionName": "EVENTS_CAR_SMASH_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "A0": 35,
+                "EH": 24,
+                "GE": 5075,
+                "TR": 2
+            },
+            "KITTYCLOCK": "2025-04-10T17:07:49.513Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "EventsData": "{\"MonthlySummons\":{\"StartedWith\":0,\"EndingWeekId\":277,\"Collections\":[]},\"MonthlyPokerChips\":{\"StartedWith\":0,\"EndingWeekId\":276,\"Collections\":[0]},\"MonthlyMiscArena\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscFusion\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscShops\":{\"StartedWith\":6,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscTavern4Stars\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscTavern5Stars\":{\"StartedWith\":0,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscAll\":{\"StartedWith\":1,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyOrbs\":{\"StartedWith\":0,\"EndingWeekId\":279,\"Collections\":[]},\"ValuePackagePoker\":{\"StartedWith\":5,\"EndingWeekId\":276,\"Collections\":[]},\"OneTimeOnlyCustomSale\":{\"StartedWith\":5,\"EndingWeekId\":276,\"Collections\":[]},\"CarSmash\":{\"StartedWith\":5,\"EndingWeekId\":276,\"Collections\":[],\"ExtraData\":{\"DailyRewardIndex\":1926,\"CollectedGifts\":[0,1,2,3],\"RewardRolls\":[0,2,1,3],\"CritRolls\":[0,3,6,8,10,13,16],\"CarRolls\":[6,9,7],\"HammersSent\":[],\"HammersCollected\":[],\"PerkIndex\":0,\"Index\":0,\"Hp\":0,\"RollCount\":12,\"MilestoneCollected\":false,\"NextRollData\":{\"RewardRolls\":[0,0,2,3],\"CritRolls\":[3,5,8,10,12,13,16,19],\"CarRolls\":[3,9,10]}}}}"
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 475
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "GUILD_GET_SEARCHES",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "Index": 0,
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "GUILD_GET_SEARCHES"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 2559
+content-type: application/json
+date: Thu, 10 Apr 2025 17:09:49 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 788cce33b258429a999a1d2097975cf8
+x-tracecontext-traceid: 60d411e25dd336a698836fbee31f31e3
+x-envoy-upstream-service-time: 447
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 395,
+        "FunctionName": "GUILD_GET_SEARCHES",
+        "FunctionResult": {
+            "GuildSearchResults": [
+                {
+                    "Creation": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "2025-04-10T16:30:15.65Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "Mozambican founder. Poruguese and English speaker. Frienly Club. Progression and Causal Play style"
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "4D1A4BC1DB96407"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2025-04-10T16:30:16.005Z",
+                        "Value": "1843290176"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "1"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "NINTAKU BOCHA"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "78D97F6DE68812D5"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "2954ACA5DCAB6F67"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-10T16:30:15.884Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":8,\"Flag\":124,\"Crest\":42,\"BadgeSec\":0}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2025-01-22T00:03:22.784Z",
+                        "Value": "27660"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2025-01-22T00:03:22.784Z",
+                        "Value": "257"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2022-11-30T06:18:25.42Z",
+                        "Value": "2022-11-30T06:18:25.073Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2024-10-22T16:43:25.717Z",
+                        "Value": "Bem vindos ao clã, 3 dias off - ban, não participar dos eventos - ban, grupo Whatsapp opcional."
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2022-11-30T06:18:25.42Z",
+                        "Value": "2B9FBDD9B3935150"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2022-11-30T06:18:25.644Z",
+                        "Value": "1843292853"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T15:59:02.653Z",
+                        "Value": "7"
+                    },
+                    "Name": {
+                        "LastUpdated": "2024-10-22T16:43:25.717Z",
+                        "Value": "BR LOBOS-GUARÁ"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2022-11-30T06:18:25.42Z",
+                        "Value": "1D4045B5EFC39510"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2022-11-30T06:18:25.42Z",
+                        "Value": "86C721385F04B689"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2024-10-22T16:43:25.717Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":17,\"Flag\":26,\"Crest\":7,\"BadgeSec\":4}"
+                    }
+                },
+                {
+                    "Creation": {
+                        "LastUpdated": "2025-04-02T00:19:03.408Z",
+                        "Value": "2025-04-02T00:19:03.175Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-02T00:19:03.408Z",
+                        "Value": ""
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2025-04-02T00:19:03.408Z",
+                        "Value": "7A44AE9C63BE3EA1"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2025-04-02T00:19:03.505Z",
+                        "Value": "1843290471"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T07:45:04.157Z",
+                        "Value": "9"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-07T21:36:19.864Z",
+                        "Value": "GOONATIERS "
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2025-04-02T00:19:03.408Z",
+                        "Value": "F6D819E16D75EBEB"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2025-04-02T00:19:03.408Z",
+                        "Value": "40EF8EF420D515F3"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-07T21:36:19.864Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":1,\"Flag\":60,\"Crest\":47,\"BadgeSec\":3}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2024-10-02T00:17:09.727Z",
+                        "Value": "3779"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2024-10-02T00:17:09.727Z",
+                        "Value": "546"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2022-12-16T16:56:56.343Z",
+                        "Value": "2022-12-16T16:56:56.003Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2023-03-28T13:02:04.873Z",
+                        "Value": "Welcome! To the StrawHat Pirates guild"
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2022-12-16T16:56:56.343Z",
+                        "Value": "A37BAE27B731F42A"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2022-12-16T16:56:56.434Z",
+                        "Value": "1843290984"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T14:57:25.284Z",
+                        "Value": "9"
+                    },
+                    "Name": {
+                        "LastUpdated": "2023-03-28T13:02:04.873Z",
+                        "Value": "STRAWHAT CREW"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2022-12-16T16:56:56.343Z",
+                        "Value": "F75A840374E528E1"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2022-12-16T16:56:56.343Z",
+                        "Value": "1635DAEDEF2E8225"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2023-03-28T13:02:04.873Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":1,\"Flag\":60,\"Crest\":44,\"BadgeSec\":3}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2024-09-18T00:07:29.848Z",
+                        "Value": "1295"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2024-09-18T00:07:29.848Z",
+                        "Value": "702"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "2022-11-30T22:17:54.567Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": null
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "BA20677E33F7D346"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2022-11-30T22:17:55.098Z",
+                        "Value": "1843292504"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T13:49:54.648Z",
+                        "Value": "5"
+                    },
+                    "Name": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "MIRIADS"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "E83AF095CFF5758A"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "4928480736FBF383"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2022-11-30T22:17:54.975Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":17,\"Flag\":58,\"Crest\":5,\"BadgeSec\":2}"
+                    }
+                },
+                {
+                    "Creation": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "2025-04-02T12:43:57.006Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": ""
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "307AF1D1E4BE8FE0"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2025-04-02T12:43:57.366Z",
+                        "Value": "1843298382"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T12:36:53.727Z",
+                        "Value": "11"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "SUPERFRIENDS"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "37D4CDFAE5AE3233"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "F07F8BAB241A52F7"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-02T12:43:57.235Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":3,\"Flag\":60,\"Crest\":44,\"BadgeSec\":0}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2024-07-10T00:00:10.383Z",
+                        "Value": "17499"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2024-07-10T00:00:10.383Z",
+                        "Value": "273"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2023-06-20T12:44:37.706Z",
+                        "Value": "2023-06-20T12:44:37.425Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-09T11:39:22.528Z",
+                        "Value": "Clube pra brasileiros, Club for brazilians or not, but people that love brazilians just came."
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2023-06-20T12:44:37.706Z",
+                        "Value": "4FAE41767A4F6A42"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2023-06-20T12:44:37.77Z",
+                        "Value": "1843297395"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T12:15:58.72Z",
+                        "Value": "23"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-09T11:39:22.528Z",
+                        "Value": "ROCKET LANCHE"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2023-06-20T12:44:37.706Z",
+                        "Value": "308751048EDBC300"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2023-06-20T12:44:37.706Z",
+                        "Value": "85AA3AF6789FA287"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-09T11:39:22.528Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":16,\"Flag\":26,\"Crest\":57,\"BadgeSec\":3}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2025-04-02T00:00:11.607Z",
+                        "Value": "625"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2025-04-02T00:00:11.607Z",
+                        "Value": "768"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2025-03-09T16:43:35.442Z",
+                        "Value": "2025-03-09T16:43:35.224Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-02T01:18:07.694Z",
+                        "Value": "Сибирь присоединяйся"
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2025-03-09T16:43:35.442Z",
+                        "Value": "24129070745ADBC6"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2025-03-09T16:43:35.557Z",
+                        "Value": "1843296353"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T14:30:50.825Z",
+                        "Value": "7"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-02T01:18:07.694Z",
+                        "Value": "Дети Сибири"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2025-03-09T16:43:35.442Z",
+                        "Value": "D1899F760288FEB5"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2025-03-09T16:43:35.442Z",
+                        "Value": "FB0F82B04D2239"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-02T01:18:07.694Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":1,\"Flag\":152,\"Crest\":39,\"BadgeSec\":1}"
+                    }
+                },
+                {
+                    "Creation": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "2025-04-05T22:03:30.382Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "....@"
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "AF2F5E40ED1ED8F3"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2025-04-05T22:03:30.719Z",
+                        "Value": "1843297334"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-09T16:38:04.427Z",
+                        "Value": "2"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "мир"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "521382302ADB924A"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "F77304CEF71EA070"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-04-05T22:03:30.604Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":12,\"Flag\":152,\"Crest\":38,\"BadgeSec\":3}"
+                    }
+                },
+                {
+                    "BestPoints": {
+                        "LastUpdated": "2025-03-05T00:00:44.405Z",
+                        "Value": "22885"
+                    },
+                    "BestPosition": {
+                        "LastUpdated": "2025-03-05T00:00:44.405Z",
+                        "Value": "280"
+                    },
+                    "Creation": {
+                        "LastUpdated": "2024-12-25T08:59:45.469Z",
+                        "Value": "2024-12-25T08:59:45.213Z"
+                    },
+                    "Description": {
+                        "LastUpdated": "2025-04-09T06:42:51.509Z",
+                        "Value": "メカ狩り頑張ろ～(≧▽≦)メカの発見数10体以上の人は、メカ狩りが終わった後追い出しませんが、その条件を満たしていない人は追い出しますのでご注意を!!!"
+                    },
+                    "GroupId": {
+                        "LastUpdated": "2024-12-25T08:59:45.469Z",
+                        "Value": "F486AAD6B99E2865"
+                    },
+                    "GuildId": {
+                        "LastUpdated": "2024-12-25T08:59:45.608Z",
+                        "Value": "1843294155"
+                    },
+                    "GuildSize": {
+                        "LastUpdated": "2025-04-10T14:24:39.233Z",
+                        "Value": "20"
+                    },
+                    "Name": {
+                        "LastUpdated": "2025-04-09T06:42:51.509Z",
+                        "Value": "エロゴリラ"
+                    },
+                    "OwnerCharacterId": {
+                        "LastUpdated": "2024-12-25T08:59:45.469Z",
+                        "Value": "6F19698E3003AFD6"
+                    },
+                    "OwnerId": {
+                        "LastUpdated": "2024-12-25T08:59:45.469Z",
+                        "Value": "6DCA8A4ECFA6340"
+                    },
+                    "Settings": {
+                        "LastUpdated": "2025-02-07T12:56:54.938Z",
+                        "Value": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":6,\"Flag\":92,\"Crest\":50,\"BadgeSec\":3}"
+                    }
+                }
+            ]
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 477
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "GUILD_JOIN",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "GroupId": "4D1A4BC1DB96407",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "build": 297,
+        "callName": "GUILD_JOIN"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 1231
+content-type: application/json
+date: Thu, 10 Apr 2025 17:09:52 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 71a069aa83ed4a8b82241a979bb1d4d7
+x-tracecontext-traceid: 16bada5c33779b15f024f76b10925126
+x-envoy-upstream-service-time: 882
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 838,
+        "FunctionName": "GUILD_JOIN",
+        "FunctionResult": {
+            "GuildData": {
+                "ActiveBosses": "[]",
+                "ClubSmashData": "{\"WeekId\":276,\"NeighboursGuilds\":[{\"OwnerCharacterId\":\"9138E7D1DB0FE991\",\"GuildUniqueId\":1843291410,\"SmashPoints\":0,\"Settings\":{\"Badge\":4,\"Flag\":142,\"Crest\":5,\"BadgeSec\":2},\"GroupId\":\"7EDE7E177CD61745\",\"OwnerId\":\"B25D1F536612350A\",\"Name\":\"MOON CLUB\"},{\"OwnerCharacterId\":\"C2D75CC771050FCE\",\"GuildUniqueId\":1843290350,\"SmashPoints\":0,\"Settings\":{\"Badge\":10,\"Flag\":26,\"Crest\":3,\"BadgeSec\":1},\"GroupId\":\"99C418F98F7D8A32\",\"OwnerId\":\"7FDD2DDE271F6CFD\",\"Name\":\"TF,BR\"},{\"OwnerCharacterId\":\"FAF6B62831EF654B\",\"GuildUniqueId\":1843290595,\"SmashPoints\":0,\"Settings\":{\"Badge\":8,\"Flag\":60,\"Crest\":51,\"BadgeSec\":3},\"GroupId\":\"EB66CC020BDD7C31\",\"OwnerId\":\"7FC0155776AADA59\",\"Name\":\"KITTEN MUNCHERS\"}]}",
+                "Creation": "2025-04-10T16:30:15.65Z",
+                "Description": "Mozambican founder. Poruguese and English speaker. Frienly Club. Progression and Causal Play style",
+                "GUILD_POINTS": "276000000",
+                "GroupId": "4D1A4BC1DB96407",
+                "GuildBossKills": "0",
+                "GuildId": "1843290176",
+                "GuildPoints": "0",
+                "GuildSize": "2",
+                "GuildSmashSearch": "0",
+                "LastBosses": "[]",
+                "LeaderboardPosition": "1226",
+                "MyClubSmashData": "{\"WeekId\":276,\"NeighboursGuilds\":[{\"OwnerCharacterId\":\"9138E7D1DB0FE991\",\"GuildUniqueId\":0,\"SmashPoints\":0,\"Settings\":{\"Badge\":4,\"Flag\":142,\"Crest\":5,\"BadgeSec\":2},\"GroupId\":\"7EDE7E177CD61745\",\"OwnerId\":\"B25D1F536612350A\",\"Name\":\"MOON CLUB\"},{\"OwnerCharacterId\":\"C2D75CC771050FCE\",\"GuildUniqueId\":0,\"SmashPoints\":0,\"Settings\":{\"Badge\":10,\"Flag\":26,\"Crest\":3,\"BadgeSec\":1},\"GroupId\":\"99C418F98F7D8A32\",\"OwnerId\":\"7FDD2DDE271F6CFD\",\"Name\":\"TF,BR\"},{\"OwnerCharacterId\":\"FAF6B62831EF654B\",\"GuildUniqueId\":0,\"SmashPoints\":0,\"Settings\":{\"Badge\":8,\"Flag\":60,\"Crest\":51,\"BadgeSec\":3},\"GroupId\":\"EB66CC020BDD7C31\",\"OwnerId\":\"7FC0155776AADA59\",\"Name\":\"KITTEN MUNCHERS\"}]}",
+                "MyCollectedBosses": "[]",
+                "Name": "NINTAKU BOCHA",
+                "OwnerCharacterId": "78D97F6DE68812D5",
+                "OwnerId": "2954ACA5DCAB6F67",
+                "Settings": "{\"IsPrivate\":false,\"XpRequirement\":0,\"Badge\":8,\"Flag\":124,\"Crest\":42,\"BadgeSec\":0}",
+                "_Admin_2954ACA5DCAB6F67": "2025-04-10T16:30:15.838Z",
+                "_User_2954ACA5DCAB6F67": "{\"PlayFabId\":\"2954ACA5DCAB6F67\",\"UserName\":\"Bumma\",\"AvatarIndex\":17,\"ArenaPoints\":153,\"XpLevel\":9,\"FriendCount\":0,\"LastLogin\":\"2025-04-10T16:43:59.786Z\",\"MyClubSmash\":{\"ClubSmashBossAttacks\":[],\"ClubSmashLosses\":[],\"ClubSmashWins\":[],\"clubSmashBossDmgDays\":[0,0,0,0,0,0,0],\"WeekId\":276}}",
+                "_User_A5E436357CC205E5": "{\"PlayFabId\":\"A5E436357CC205E5\",\"UserName\":\"asburrala\",\"AvatarIndex\":3,\"ArenaPoints\":100,\"XpLevel\":6,\"FriendCount\":0,\"LastLogin\":\"2025-04-10T17:09:52.608Z\",\"MyClubSmash\":{}}"
+            },
+            "KITTYCLOCK": "2025-04-10T17:09:52.985Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "TimeStamps": "{\"ArenaTicket\":\"2025-04-11T03:36:36.855Z\",\"LastTicketCollection\":\"2025-04-10T16:56:59.391Z\",\"BeginnerSale\":\"2025-04-05T23:29:52.801Z\",\"DailyRefresh\":\"2025-04-11T00:00:00.000Z\",\"Monthly\":\"2025-04-28T00:00:00.000Z\",\"GuildJoined\":\"2025-04-10T17:09:52.883Z\"}"
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxNWkxpVFhJMFFNVUR5WHNuTG5yWGlrUG8rUzdpQVBWMWtpUGM0NGh4VFFrPXx7ImkiOiIyMDI1LTA0LTEwVDE2OjU3OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDE2OjU3OjMzWiIsImZpIjoiMjAyNS0wNC0xMFQxNjo1NzozM1oiLCJ0aWQiOiJhcTJ0SXU2Slk0USIsImlkaSI6IjgxMWUyZWEwZjNkZjc3MWQiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0E1RTQzNjM1N0NDMjA1RTUvMzMwRTg2QkRCNkU5QzU1NS8iLCJlaSI6IjMzMEU4NkJEQjZFOUM1NTUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 525
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "GUILD_SHOP_ROLL",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "A5E436357CC205E5-3D7EA51AE24C4BC-330E86BDB6E9C555-2144-8DD7850C9AEC177-6XBdYpO4zP51UI7XlZ2L4kx14L95OADhJVVD+5rQqM8=",
+        "attemptList": [
+            1
+        ],
+        "build": 297,
+        "callName": "GUILD_SHOP_ROLL",
+        "id2": "4D1A4BC1DB96407",
+        "name": "GuildStoreRoll"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 290
+content-type: application/json
+date: Thu, 10 Apr 2025 17:09:58 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: e84f0867e16b4fa595c5a5bda94c9fac
+x-tracecontext-traceid: 9da40f4a28795e120debd423b1bbbefb
+x-envoy-upstream-service-time: 259
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 210,
+        "FunctionName": "GUILD_SHOP_ROLL",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_DojoSpin": [
+                7
+            ],
+            "CurrencyClaims": {
+                "TR": 6
+            },
+            "KITTYCLOCK": "2025-04-10T17:09:59.21Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "DailyGrants": "{\"DailySummon\":\"2025-04-10T16:58:26.530Z\",\"TavernCollections\":\"[2,0,1]\",\"DailyGuildRoll\":\"2025-04-10T17:09:59.111Z\"}"
+            }
+        }
+    },
+    "status": "OK"
+}

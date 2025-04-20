@@ -1,0 +1,955 @@
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxhVHhJTGwzSzRYcVE4WVVPelQzeDRKS3EzbkdISjAzQ1RxZndUVXhkSjJVPXx7ImkiOiIyMDI1LTA0LTEwVDA4OjA1OjMyWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA4OjA1OjMyWiIsImZpIjoiMjAyNS0wNC0xMFQwODowNTozMloiLCJ0aWQiOiJ4WTFucW44TUlNUSIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 477
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "COLLECT_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD7806774264CB-jWTKIrHp53fFHEvefEZqVY6Yzhd1lTvg7EXKW13VSj0=",
+        "build": 297,
+        "callName": "COLLECT_ACTION",
+        "name": "welcomeBack"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 204
+content-type: application/json
+date: Thu, 10 Apr 2025 08:05:40 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 6d07d98c1e2f48dbb6f0fcab636e862a
+x-tracecontext-traceid: 3463257b434aa808469db2d8bf70c052
+x-envoy-upstream-service-time: 264
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 237,
+        "FunctionName": "COLLECT_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GE": 600, //It adds 50 gems (GE was 550 in GetPlayerCombinedInfo during this session)
+                "GO": 52600, //Adds 8000 Gold
+                "OZ": 200 //100 Elixir
+            },
+            "KITTYCLOCK": "2025-04-10T08:05:41.104Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxhVHhJTGwzSzRYcVE4WVVPelQzeDRKS3EzbkdISjAzQ1RxZndUVXhkSjJVPXx7ImkiOiIyMDI1LTA0LTEwVDA4OjA1OjMyWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA4OjA1OjMyWiIsImZpIjoiMjAyNS0wNC0xMFQwODowNTozMloiLCJ0aWQiOiJ4WTFucW44TUlNUSIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 502
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "STALL_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "Data": "{\"0\":{\"Collect\":true,\"Open\":true}}",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD7806774264CB-jWTKIrHp53fFHEvefEZqVY6Yzhd1lTvg7EXKW13VSj0=",
+        "build": 297,
+        "callName": "STALL_ACTION"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 205
+content-type: application/json
+date: Thu, 10 Apr 2025 08:05:45 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 7f1f53422141451c960af4e32f7ae98c
+x-tracecontext-traceid: 9de9f59d4222bba0dce8e69fa8c1d3cc
+x-envoy-upstream-service-time: 247
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 216,
+        "FunctionName": "STALL_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GO": 54600,
+                "TI": 62,
+                "XP": 120
+            },
+            "KITTYCLOCK": "2025-04-10T08:05:46.367Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxhVHhJTGwzSzRYcVE4WVVPelQzeDRKS3EzbkdISjAzQ1RxZndUVXhkSjJVPXx7ImkiOiIyMDI1LTA0LTEwVDA4OjA1OjMyWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA4OjA1OjMyWiIsImZpIjoiMjAyNS0wNC0xMFQwODowNTozMloiLCJ0aWQiOiJ4WTFucW44TUlNUSIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 512
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "HOURLY_COLLECT",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD7806774264CB-jWTKIrHp53fFHEvefEZqVY6Yzhd1lTvg7EXKW13VSj0=",
+        "build": 297,
+        "callName": "HOURLY_COLLECT",
+        "clientNow": "2025-04-10T08:05:46.049Z",
+        "clientStreak": 2
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 240
+content-type: application/json
+date: Thu, 10 Apr 2025 08:05:46 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 78cdf4c38d1b43e194a6c3026c5248eb
+x-tracecontext-traceid: e9e107348369a23b06ee2df609758292
+x-envoy-upstream-service-time: 250
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 224,
+        "FunctionName": "HOURLY_COLLECT",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "OZ": 250
+            },
+            "KITTYCLOCK": "2025-04-10T08:05:46.824Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "HourlyGiftData": "{\"Streak\":3,\"CollectTime\":\"2025-04-10T08:10:46.732Z\"}"
+            }
+        }
+    },
+    "status": "OK"
+}
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 468
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_ORBS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "attemptList": [
+            1
+        ],
+        "build": 297,
+        "callName": "SUMMON_ORBS"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 316
+content-type: application/json
+date: Thu, 10 Apr 2025 09:38:10 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: fe2792fb49ea4c8eb62aa05fd403c6a4
+x-tracecontext-traceid: d772e70309f7558eec3f52933506ce55
+x-envoy-upstream-service-time: 355
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 323,
+        "FunctionName": "SUMMON_ORBS",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_RecruitOrbs": [
+                2
+            ],
+            "CurrencyClaims": {
+                "OR": 0
+            },
+            "KITTYCLOCK": "2025-04-10T09:38:10.643Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "AvatarsData": "[9,1,3,17,8,27,16,21,25,29,2,18,0,13]"
+            },
+            "grantItemsToUserResult": [
+                {
+                    "customData": null,
+                    "itemId": "hero_Cooper",
+                    "itemInstanceId": "C157E39067D50DF8"
+                }
+            ]
+        }
+    },
+    "status": "OK"
+}
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 464
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "BATTLE",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "BATTLE",
+        "index": 1,
+        "teamKey": "0"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 213
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:10 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 61e9dfc6ea5c44d5b3ba0bde2157b5ed
+x-tracecontext-traceid: fb620cdfdbafbf0bd05fae3d7ba6921d
+x-envoy-upstream-service-time: 256
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 227,
+        "FunctionName": "BATTLE",
+        "FunctionResult": {
+            "BattleResults": "fetchResults",
+            "KITTYCLOCK": "2025-04-10T10:03:11.426Z",
+            "StatisticsClaims": {
+                "AttackTeamPower": 359
+            },
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetUserData?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 116
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "IfChangedFromDataVersion": null,
+    "Keys": [
+        "_BattleSplit"
+    ],
+    "PlayFabId": "F6D12105CD6928B"
+}
+HTTP/1.1 200 OK
+content-length: 1157
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:11 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 2c8a713c87f14a3b93a0a8db333f015b
+x-tracecontext-traceid: f7939c1107f3b3d7035f53795a6ef787
+x-envoy-upstream-service-time: 9
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "Data": {
+            "_BattleSplit": {
+                "LastUpdated": "2025-04-10T10:03:11.322Z",
+                "Permission": "Private",
+                "Value": "{\"PreBattleTags\":[],\"AttackData\":[[{\"r\":0,\"ai\":0,\"e\":100,\"atk\":2,\"td\":[{\"hp\":76,\"bi\":6,\"e\":60,\"dmg\":292}]},{\"r\":0,\"ai\":1,\"e\":100,\"atk\":5,\"td\":[{\"hp\":-260,\"bi\":6,\"isEnergyBoost\":true,\"dmg\":336}]},{\"r\":0,\"ai\":2,\"e\":100,\"atk\":1,\"td\":[{\"hp\":274,\"bi\":7,\"isCrit\":true,\"e\":60,\"dmg\":94}]},{\"r\":0,\"ai\":3,\"e\":100,\"atk\":4,\"td\":[{\"hp\":188,\"bi\":7,\"best\":true,\"e\":70,\"dmg\":86}]},{\"r\":0,\"ai\":4,\"e\":100,\"atk\":3,\"td\":[{\"hp\":116,\"bi\":7,\"e\":80,\"dmg\":72}]},{\"r\":0,\"ai\":5,\"e\":100,\"atk\":0,\"td\":[{\"hp\":52,\"bi\":7,\"e\":90,\"dmg\":64}]},{\"r\":0,\"ai\":6,\"e\":100,\"atk\":10,\"td\":[{\"hp\":583,\"bi\":0,\"e\":110,\"dmg\":95}]},{\"r\":0,\"ai\":7,\"e\":100,\"atk\":11,\"td\":[{\"hp\":488,\"bi\":0,\"e\":120,\"dmg\":95}]},{\"r\":0,\"ai\":8,\"e\":140,\"atk\":7,\"td\":[{\"hp\":373,\"bi\":0,\"best\":true,\"e\":130,\"dmg\":115}]},{\"r\":0,\"ai\":9,\"e\":100,\"atk\":8,\"td\":[{\"hp\":240,\"bi\":0,\"best\":true,\"e\":140,\"dmg\":133}]},{\"r\":0,\"ai\":10,\"e\":100,\"atk\":9,\"td\":[{\"hp\":152,\"bi\":0,\"e\":150,\"dmg\":88}]}],[{\"r\":1,\"ai\":11,\"e\":0,\"atk\":2,\"skill\":true,\"td\":[{\"hp\":-338,\"bi\":9,\"isEnergyBoost\":true,\"best\":true,\"dmg\":706},{\"hp\":-406,\"bi\":10,\"isEnergyBoost\":true,\"best\":true,\"dmg\":713},{\"hp\":-406,\"bi\":11,\"isEnergyBoost\":true,\"best\":true,\"dmg\":713}]},{\"r\":1,\"ai\":12,\"e\":0,\"atk\":5,\"skill\":true,\"td\":[{\"hp\":-1002,\"bi\":8,\"isEnergyBoost\":true,\"isCrit\":true,\"dmg\":1309}]},{\"r\":1,\"ai\":13,\"e\":0,\"atk\":1,\"skill\":true,\"td\":[{\"hp\":-146,\"bi\":7,\"isEnergyBoost\":true,\"dmg\":198}]}]],\"Heroes\":[{\"hp\":678,\"hpEnd\":152,\"hpStart\":678,\"e\":50,\"rank\":1,\"level\":1,\"ascension\":0,\"id\":\"4877C7AC980A9079\",\"heroIndex\":1,\"statDamage\":64,\"statHeal\":0,\"statDmgTaken\":526,\"battleIndex\":0,\"isBoss\":false},{\"hp\":465,\"hpEnd\":465,\"hpStart\":465,\"e\":50,\"rank\":0,\"level\":1,\"ascension\":0,\"id\":\"AFC9A791977A9A00\",\"heroIndex\":3,\"statDamage\":292,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":1,\"isBoss\":false},{\"hp\":2133,\"hpEnd\":2133,\"hpStart\":2133,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"5DEF039FB3705C9E\",\"heroIndex\":17,\"statDamage\":2424,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":2,\"isBoss\":false},{\"hp\":388,\"hpEnd\":388,\"hpStart\":388,\"e\":50,\"rank\":0,\"level\":1,\"ascension\":0,\"id\":\"84A6A0F43E1D53ED\",\"heroIndex\":9,\"statDamage\":72,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":3,\"isBoss\":false},{\"hp\":388,\"hpEnd\":388,\"hpStart\":388,\"e\":50,\"rank\":0,\"level\":1,\"ascension\":0,\"id\":\"442400086839EA26\",\"heroIndex\":8,\"statDamage\":86,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":4,\"isBoss\":false},{\"hp\":2346,\"hpEnd\":2346,\"hpStart\":2346,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"DE0EDB5C34503F8B\",\"heroIndex\":25,\"statDamage\":1645,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":5,\"isBoss\":false},{\"hp\":368,\"hpEnd\":-260,\"hpStart\":368,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":11,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":368,\"battleIndex\":6,\"isBoss\":false},{\"hp\":368,\"hpEnd\":-146,\"hpStart\":368,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":10,\"statDamage\":115,\"statHeal\":0,\"statDmgTaken\":368,\"battleIndex\":7,\"isBoss\":false},{\"hp\":307,\"hpEnd\":-1002,\"hpStart\":307,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":9,\"statDamage\":133,\"statHeal\":0,\"statDmgTaken\":307,\"battleIndex\":8,\"isBoss\":false},{\"hp\":368,\"hpEnd\":-338,\"hpStart\":368,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":7,\"statDamage\":88,\"statHeal\":0,\"statDmgTaken\":368,\"battleIndex\":9,\"isBoss\":false},{\"hp\":307,\"hpEnd\":-406,\"hpStart\":307,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":8,\"statDamage\":95,\"statHeal\":0,\"statDmgTaken\":307,\"battleIndex\":10,\"isBoss\":false},{\"hp\":307,\"hpEnd\":-406,\"hpStart\":307,\"e\":50,\"rank\":0,\"level\":5,\"ascension\":0,\"id\":\"\",\"heroIndex\":8,\"statDamage\":95,\"statHeal\":0,\"statDmgTaken\":307,\"battleIndex\":11,\"isBoss\":false}],\"PvpData\":null,\"Rounds\":[{\"r\":0,\"ai\":0,\"e\":0,\"eoa\":[{\"hp\":2133,\"bi\":2,\"e\":100,\"tags\":[{\"s\":\"Attack\",\"atk\":2,\"fr\":true,\"am\":5,\"rounds\":2}]}]}],\"IsVictorious\":true,\"Version\":1}"
+            }
+        },
+        "DataVersion": 78
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 483
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "COLLECT_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "COLLECT_ACTION",
+        "name": "levelBeatCampaign"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 224
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:27 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: b5c52073eb7b4ef0b2fec5080d709291
+x-tracecontext-traceid: 2e3fdd4fb7f1cdf6fb15dd19b9d661a4
+x-envoy-upstream-service-time: 299
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 270,
+        "FunctionName": "COLLECT_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GO": 54200,
+                "XP": 240
+            },
+            "KITTYCLOCK": "2025-04-10T10:03:28.483Z",
+            "StatisticsClaims": {
+                "Progress_Campaign": 5
+            },
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 650
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "BATTLE",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "BATTLE",
+        "index": 1,
+        "teamKey": "0",
+        "teamsData": "{\"0\":{\"3\":\"8CB39844485126E0\",\"4\":\"6789EC7EE9F612F1\",\"2\":\"5DEF039FB3705C9E\",\"1\":\"CA308654E58B47EC\",\"0\":\"347B2484E9DF6CB6\",\"5\":\"DE0EDB5C34503F8B\"}}"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 212
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:35 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 86c177c712a741cc93cdf2c603ca1b21
+x-tracecontext-traceid: 956a63abe6cd5062c04096c2e03520ce
+x-envoy-upstream-service-time: 279
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 245,
+        "FunctionName": "BATTLE",
+        "FunctionResult": {
+            "BattleResults": "fetchResults",
+            "KITTYCLOCK": "2025-04-10T10:03:36.056Z",
+            "StatisticsClaims": {
+                "AttackTeamPower": 905
+            },
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetUserData?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 116
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "IfChangedFromDataVersion": null,
+    "Keys": [
+        "_BattleSplit"
+    ],
+    "PlayFabId": "F6D12105CD6928B"
+}
+HTTP/1.1 200 OK
+content-length: 1094
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:35 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: fa21c49d434b4d449c8ab18570eb54aa
+x-tracecontext-traceid: f811402a332a58db608f2b80aae89e9a
+x-envoy-upstream-service-time: 9
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "Data": {
+            "_BattleSplit": {
+                "LastUpdated": "2025-04-10T10:03:35.97Z",
+                "Permission": "Private",
+                "Value": "{\"PreBattleTags\":[],\"AttackData\":[[{\"r\":0,\"ai\":0,\"e\":100,\"atk\":3,\"td\":[{\"hp\":195,\"bi\":6,\"e\":60,\"dmg\":309}]},{\"r\":0,\"ai\":1,\"e\":100,\"atk\":2,\"td\":[{\"hp\":-94,\"bi\":6,\"isEnergyBoost\":true,\"dmg\":289}]},{\"r\":0,\"ai\":2,\"e\":100,\"atk\":1,\"td\":[{\"hp\":195,\"bi\":7,\"e\":60,\"dmg\":309}]},{\"r\":0,\"ai\":3,\"e\":100,\"atk\":5,\"td\":[{\"hp\":-236,\"bi\":7,\"isEnergyBoost\":true,\"best\":true,\"dmg\":431}]},{\"r\":0,\"ai\":4,\"e\":100,\"atk\":0,\"td\":[{\"hp\":80,\"bi\":8,\"isCrit\":true,\"e\":60,\"dmg\":352}]},{\"r\":0,\"ai\":5,\"e\":100,\"atk\":4,\"td\":[{\"hp\":-179,\"bi\":8,\"isEnergyBoost\":true,\"dmg\":259}]},{\"r\":0,\"ai\":6,\"e\":100,\"atk\":9,\"td\":[{\"hp\":2962,\"bi\":0,\"e\":110,\"dmg\":104}]},{\"r\":0,\"ai\":7,\"e\":100,\"atk\":10,\"td\":[{\"hp\":2866,\"bi\":0,\"e\":120,\"dmg\":96}]},{\"r\":0,\"ai\":8,\"e\":100,\"atk\":11,\"td\":[{\"hp\":2762,\"bi\":0,\"e\":130,\"dmg\":104}]}],[{\"r\":1,\"ai\":9,\"e\":0,\"atk\":3,\"skill\":true,\"td\":[{\"hp\":-564,\"bi\":10,\"isEnergyBoost\":true,\"isIgnoreArmor\":true,\"dmg\":924}]},{\"r\":1,\"ai\":10,\"e\":0,\"atk\":2,\"skill\":true,\"td\":[{\"hp\":-182,\"bi\":9,\"isEnergyBoost\":true,\"dmg\":614},{\"hp\":-182,\"bi\":11,\"isEnergyBoost\":true,\"dmg\":614}]}]],\"Heroes\":[{\"hp\":1866,\"hpEnd\":1866,\"hpStart\":1866,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"8CB39844485126E0\",\"heroIndex\":16,\"statDamage\":1233,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":3,\"isBoss\":false},{\"hp\":1340,\"hpEnd\":1340,\"hpStart\":1340,\"e\":50,\"rank\":2,\"level\":19,\"ascension\":0,\"id\":\"6789EC7EE9F612F1\",\"heroIndex\":27,\"statDamage\":259,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":4,\"isBoss\":false},{\"hp\":2133,\"hpEnd\":2133,\"hpStart\":2133,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"5DEF039FB3705C9E\",\"heroIndex\":17,\"statDamage\":1517,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":2,\"isBoss\":false},{\"hp\":2146,\"hpEnd\":2146,\"hpStart\":2146,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"CA308654E58B47EC\",\"heroIndex\":21,\"statDamage\":309,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":1,\"isBoss\":false},{\"hp\":3066,\"hpEnd\":2762,\"hpStart\":3066,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"347B2484E9DF6CB6\",\"heroIndex\":29,\"statDamage\":352,\"statHeal\":0,\"statDmgTaken\":304,\"battleIndex\":0,\"isBoss\":false},{\"hp\":2346,\"hpEnd\":2346,\"hpStart\":2346,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"DE0EDB5C34503F8B\",\"heroIndex\":25,\"statDamage\":431,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":5,\"isBoss\":false},{\"hp\":504,\"hpEnd\":-94,\"hpStart\":504,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":2,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":504,\"battleIndex\":6,\"isBoss\":false},{\"hp\":504,\"hpEnd\":-236,\"hpStart\":504,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":1,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":504,\"battleIndex\":7,\"isBoss\":false},{\"hp\":432,\"hpEnd\":-179,\"hpStart\":432,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":3,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":432,\"battleIndex\":8,\"isBoss\":false},{\"hp\":432,\"hpEnd\":-182,\"hpStart\":432,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":4,\"statDamage\":104,\"statHeal\":0,\"statDmgTaken\":432,\"battleIndex\":9,\"isBoss\":false},{\"hp\":360,\"hpEnd\":-564,\"hpStart\":360,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":5,\"statDamage\":96,\"statHeal\":0,\"statDmgTaken\":360,\"battleIndex\":10,\"isBoss\":false},{\"hp\":432,\"hpEnd\":-182,\"hpStart\":432,\"e\":50,\"rank\":0,\"level\":6,\"ascension\":0,\"id\":\"\",\"heroIndex\":3,\"statDamage\":104,\"statHeal\":0,\"statDmgTaken\":432,\"battleIndex\":11,\"isBoss\":false}],\"PvpData\":null,\"Rounds\":[{\"r\":0,\"ai\":0,\"e\":0,\"eoa\":[{\"hp\":2133,\"bi\":2,\"e\":100,\"tags\":[{\"s\":\"Attack\",\"atk\":2,\"fr\":true,\"am\":5,\"rounds\":2}]}]}],\"IsVictorious\":true,\"Version\":1}"
+            }
+        },
+        "DataVersion": 80
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 483
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "COLLECT_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "COLLECT_ACTION",
+        "name": "levelBeatCampaign"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 226
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:50 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 0249a2c919264ca89c459d2f917b25cc
+x-tracecontext-traceid: f9262515a345e7bc573babbb887a3fae
+x-envoy-upstream-service-time: 292
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 257,
+        "FunctionName": "COLLECT_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GO": 55200,
+                "XP": 340
+            },
+            "KITTYCLOCK": "2025-04-10T10:03:50.969Z",
+            "StatisticsClaims": {
+                "Progress_Campaign": 6
+            },
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 464
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "BATTLE",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "BATTLE",
+        "index": 1,
+        "teamKey": "0"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 184
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:56 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 73e3bce1918146d4917f81da952db7e4
+x-tracecontext-traceid: 109b08abeae6ad0393698c53144153da
+x-envoy-upstream-service-time: 217
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 187,
+        "FunctionName": "BATTLE",
+        "FunctionResult": {
+            "BattleResults": "fetchResults",
+            "KITTYCLOCK": "2025-04-10T10:03:56.448Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetUserData?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 116
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "IfChangedFromDataVersion": null,
+    "Keys": [
+        "_BattleSplit"
+    ],
+    "PlayFabId": "F6D12105CD6928B"
+}
+
+HTTP/1.1 200 OK
+content-length: 1148
+content-type: application/json
+date: Thu, 10 Apr 2025 10:03:55 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: aae620f9765f4839973ae2b5041d9c3f
+x-tracecontext-traceid: a2644a83eecd7e9c8c847cc2c80ede37
+x-envoy-upstream-service-time: 8
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "Data": {
+            "_BattleSplit": {
+                "LastUpdated": "2025-04-10T10:03:56.409Z",
+                "Permission": "Private",
+                "Value": "{\"PreBattleTags\":[],\"AttackData\":[[{\"r\":0,\"ai\":0,\"e\":100,\"atk\":3,\"td\":[{\"hp\":11,\"bi\":6,\"best\":true,\"e\":60,\"dmg\":406}]},{\"r\":0,\"ai\":1,\"e\":100,\"atk\":2,\"td\":[{\"hp\":-368,\"bi\":6,\"isEnergyBoost\":true,\"best\":true,\"dmg\":379}]},{\"r\":0,\"ai\":2,\"e\":100,\"atk\":1,\"td\":[{\"hp\":191,\"bi\":7,\"e\":60,\"dmg\":309}]},{\"r\":0,\"ai\":3,\"e\":100,\"atk\":5,\"td\":[{\"hp\":-141,\"bi\":7,\"isEnergyBoost\":true,\"dmg\":332}]},{\"r\":0,\"ai\":4,\"e\":100,\"atk\":0,\"td\":[{\"hp\":146,\"bi\":8,\"e\":60,\"dmg\":271}]},{\"r\":0,\"ai\":5,\"e\":100,\"atk\":4,\"td\":[{\"hp\":-113,\"bi\":8,\"isEnergyBoost\":true,\"dmg\":259}]},{\"r\":0,\"ai\":6,\"e\":100,\"atk\":10,\"td\":[{\"hp\":2932,\"bi\":0,\"isCrit\":true,\"e\":110,\"dmg\":134}]},{\"r\":0,\"ai\":7,\"e\":100,\"atk\":11,\"td\":[{\"hp\":2829,\"bi\":0,\"e\":120,\"dmg\":103}]},{\"r\":0,\"ai\":8,\"e\":100,\"atk\":9,\"td\":[{\"hp\":2735,\"bi\":0,\"e\":130,\"dmg\":94}]}],[{\"r\":1,\"ai\":9,\"e\":0,\"atk\":3,\"skill\":true,\"td\":[{\"hp\":-618,\"bi\":10,\"isEnergyBoost\":true,\"isIgnoreArmor\":true,\"best\":true,\"dmg\":1035}],\"eoa\":[{\"hp\":500,\"bi\":9,\"e\":100,\"tags\":[{\"s\":\"Attack\",\"atk\":9,\"fr\":true,\"am\":10,\"rounds\":15}]}]},{\"r\":1,\"ai\":10,\"e\":0,\"atk\":2,\"skill\":true,\"td\":[{\"hp\":-506,\"bi\":9,\"isEnergyBoost\":true,\"best\":true,\"isCrit\":true,\"dmg\":1006},{\"hp\":-289,\"bi\":11,\"isEnergyBoost\":true,\"best\":true,\"dmg\":706}]}]],\"Heroes\":[{\"hp\":1866,\"hpEnd\":1866,\"hpStart\":1866,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"8CB39844485126E0\",\"heroIndex\":16,\"statDamage\":1441,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":3,\"isBoss\":false},{\"hp\":1340,\"hpEnd\":1340,\"hpStart\":1340,\"e\":50,\"rank\":2,\"level\":19,\"ascension\":0,\"id\":\"6789EC7EE9F612F1\",\"heroIndex\":27,\"statDamage\":259,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":4,\"isBoss\":false},{\"hp\":2133,\"hpEnd\":2133,\"hpStart\":2133,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"5DEF039FB3705C9E\",\"heroIndex\":17,\"statDamage\":2091,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":2,\"isBoss\":false},{\"hp\":2146,\"hpEnd\":2146,\"hpStart\":2146,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"CA308654E58B47EC\",\"heroIndex\":21,\"statDamage\":309,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":1,\"isBoss\":false},{\"hp\":3066,\"hpEnd\":2735,\"hpStart\":3066,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"347B2484E9DF6CB6\",\"heroIndex\":29,\"statDamage\":271,\"statHeal\":0,\"statDmgTaken\":331,\"battleIndex\":0,\"isBoss\":false},{\"hp\":2346,\"hpEnd\":2346,\"hpStart\":2346,\"e\":50,\"rank\":2,\"level\":20,\"ascension\":0,\"id\":\"DE0EDB5C34503F8B\",\"heroIndex\":25,\"statDamage\":332,\"statHeal\":0,\"statDmgTaken\":0,\"battleIndex\":5,\"isBoss\":false},{\"hp\":417,\"hpEnd\":-368,\"hpStart\":417,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":6,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":417,\"battleIndex\":6,\"isBoss\":false},{\"hp\":500,\"hpEnd\":-141,\"hpStart\":500,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":7,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":500,\"battleIndex\":7,\"isBoss\":false},{\"hp\":417,\"hpEnd\":-113,\"hpStart\":417,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":6,\"statDamage\":0,\"statHeal\":0,\"statDmgTaken\":417,\"battleIndex\":8,\"isBoss\":false},{\"hp\":500,\"hpEnd\":-506,\"hpStart\":500,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":7,\"statDamage\":94,\"statHeal\":0,\"statDmgTaken\":500,\"battleIndex\":9,\"isBoss\":false},{\"hp\":417,\"hpEnd\":-618,\"hpStart\":417,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":8,\"statDamage\":134,\"statHeal\":0,\"statDmgTaken\":417,\"battleIndex\":10,\"isBoss\":false},{\"hp\":417,\"hpEnd\":-289,\"hpStart\":417,\"e\":50,\"rank\":0,\"level\":7,\"ascension\":0,\"id\":\"\",\"heroIndex\":8,\"statDamage\":103,\"statHeal\":0,\"statDmgTaken\":417,\"battleIndex\":11,\"isBoss\":false}],\"PvpData\":null,\"Rounds\":[{\"r\":0,\"ai\":0,\"e\":0,\"eoa\":[{\"hp\":2133,\"bi\":2,\"e\":100,\"tags\":[{\"s\":\"Attack\",\"atk\":2,\"fr\":true,\"am\":5,\"rounds\":2}]}]}],\"IsVictorious\":true,\"Version\":1}"
+            }
+        },
+        "DataVersion": 82
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 483
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "COLLECT_ACTION",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "COLLECT_ACTION",
+        "name": "levelBeatCampaign"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 226
+content-type: application/json
+date: Thu, 10 Apr 2025 10:04:10 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 785e9487981a48199b6feb2b19413e17
+x-tracecontext-traceid: b998f73dba18414d740e8dfb0e6f64ac
+x-envoy-upstream-service-time: 240
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 212,
+        "FunctionName": "COLLECT_ACTION",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GO": 56200,
+                "XP": 440
+            },
+            "KITTYCLOCK": "2025-04-10T10:04:11.381Z",
+            "StatisticsClaims": {
+                "Progress_Campaign": 7
+            },
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {}
+        }
+    },
+    "status": "OK"
+}
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 450
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "XP_LEVEL_UP",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "build": 297,
+        "callName": "XP_LEVEL_UP"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 211
+content-type: application/json
+date: Thu, 10 Apr 2025 10:04:18 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: a271eb9abe2842d2b90478204b1c2017
+x-tracecontext-traceid: fc9bb9ba8b53a6d2543ec4e270f578d6
+x-envoy-upstream-service-time: 194
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 167,
+        "FunctionName": "XP_LEVEL_UP",
+        "FunctionResult": {
+            "CurrencyClaims": {
+                "GE": 550,
+                "TI": 75,
+                "XP": 40
+            },
+            "KITTYCLOCK": "2025-04-10T10:04:18.677Z",
+            "StatisticsClaims": {
+                "XpLevel": 4
+            },
+            "TITLE_DATA_VERSION": "297_009"
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHx3c2RPaXp5SmdVYVE2VmdTYk55UHhObVprM1dHUXJSUEU2RU9zVW4vVUFJPXx7ImkiOiIyMDI1LTA0LTEwVDA5OjM3OjQzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTExVDA5OjM3OjQzWiIsImZpIjoiMjAyNS0wNC0xMFQwOTozNzo0M1oiLCJ0aWQiOiJqQ1hVb3k0OFpxcyIsImlkaSI6ImViZjI1NTMzYzI2NDBlMjUiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0Y2RDEyMTA1Q0Q2OTI4Qi9BMEJCNEM5QkQ4MjdDODA1LyIsImVpIjoiQTBCQjRDOUJEODI3QzgwNSIsImV0IjoidGl0bGVfcGxheWVyX2FjY291bnQifQ==
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 491
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SHARDS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "F6D12105CD6928B-3D7EA51AE24C4BC-A0BB4C9BD827C805-2144-8DD781357F048E6-S2iKDyzqo0HpB1f7r/LFrF2AnvT4mYt7dFN1JChP14Y=",
+        "attempts": 2,
+        "build": 297,
+        "callName": "SUMMON_SHARDS",
+        "type": "ShardsHeroBlue"
+    },
+    "GeneratePlayStreamEvent": false
+}
+HTTP/1.1 200 OK
+content-length: 352
+content-type: application/json
+date: Thu, 10 Apr 2025 10:08:28 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 880cc6c1364343439e93c5d1bc4cc103
+x-tracecontext-traceid: 8b45300f010fe54b7a2f2de607d4f992
+x-envoy-upstream-service-time: 258
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 230,
+        "FunctionName": "SUMMON_SHARDS",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_RecruitShardsBlue": [
+                18,
+                29
+            ],
+            "CurrencyClaims": {
+                "H0": 0
+            },
+            "KITTYCLOCK": "2025-04-10T10:08:28.855Z",
+            "TITLE_DATA_VERSION": "297_009",
+            "UserDataClaims": {
+                "AvatarsData": "[9,1,3,17,8,27,16,21,25,29,2,18,0,13,20,19]"
+            },
+            "grantItemsToUserResult": [
+                {
+                    "customData": null,
+                    "itemId": "hero_Joe",
+                    "itemInstanceId": "1B0FE0F4363F6BA7"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Zen",
+                    "itemInstanceId": "4AD5A65DCE83F3EB"
+                }
+            ]
+        }
+    },
+    "status": "OK"
+}
