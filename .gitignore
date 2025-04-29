@@ -1,6 +1,6 @@
 # Node modules
 node_modules/
-FlowLogs/
+src/FlowLogs/
 # Logs
 logs/
 *.log
