@@ -21,7 +21,7 @@ export const SummonOrbs = (req: Request, res: Response) => {
             OR: 5
         },
         KITTYCLOCK: new Date().toISOString(),
-        TITLE_DATA_VERSION: "297_010",
+        TITLE_DATA_VERSION: "297_013",
         UserDataClaims: {
             AvatarsData: [9,1,3,17,8,27,16,21,25,29,2,18,0,13]
         },

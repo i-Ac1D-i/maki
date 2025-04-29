@@ -4,7 +4,7 @@ import { LoginCheck } from "../../ExecuteFunction/LoginCheck";
 import { GuildCheck } from "../../ExecuteFunction/GuildCheck";
 import { ChatFetch } from "../../ExecuteFunction/ChatFetch";
 import { SummonOrbs } from "../../ExecuteFunction/SummonOrbs";
-
+import { summonCapsules } from "../../ExecuteFunction/SummonCapsules";
 export const ExecuteFunction = (req: Request, res: Response) => {
     console.log("ExecuteFunction", req.body);
   const { FunctionName } = req.body;
@@ -25,6 +25,9 @@ export const ExecuteFunction = (req: Request, res: Response) => {
     case "SUMMON_ORBS":
       console.log("SummonOrbs")
       functionResult = SummonOrbs(req, res);
+    case "SUMMON_SCROLLS":
+      functionResult = summonCapsules(req, res);
+      console.log("SummonCapsules", functionResult);
       break;
     default:
       functionResult = { message: "Function not implemented yet" };

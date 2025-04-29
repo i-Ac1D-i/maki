@@ -1,0 +1,2 @@
+Game forces the tutorial when generating a PlayFabID and SessionTicket with Maki (this server emulator) instead of using the ones provided by the official game server
+Tutorial crashes when trying to open the summon page without throwing any error in the logcat

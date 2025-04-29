@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { getAccountBySessionTicket, updateLastLogin } from "../controllers/accountController";
+import { getCurrency } from "../controllers/dataController";
 
 export const LoginCheck = (req: Request, res: Response) => {
     const account = getAccountBySessionTicket(req.body.FunctionParameter.LOGIN_TOKEN);
@@ -8,6 +9,17 @@ export const LoginCheck = (req: Request, res: Response) => {
     }
     updateLastLogin(account.playFabId)
     const functionResult = {
+        BucketLeaderboard: [{
+          ArenaPoints: 600,
+          AttackTeamPower: 50000,
+          AvatarIndex: 10,
+          LastLogin: new Date().toISOString(),
+          PlayFabId: account.playFabId,
+          Position: 1,
+          StatValue: 27805005,
+          UserName: account.displayName,
+          XpLevel: 100
+        }], 
         CACHE_PAYLOAD_Tavern: [
           8,
           7,
@@ -144,41 +156,28 @@ export const LoginCheck = (req: Request, res: Response) => {
           WelcomeBack_DiminishedReturns: 50,
           WelcomeBack_MaxDays: 30
         },
-        CurrencyClaims: {
-          TI: 40,
-          TT: 3
-        },
         KITTYCLOCK: new Date().toISOString(),
         MyFriendsData: [],
         PizzaRefill: 20,
         StatisticsClaims: {
-          ArenaPoints: 100,
-          ArenaPointsOdd: 275000100,
-          AvatarIndex: 9,
-          BuildVersion: 297,
-          EventMonopoly: 275000000,
-          XpLevel: 1
+          LastLoginInMinutes: Math.floor((Date.now() - new Date("2020-01-01").getTime()) / (1000 * 60)),
+          ArenaBucketEven: 27805005
         },
-        TITLE_DATA_VERSION: "297_010",
+        TITLE_DATA_VERSION: "297_013",
         TitleEventsPayload: {
           ClubSmashHeroes: [],
           Event_OneTimeOnlyCustomSale: {
-            EndingWeekId: 275,
+            EndingWeekId: Math.floor((Date.now() - new Date("2020-01-01").getTime()) / (1000 * 60 * 60 * 24 * 7) + 1),
             IsDefaultWeek: true,
-            PriceTier: 4,
+            PriceTier: 3,
             Rewards: {
-              EventDiceDust: 1500,
-              Gems: 4000,
-              Orbs: 15,
-              Relics: 25
+              ArtifactDust: 5000,
+              ShardsArtifactPurple: 4000,
+              ShardsArtifactUltra: 15,
+              SlotsTickets: 25
             }
           },
           TechnoHeroes: [
-            91,
-            90,
-            89,
-            76,
-            71
           ]
         }
       };

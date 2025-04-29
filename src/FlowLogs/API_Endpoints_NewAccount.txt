@@ -374,7 +374,7 @@ x-envoy-upstream-service-time: 988
                 "LastLoginInMinutes": 2777359,
                 "XpLevel": 1
             },
-            "TITLE_DATA_VERSION": "297_010",
+            "TITLE_DATA_VERSION": "297_013",
             "TitleEventsPayload": {
                 "ClubSmashHeroes": [],
                 "Event_OneTimeOnlyCustomSale": {
@@ -452,7 +452,7 @@ x-envoy-upstream-service-time: 198
         "FunctionName": "GUILD_CHECK",
         "FunctionResult": {
             "KITTYCLOCK": "2025-04-12T17:19:37.898Z",
-            "TITLE_DATA_VERSION": "297_010"
+            "TITLE_DATA_VERSION": "297_013"
         }
     },
     "status": "OK"
@@ -712,7 +712,7 @@ x-envoy-upstream-service-time: 136
                 "Links": "{\"Reddit\":\"https://www.reddit.com/r/TapForce\",\"Twitter\":\"https://twitter.com/racecatgames\",\"Discord\":\"https://discord.gg/tap-force\",\"StorePageIOS\":\"https://apps.apple.com/ca/app/tap-force-rpg/id1459276435\",\"StorePageAndroid\":\"https://play.google.com/store/apps/details?id=com.racecat.fight\",\"TermsAndConditions\":\"https://www.tapforcegame.com/terms-conditions\",\"EmailFeedback\":\"racecatgames@gmail.com\"}",
                 "OneDaySale": "{\"rewards\":{\"HeroCard\":1,\"Relics\":40,\"SummonScrolls\":100},\"requirements\":{\"XpLevel\":20},\"priceTierDiscount\":1,\"priceTier\":2,\"dayIndex\":1910,\"value\":1600,\"vendor\":\"bingo_vendor2_valentines\",\"title\":\"spring_sale\",\"bg\":\"spring_splash_bg\"}",
                 "TechnoHeroes": "{\"271\":[75,84,83,81,80],\"275\":[91,90,89,76,71]}",
-                "_Version": "297_010"
+                "_Version": "297_013"
             },
             "UserData": {
                 "ArenaMatches": {
@@ -886,6 +886,108 @@ x-envoy-upstream-service-time: 136
             "UserVirtualCurrencyRechargeTimes": {}
         },
         "PlayFabId": "7CC4BA50F9A56E0C"
+    },
+    "status": "OK"
+}
+
+
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxqNUxjL0pyUlRmRXlnTmtmOU4zUm1UOVdOQkQxbDlDbzZSZTRLS3gvQjFRPXx7ImkiOiIyMDI1LTA0LTIwVDAxOjU1OjUzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTIxVDAxOjU1OjUzWiIsImZpIjoiMjAyNS0wNC0yMFQwMTo1NTo1M1oiLCJ0aWQiOiJ3T2xuWWRuVlYvayIsImlkaSI6ImJiZDZlMTkxNjZhMjhmOTEiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0LzI4N0E2OTRFNzM2OTI0MTcvN0YxODNBNzk2MTJCRjUyRS8iLCJlaSI6IjdGMTgzQTc5NjEyQkY1MkUiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 475
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "SUMMON_SCROLLS",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "287A694E73692417-3D7EA51AE24C4BC-7F183A79612BF52E-2144-8DD7FAE7B8D65C4-c9JeOppJMcEQZWvcD6Eda668/eRTSBOhMCx88UKpqoc=",
+        "attemptList": [
+            5
+        ],
+        "build": 297,
+        "callName": "SUMMON_SCROLLS"
+    },
+    "GeneratePlayStreamEvent": false
+}
+
+HTTP/1.1 200 OK
+content-length: 393
+content-type: application/json
+date: Sun, 20 Apr 2025 01:57:40 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: f82a8d7bdd2346efb98e02281e902430
+x-tracecontext-traceid: 1dcba38ddb1476751becf497e3ed91f3
+x-envoy-upstream-service-time: 348
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 322,
+        "FunctionName": "SUMMON_SCROLLS",
+        "FunctionResult": {
+            "CACHE_PAYLOAD_RecruitScrolls": [
+                1,
+                3,
+                17,
+                9,
+                8
+            ],
+            "CurrencyClaims": {
+                "SC": 0
+            },
+            "KITTYCLOCK": "2025-04-20T01:57:41.478Z",
+            "TITLE_DATA_VERSION": "297_013",
+            "UserDataClaims": {
+                "AvatarsData": "[17,1,3,9,8]"
+            },
+            "grantItemsToUserResult": [
+                {
+                    "customData": null,
+                    "itemId": "hero_Sarah",
+                    "itemInstanceId": "8727C5905D119970"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Sasuke",
+                    "itemInstanceId": "A9BB014DDF1C917A"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Kenshi",
+                    "itemInstanceId": "D53259CD5BAE34E2"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Maki",
+                    "itemInstanceId": "263B9F047211D77B"
+                },
+                {
+                    "customData": null,
+                    "itemId": "hero_Mortar",
+                    "itemInstanceId": "4738546103E19757"
+                }
+            ]
+        }
     },
     "status": "OK"
 }

@@ -21,11 +21,7 @@ export const LoginAuth = (req: Request, res: Response): any => {
   return {
     KITTYCLOCK: new Date().toISOString(),
     UserDataClaims: {
-      _TokenCheck: {
-        LastUpdated: new Date().toISOString(),
-        Permission: "Private",
-        Value: tokenCheck
-      }
+      _TokenCheck: tokenCheck
     }
   };
 };

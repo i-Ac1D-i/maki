@@ -56,3 +56,6 @@ Thumbs.db
 # Optional: if using PM2 for process management
 .pids/
 *.pm2.log
+
+
+package-lock.json

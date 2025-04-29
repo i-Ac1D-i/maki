@@ -1,0 +1,1913 @@
+POST https://2144.playfabapi.com/Client/LoginWithCustomID?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 570
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CreateAccount": true,
+    "CustomId": "bbd6e19166a28f91",
+    "CustomTags": null,
+    "EncryptedRequest": null,
+    "InfoRequestParameters": {
+        "GetCharacterInventories": false,
+        "GetCharacterList": false,
+        "GetPlayerProfile": false,
+        "GetPlayerStatistics": false,
+        "GetTitleData": false,
+        "GetUserAccountInfo": true,
+        "GetUserData": false,
+        "GetUserInventory": false,
+        "GetUserReadOnlyData": false,
+        "GetUserVirtualCurrency": false,
+        "PlayerStatisticNames": null,
+        "ProfileConstraints": null,
+        "TitleDataKeys": null,
+        "UserDataKeys": null,
+        "UserReadOnlyDataKeys": null
+    },
+    "PlayerSecret": null,
+    "TitleId": "2144"
+}
+HTTP/1.1 200 OK
+content-length: 928
+content-type: application/json
+date: Wed, 23 Apr 2025 01:25:32 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 234cfbbc1c7b4e7ba6ab4dc0617506ac
+x-tracecontext-traceid: 61f6a7dac7714fc1dce3025eceeed231
+x-envoy-upstream-service-time: 65
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "EntityToken": {
+            "Entity": {
+                "Id": "E35DEBA7E82517C1",
+                "Type": "title_player_account",
+                "TypeString": "title_player_account"
+            },
+            "EntityToken": "NHxjOHNFVXFnUGloMnNmTlp3TkJtWWZkd2xSQUMweXBJMmRoQUt1MW5Lb01VPXx7ImkiOiIyMDI1LTA0LTIzVDAxOjI1OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTI0VDAxOjI1OjMzWiIsImZpIjoiMjAyNS0wNC0yM1QwMToyNTozM1oiLCJ0aWQiOiI5M0l6T1N6eGZ2QSIsImlkaSI6ImJiZDZlMTkxNjZhMjhmOTEiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0JDQTRFN0ZDOEYyMDUzQjQvRTM1REVCQTdFODI1MTdDMS8iLCJlaSI6IkUzNURFQkE3RTgyNTE3QzEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=",
+            "TokenExpiration": "2025-04-24T01:25:33Z"
+        },
+        "InfoResultPayload": {
+            "AccountInfo": {
+                "Created": "2024-08-01T19:52:34.172Z",
+                "CustomIdInfo": {
+                    "CustomId": "bbd6e19166a28f91"
+                },
+                "PlayFabId": "BCA4E7FC8F2053B4",
+                "PrivateInfo": {
+                    "Email": "oasamaf@gmail.com"
+                },
+                "TitleInfo": {
+                    "Created": "2024-08-01T19:52:34.172Z",
+                    "DisplayName": "3nvy",
+                    "FirstLogin": "2024-08-01T19:52:34.172Z",
+                    "LastLogin": "2025-04-23T01:25:33.501Z",
+                    "Origination": "CustomId",
+                    "TitlePlayerAccount": {
+                        "Id": "E35DEBA7E82517C1",
+                        "Type": "title_player_account",
+                        "TypeString": "title_player_account"
+                    },
+                    "isBanned": false
+                },
+                "Username": "bca4e7fc8f2053b4"
+            },
+            "CharacterInventories": [],
+            "UserDataVersion": 0,
+            "UserInventory": [],
+            "UserReadOnlyDataVersion": 0
+        },
+        "LastLoginTime": "2025-04-23T01:17:32.39Z",
+        "NewlyCreated": false,
+        "PlayFabId": "BCA4E7FC8F2053B4",
+        "SessionTicket": "BCA4E7FC8F2053B4-3D7EA51AE24C4BC-E35DEBA7E82517C1-2144-8DD8205BE43645E-Bwbjjg05J2GGtuUO8ftiXBJ1xC0dmoGZWkmwyrijPLE=",
+        "SettingsForUser": {
+            "GatherDeviceInfo": true,
+            "GatherFocusInfo": false,
+            "NeedsAttribution": false
+        },
+        "TreatmentAssignment": {
+            "Variables": [],
+            "Variants": []
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/CloudScript/ExecuteFunction?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-EntityToken: NHxjOHNFVXFnUGloMnNmTlp3TkJtWWZkd2xSQUMweXBJMmRoQUt1MW5Lb01VPXx7ImkiOiIyMDI1LTA0LTIzVDAxOjI1OjMzWiIsImlkcCI6IkN1c3RvbSIsImUiOiIyMDI1LTA0LTI0VDAxOjI1OjMzWiIsImZpIjoiMjAyNS0wNC0yM1QwMToyNTozM1oiLCJ0aWQiOiI5M0l6T1N6eGZ2QSIsImlkaSI6ImJiZDZlMTkxNjZhMjhmOTEiLCJoIjoiaW50ZXJuYWwiLCJlYyI6InRpdGxlX3BsYXllcl9hY2NvdW50ITNEN0VBNTFBRTI0QzRCQy8yMTQ0L0JDQTRFN0ZDOEYyMDUzQjQvRTM1REVCQTdFODI1MTdDMS8iLCJlaSI6IkUzNURFQkE3RTgyNTE3QzEiLCJldCI6InRpdGxlX3BsYXllcl9hY2NvdW50In0=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 491
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "Entity": null,
+    "FunctionName": "LOGIN_CHECK",
+    "FunctionParameter": {
+        "DB_versions": "[\"297_ArtifactDB\",\"297_LevelDB\",\"297_HeroDB\",\"297_HeroSkillDB\",\"297_SewerDB\",\"297_StallDB\",\"297_TuningDB\"]",
+        "LOGIN_TOKEN": "BCA4E7FC8F2053B4-3D7EA51AE24C4BC-E35DEBA7E82517C1-2144-8DD8205BE43645E-Bwbjjg05J2GGtuUO8ftiXBJ1xC0dmoGZWkmwyrijPLE=",
+        "build": 297,
+        "callName": "LOGIN_CHECK",
+        "id": "e1538075721a928823bee38f380e85ba"
+    },
+    "GeneratePlayStreamEvent": false
+}
+
+HTTP/1.1 200 OK
+content-length: 4567
+content-type: application/json
+date: Wed, 23 Apr 2025 01:25:35 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: 361a2bdfe1eb4d3eafa88c85a998d44a
+x-tracecontext-traceid: 4974fe758e9873743bca999285c0a0e1
+x-envoy-upstream-service-time: 447
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "ExecutionTimeMilliseconds": 419,
+        "FunctionName": "LOGIN_CHECK",
+        "FunctionResult": {
+            "BucketLeaderboard": [
+                {
+                    "ArenaPoints": 589,
+                    "AttackTeamPower": 49404,
+                    "AvatarIndex": 88,
+                    "LastLogin": "2025-04-23T00:46:34.519Z",
+                    "PlayFabId": "5F25889652AC38D6",
+                    "Position": 4520,
+                    "StatValue": 27805005,
+                    "UserName": "volodium",
+                    "XpLevel": 66
+                },
+                {
+                    "ArenaPoints": 582,
+                    "AttackTeamPower": 46891,
+                    "AvatarIndex": 88,
+                    "LastLogin": "2025-04-23T00:36:50.302Z",
+                    "PlayFabId": "943E95686E823786",
+                    "Position": 4532,
+                    "StatValue": 27805005,
+                    "UserName": "PACMANOZAVR",
+                    "XpLevel": 66
+                },
+                {
+                    "ArenaPoints": 569,
+                    "AttackTeamPower": 40123,
+                    "AvatarIndex": 86,
+                    "LastLogin": "2025-04-23T01:25:33.501Z",
+                    "PlayFabId": "BCA4E7FC8F2053B4",
+                    "Position": 4515,
+                    "StatValue": 27805005,
+                    "UserName": "3nvy",
+                    "XpLevel": 60
+                },
+                {
+                    "ArenaPoints": 567,
+                    "AttackTeamPower": 44688,
+                    "AvatarIndex": 86,
+                    "LastLogin": "2025-04-23T00:37:52.155Z",
+                    "PlayFabId": "EBDF8B1833BE5B3F",
+                    "Position": 4527,
+                    "StatValue": 27805005,
+                    "UserName": "octopus_0314",
+                    "XpLevel": 53
+                },
+                {
+                    "ArenaPoints": 566,
+                    "AttackTeamPower": 41788,
+                    "AvatarIndex": 86,
+                    "LastLogin": "2025-04-23T00:54:36.1Z",
+                    "PlayFabId": "2378227BE26F9317",
+                    "Position": 4523,
+                    "StatValue": 27805005,
+                    "UserName": "micz_0161",
+                    "XpLevel": 62
+                },
+                {
+                    "ArenaPoints": 566,
+                    "AttackTeamPower": 35559,
+                    "AvatarIndex": 65,
+                    "LastLogin": "2025-04-23T00:43:12.029Z",
+                    "PlayFabId": "AEE89E85A5AE894B",
+                    "Position": 4531,
+                    "StatValue": 27805005,
+                    "UserName": "Renfroe",
+                    "XpLevel": 59
+                },
+                {
+                    "ArenaPoints": 559,
+                    "AttackTeamPower": 44493,
+                    "AvatarIndex": 86,
+                    "LastLogin": "2025-04-23T01:12:03.189Z",
+                    "PlayFabId": "D96D56FE2A404990",
+                    "Position": 4528,
+                    "StatValue": 27805005,
+                    "UserName": "Jay_T",
+                    "XpLevel": 63
+                },
+                {
+                    "ArenaPoints": 558,
+                    "AttackTeamPower": 38296,
+                    "AvatarIndex": 76,
+                    "LastLogin": "2025-04-23T01:18:09.739Z",
+                    "PlayFabId": "D022C82F3C4D14E6",
+                    "Position": 4529,
+                    "StatValue": 27805005,
+                    "UserName": "Tester_8037",
+                    "XpLevel": 63
+                },
+                {
+                    "ArenaPoints": 556,
+                    "AttackTeamPower": 37225,
+                    "AvatarIndex": 33,
+                    "LastLogin": "2025-04-23T01:14:29.452Z",
+                    "PlayFabId": "5FF54982E1F4030E",
+                    "Position": 4519,
+                    "StatValue": 27805005,
+                    "UserName": "SuSuBae",
+                    "XpLevel": 67
+                },
+                {
+                    "ArenaPoints": 547,
+                    "AttackTeamPower": 128742,
+                    "AvatarIndex": 71,
+                    "LastLogin": "2025-04-23T00:40:24.962Z",
+                    "PlayFabId": "FF9260DC2F6C77C5",
+                    "Position": 4525,
+                    "StatValue": 27805005,
+                    "UserName": "TamTam",
+                    "XpLevel": 229
+                },
+                {
+                    "ArenaPoints": 542,
+                    "AttackTeamPower": 41095,
+                    "AvatarIndex": 3,
+                    "LastLogin": "2025-04-23T01:00:50.948Z",
+                    "PlayFabId": "B4A6343973170736",
+                    "Position": 4530,
+                    "StatValue": 27805005,
+                    "UserName": "Sifu_8988",
+                    "XpLevel": 62
+                },
+                {
+                    "ArenaPoints": 539,
+                    "AttackTeamPower": 44686,
+                    "AvatarIndex": 52,
+                    "LastLogin": "2025-04-23T01:07:37.823Z",
+                    "PlayFabId": "6D21B52E38698A1A",
+                    "Position": 4517,
+                    "StatValue": 27805005,
+                    "UserName": "fistingAss",
+                    "XpLevel": 64
+                },
+                {
+                    "ArenaPoints": 534,
+                    "AttackTeamPower": 43235,
+                    "AvatarIndex": 33,
+                    "LastLogin": "2025-04-23T00:52:01.912Z",
+                    "PlayFabId": "6FB53FFBDBC57A44",
+                    "Position": 4516,
+                    "StatValue": 27805005,
+                    "UserName": "Istari_32",
+                    "XpLevel": 60
+                },
+                {
+                    "ArenaPoints": 526,
+                    "AttackTeamPower": 41169,
+                    "AvatarIndex": 91,
+                    "LastLogin": "2025-04-23T01:18:43.642Z",
+                    "PlayFabId": "EC56B1AE123408C6",
+                    "Position": 4526,
+                    "StatValue": 27805005,
+                    "UserName": "akaBeanz",
+                    "XpLevel": 59
+                },
+                {
+                    "ArenaPoints": 524,
+                    "AttackTeamPower": 32340,
+                    "AvatarIndex": 71,
+                    "LastLogin": "2025-04-23T00:54:15.791Z",
+                    "PlayFabId": "4659BC4D8C3BB24B",
+                    "Position": 4522,
+                    "StatValue": 27805005,
+                    "UserName": "EonN1",
+                    "XpLevel": 61
+                },
+                {
+                    "ArenaPoints": 514,
+                    "AttackTeamPower": 33720,
+                    "AvatarIndex": 80,
+                    "LastLogin": "2025-04-23T00:44:22.291Z",
+                    "PlayFabId": "5647FBBC839E5C31",
+                    "Position": 4521,
+                    "StatValue": 27805005,
+                    "UserName": "betrayed",
+                    "XpLevel": 61
+                },
+                {
+                    "ArenaPoints": 506,
+                    "AttackTeamPower": 25515,
+                    "AvatarIndex": 86,
+                    "LastLogin": "2025-04-23T01:18:30.023Z",
+                    "PlayFabId": "838583E4E0907574",
+                    "Position": 4534,
+                    "StatValue": 27805005,
+                    "UserName": "ANGEL_B",
+                    "XpLevel": 51
+                },
+                {
+                    "ArenaPoints": 505,
+                    "AttackTeamPower": 33530,
+                    "AvatarIndex": 31,
+                    "LastLogin": "2025-04-23T01:05:35.725Z",
+                    "PlayFabId": "214321A77E7090A9",
+                    "Position": 4524,
+                    "StatValue": 27805005,
+                    "UserName": "hahahaji",
+                    "XpLevel": 71
+                },
+                {
+                    "ArenaPoints": 503,
+                    "AttackTeamPower": 40553,
+                    "AvatarIndex": 24,
+                    "LastLogin": "2025-04-23T01:04:45.39Z",
+                    "PlayFabId": "687C3A5F4A4A78FD",
+                    "Position": 4518,
+                    "StatValue": 27805005,
+                    "UserName": "Splineter",
+                    "XpLevel": 61
+                },
+                {
+                    "ArenaPoints": 500,
+                    "AttackTeamPower": 30179,
+                    "AvatarIndex": 38,
+                    "LastLogin": "2025-04-23T00:36:53.729Z",
+                    "PlayFabId": "8B2D8F4350DA1607",
+                    "Position": 4533,
+                    "StatValue": 27805005,
+                    "UserName": "shagrat",
+                    "XpLevel": 62
+                }
+            ],
+            "CURRENT_DAY_INDEX": 1939,
+            "CloudData": {
+                "Achievements_VipCut": 20,
+                "ArenaDivisions": [
+                    101,
+                    200,
+                    300,
+                    400,
+                    500,
+                    600,
+                    700,
+                    800,
+                    900,
+                    1000,
+                    1200,
+                    1400,
+                    1600,
+                    1800,
+                    2000,
+                    2200,
+                    2400,
+                    2600,
+                    2800,
+                    3000,
+                    3200,
+                    3500,
+                    4000
+                ],
+                "ArenaRefreshiesCap": 5,
+                "ArenaTicketRefillInHours": 12,
+                "ArtifactAscensionReq": 5,
+                "AutoEquipXpLock": 50,
+                "CandleFirstReward": 50,
+                "ClubSmashClubReleaseWeek": 999,
+                "DailyRewardsOrder": [
+                    "Daily_FreeGems",
+                    "Daily_FreeHeroShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeChips",
+                    "Daily_FreeGems",
+                    "Daily_FreeHeroShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeScrolls",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeOrbs",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeChips",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeScrolls",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeOrbs",
+                    "Daily_FreeGems",
+                    "Daily_FreeDragonShardsBlue",
+                    "Daily_FreeGems",
+                    "Daily_FreeShardsPurple"
+                ],
+                "DesertCooldown": 1100,
+                "EventBundleMisc": 3,
+                "EventBundleOrbs": 4,
+                "EventBundlePoker": 2,
+                "EventBundleScrolls": 3,
+                "EventWeek_MaxLoops": 3,
+                "EventsHeroFusionAscIndexRequired": 3,
+                "FirstPurchaseHeroAny": 45,
+                "FirstPurchaseHeroPremium": 88,
+                "FriendsMax": 20,
+                "GuildMax": 30,
+                "GuildModsMax": 3,
+                "GuildQuitCooldownMins": 60,
+                "GuildRotatingBarCycle": 50,
+                "Hero_BaseStatPercentage_Attack": 5,
+                "Hero_BaseStatPercentage_Hp": 15,
+                "Hero_BaseStatPercentage_Speed": 30,
+                "HolidayGiftGems": 250,
+                "HourlyRewardsOrder": [
+                    "Hourly_GemsAmounts",
+                    "Hourly_GoldAmounts",
+                    "Hourly_OozeAmounts",
+                    "Hourly_PokerChipAmounts"
+                ],
+                "LimitedSale_Limit": 3,
+                "MaxCurrencyBoxes": 5,
+                "MaxDragons": 80,
+                "MutagensCost": 500,
+                "PremiumGoldPackageMin": 250000,
+                "PriceTier_AscensionCard": 4,
+                "PriceTier_AscensionCardPremium": 6,
+                "PriceTier_BiWeeklyCard": 2,
+                "PriceTier_CapsuleWeek": 2,
+                "PriceTier_DiamondFund": 3,
+                "PriceTier_GamePass": 2,
+                "PriceTier_GuildBundle1": 0,
+                "PriceTier_GuildBundle2": 2,
+                "PriceTier_GuildBundle3": 4,
+                "PriceTier_HolidayBundle1": 2,
+                "PriceTier_HolidayBundle2": 5,
+                "PriceTier_HolidayWeek": 4,
+                "PriceTier_QuestSale": 2,
+                "PriceTier_TechnoBundle1": 2,
+                "PriceTier_TechnoBundle2": 4,
+                "PriceTier_TechnoBundle3": 5,
+                "Relic_PromoDiscount": 90,
+                "Relic_PurchaseLimit": 2,
+                "SeasonDays": [
+                    2188,
+                    1906,
+                    2000,
+                    2094
+                ],
+                "ServerUTC": "2025-04-23T01:25:36.212Z",
+                "SummonVipUnlock": 4,
+                "TicketCollectionTime": 25,
+                "TicketPerRefill": 5,
+                "UnmergeDragonCost": 2000,
+                "UsernameGemCost": 300,
+                "WelcomeBack_DiminishedReturns": 50,
+                "WelcomeBack_MaxDays": 30
+            },
+            "GlobalRanking": 9820,
+            "KITTYCLOCK": "2025-04-23T01:25:36.312Z",
+            "MyFriendsData": [
+                {
+                    "ArenaPoints": 80,
+                    "AttackTeamPower": 952,
+                    "AvatarIndex": 8,
+                    "FriendCount": 0,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2024-08-30T20:10:38.252Z",
+                    "PlayFabId": "C0609BDE11F74A60",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "600kg",
+                    "XpLevel": 8
+                },
+                {
+                    "ArenaPoints": 558,
+                    "AttackTeamPower": 34230,
+                    "AvatarIndex": 63,
+                    "FriendCount": 20,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-22T14:12:13.221Z",
+                    "PlayFabId": "1B77178B7D535CE7",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "YoungSAKURA",
+                    "XpLevel": 60
+                },
+                {
+                    "ArenaPoints": 79,
+                    "AttackTeamPower": 11229,
+                    "AvatarIndex": 17,
+                    "FriendCount": 16,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-16T10:14:45.655Z",
+                    "PlayFabId": "6700AEB579AE9A3E",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Hrimos",
+                    "XpLevel": 27
+                },
+                {
+                    "ArenaPoints": 2079,
+                    "AttackTeamPower": 176261,
+                    "AvatarIndex": 84,
+                    "FriendCount": 20,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-22T17:28:54.464Z",
+                    "PlayFabId": "3C3EF07DA0E75950",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Vopank",
+                    "XpLevel": 119
+                },
+                {
+                    "ArenaPoints": 1415,
+                    "AttackTeamPower": 154490,
+                    "AvatarIndex": 88,
+                    "FriendCount": 20,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-22T06:07:57.038Z",
+                    "PlayFabId": "A293E47451617A86",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "PapasBossz",
+                    "XpLevel": 133
+                },
+                {
+                    "ArenaPoints": 1360,
+                    "AttackTeamPower": 157001,
+                    "AvatarIndex": 73,
+                    "FriendCount": 20,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-23T00:35:18.399Z",
+                    "PlayFabId": "7B2A362EEE5578E3",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "SB_French",
+                    "XpLevel": 123
+                },
+                {
+                    "ArenaPoints": 2285,
+                    "AttackTeamPower": 197515,
+                    "AvatarIndex": 51,
+                    "FriendCount": 20,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-22T18:24:29.488Z",
+                    "PlayFabId": "86678A6624E30DFF",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "majorkuzanagy",
+                    "XpLevel": 165
+                },
+                {
+                    "ArenaPoints": 247,
+                    "AttackTeamPower": 10985,
+                    "AvatarIndex": 89,
+                    "FriendCount": 1,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:08:20.046Z",
+                    "PlayFabId": "4C8CD5D5A05E6684",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Wonejo2",
+                    "XpLevel": 33
+                },
+                {
+                    "ArenaPoints": 232,
+                    "AttackTeamPower": 10469,
+                    "AvatarIndex": 3,
+                    "FriendCount": 0,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:07:53.709Z",
+                    "PlayFabId": "4C2B830F5FB313B3",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "dj83",
+                    "XpLevel": 29
+                },
+                {
+                    "ArenaPoints": 169,
+                    "AttackTeamPower": 6467,
+                    "AvatarIndex": 26,
+                    "FriendCount": 6,
+                    "FriendTag": "Friends",
+                    "LastLogin": "2025-04-23T01:24:11.786Z",
+                    "PlayFabId": "C57A79EF1D704080",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "sanzin",
+                    "XpLevel": 21
+                },
+                {
+                    "ArenaPoints": 269,
+                    "AttackTeamPower": 13005,
+                    "AvatarIndex": 52,
+                    "FriendCount": 4,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:06:04.726Z",
+                    "PlayFabId": "DFA0E6B85F24C321",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Tugboat",
+                    "XpLevel": 31
+                },
+                {
+                    "ArenaPoints": 93,
+                    "AttackTeamPower": 3838,
+                    "AvatarIndex": 17,
+                    "FriendCount": 7,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:08:24.336Z",
+                    "PlayFabId": "C622E8D426BE9542",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Barabachka",
+                    "XpLevel": 18
+                },
+                {
+                    "ArenaPoints": 311,
+                    "AttackTeamPower": 16637,
+                    "AvatarIndex": 29,
+                    "FriendCount": 19,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:08:40.619Z",
+                    "PlayFabId": "CB54F654C3ED5135",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Yago_0691",
+                    "XpLevel": 42
+                },
+                {
+                    "ArenaPoints": 1129,
+                    "AttackTeamPower": 127345,
+                    "AvatarIndex": 74,
+                    "FriendCount": 19,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:07:18.02Z",
+                    "PlayFabId": "DF12ECC975B21863",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "flow_6332",
+                    "XpLevel": 109
+                },
+                {
+                    "ArenaPoints": 277,
+                    "AttackTeamPower": 17700,
+                    "AvatarIndex": 22,
+                    "FriendCount": 17,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:07:52.377Z",
+                    "PlayFabId": "607938B0B52252A4",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "paolo22ty",
+                    "XpLevel": 34
+                },
+                {
+                    "ArenaPoints": 1566,
+                    "AttackTeamPower": 144771,
+                    "AvatarIndex": 89,
+                    "FriendCount": 16,
+                    "FriendTag": "FriendRequestee",
+                    "LastLogin": "2025-04-22T23:07:13.073Z",
+                    "PlayFabId": "C78C064DE8C36DE2",
+                    "Position": 0,
+                    "StatValue": 0,
+                    "UserName": "Daarlong",
+                    "XpLevel": 130
+                }
+            ],
+            "OverallLeaderboard": [
+                {
+                    "ArenaPoints": 4788,
+                    "AttackTeamPower": 301750,
+                    "AvatarIndex": 6,
+                    "LastLogin": "2025-04-23T00:01:06.61Z",
+                    "PlayFabId": "531EE754521EDDB",
+                    "Position": 0,
+                    "StatValue": 278004788,
+                    "UserName": "pekori",
+                    "XpLevel": 529
+                },
+                {
+                    "ArenaPoints": 4648,
+                    "AttackTeamPower": 307278,
+                    "AvatarIndex": 0,
+                    "LastLogin": "2025-04-23T00:03:33.132Z",
+                    "PlayFabId": "5E6FD0BB73E20AF4",
+                    "Position": 1,
+                    "StatValue": 278004648,
+                    "UserName": "kid",
+                    "XpLevel": 479
+                },
+                {
+                    "ArenaPoints": 4512,
+                    "AttackTeamPower": 304476,
+                    "AvatarIndex": 77,
+                    "LastLogin": "2025-04-23T01:22:33.107Z",
+                    "PlayFabId": "7E0245873971210C",
+                    "Position": 2,
+                    "StatValue": 278004512,
+                    "UserName": "404_Koljek",
+                    "XpLevel": 388
+                },
+                {
+                    "ArenaPoints": 4487,
+                    "AttackTeamPower": 277775,
+                    "AvatarIndex": 71,
+                    "LastLogin": "2025-04-23T00:06:47.451Z",
+                    "PlayFabId": "8E153D03A982719A",
+                    "Position": 3,
+                    "StatValue": 278004487,
+                    "UserName": "UND_Nawak",
+                    "XpLevel": 409
+                },
+                {
+                    "ArenaPoints": 4469,
+                    "AttackTeamPower": 280363,
+                    "AvatarIndex": 56,
+                    "LastLogin": "2025-04-23T01:12:08.33Z",
+                    "PlayFabId": "A644316460091E38",
+                    "Position": 4,
+                    "StatValue": 278004469,
+                    "UserName": "TwoBugsInaRow",
+                    "XpLevel": 423
+                },
+                {
+                    "ArenaPoints": 4381,
+                    "AttackTeamPower": 260926,
+                    "AvatarIndex": 76,
+                    "LastLogin": "2025-04-22T21:15:22.577Z",
+                    "PlayFabId": "E969B27C69AED03C",
+                    "Position": 5,
+                    "StatValue": 278004381,
+                    "UserName": "Rainstorm",
+                    "XpLevel": 349
+                },
+                {
+                    "ArenaPoints": 4358,
+                    "AttackTeamPower": 312249,
+                    "AvatarIndex": 87,
+                    "LastLogin": "2025-04-23T00:00:09.786Z",
+                    "PlayFabId": "815133A6CCCCE1C2",
+                    "Position": 6,
+                    "StatValue": 278004358,
+                    "UserName": "Ppak",
+                    "XpLevel": 480
+                },
+                {
+                    "ArenaPoints": 4350,
+                    "AttackTeamPower": 283399,
+                    "AvatarIndex": 78,
+                    "LastLogin": "2025-04-23T00:10:25.739Z",
+                    "PlayFabId": "DF0074C985102139",
+                    "Position": 7,
+                    "StatValue": 278004350,
+                    "UserName": "MaddogGD",
+                    "XpLevel": 423
+                },
+                {
+                    "ArenaPoints": 4331,
+                    "AttackTeamPower": 263151,
+                    "AvatarIndex": 65,
+                    "LastLogin": "2025-04-22T19:17:55.899Z",
+                    "PlayFabId": "3A7B25609BB18CC6",
+                    "Position": 8,
+                    "StatValue": 278004331,
+                    "UserName": "MoPF_Jolly",
+                    "XpLevel": 356
+                },
+                {
+                    "ArenaPoints": 4329,
+                    "AttackTeamPower": 268397,
+                    "AvatarIndex": 73,
+                    "LastLogin": "2025-04-23T01:10:41.878Z",
+                    "PlayFabId": "2276A74D026E2FBF",
+                    "Position": 9,
+                    "StatValue": 278004329,
+                    "UserName": "_vMarck_",
+                    "XpLevel": 426
+                },
+                {
+                    "ArenaPoints": 4312,
+                    "AttackTeamPower": 284831,
+                    "AvatarIndex": 90,
+                    "LastLogin": "2025-04-23T00:14:15.427Z",
+                    "PlayFabId": "81B888AD50D960B0",
+                    "Position": 10,
+                    "StatValue": 278004312,
+                    "UserName": "404_Zero",
+                    "XpLevel": 408
+                },
+                {
+                    "ArenaPoints": 4310,
+                    "AttackTeamPower": 275576,
+                    "AvatarIndex": 73,
+                    "LastLogin": "2025-04-23T00:34:35.947Z",
+                    "PlayFabId": "31D0D7DF54086EBE",
+                    "Position": 11,
+                    "StatValue": 278004310,
+                    "UserName": "Praviy_palochka_twix",
+                    "XpLevel": 401
+                },
+                {
+                    "ArenaPoints": 4273,
+                    "AttackTeamPower": 267829,
+                    "AvatarIndex": 1,
+                    "LastLogin": "2025-04-23T01:19:16.921Z",
+                    "PlayFabId": "149CFCDCAE600F2D",
+                    "Position": 12,
+                    "StatValue": 278004273,
+                    "UserName": "UND_FritsUnchained",
+                    "XpLevel": 353
+                },
+                {
+                    "ArenaPoints": 4271,
+                    "AttackTeamPower": 258670,
+                    "AvatarIndex": 88,
+                    "LastLogin": "2025-04-23T01:12:50.807Z",
+                    "PlayFabId": "B3C1C36ADCBB7231",
+                    "Position": 13,
+                    "StatValue": 278004271,
+                    "UserName": "Guicgd",
+                    "XpLevel": 315
+                },
+                {
+                    "ArenaPoints": 4261,
+                    "AttackTeamPower": 291481,
+                    "AvatarIndex": 33,
+                    "LastLogin": "2025-04-23T01:06:51.565Z",
+                    "PlayFabId": "4102B8ECCC22115",
+                    "Position": 14,
+                    "StatValue": 278004261,
+                    "UserName": "BlueLabeI",
+                    "XpLevel": 339
+                },
+                {
+                    "ArenaPoints": 4208,
+                    "AttackTeamPower": 285323,
+                    "AvatarIndex": 73,
+                    "LastLogin": "2025-04-23T01:01:04.398Z",
+                    "PlayFabId": "7CC76697242ADF96",
+                    "Position": 15,
+                    "StatValue": 278004208,
+                    "UserName": "ITALIA_RAVEN_LU_RABE",
+                    "XpLevel": 466
+                },
+                {
+                    "ArenaPoints": 4167,
+                    "AttackTeamPower": 277734,
+                    "AvatarIndex": 88,
+                    "LastLogin": "2025-04-23T01:06:59.587Z",
+                    "PlayFabId": "C0B429DFC227B192",
+                    "Position": 16,
+                    "StatValue": 278004167,
+                    "UserName": "Chengiz",
+                    "XpLevel": 407
+                },
+                {
+                    "ArenaPoints": 4159,
+                    "AttackTeamPower": 276603,
+                    "AvatarIndex": 87,
+                    "LastLogin": "2025-04-23T00:10:49.762Z",
+                    "PlayFabId": "B2220147BE35F2A2",
+                    "Position": 17,
+                    "StatValue": 278004159,
+                    "UserName": "Flieder",
+                    "XpLevel": 342
+                },
+                {
+                    "ArenaPoints": 4140,
+                    "AttackTeamPower": 243110,
+                    "AvatarIndex": 8,
+                    "LastLogin": "2025-04-23T00:42:46.699Z",
+                    "PlayFabId": "BCF40A53B8542E84",
+                    "Position": 18,
+                    "StatValue": 278004140,
+                    "UserName": "DaxDopamine",
+                    "XpLevel": 256
+                },
+                {
+                    "ArenaPoints": 4096,
+                    "AttackTeamPower": 262524,
+                    "AvatarIndex": 90,
+                    "LastLogin": "2025-04-23T00:32:53.615Z",
+                    "PlayFabId": "7DC6E904B27FBFDF",
+                    "Position": 19,
+                    "StatValue": 278004096,
+                    "UserName": "VM9",
+                    "XpLevel": 321
+                }
+            ],
+            "StatisticsClaims": {
+                "ArenaBucketEven": 27805005,
+                "LastLoginInMinutes": 2792245
+            },
+            "TITLE_DATA_VERSION": "297_013",
+            "TitleEventsPayload": {
+                "ClubSmashHeroes": [],
+                "Event_OneTimeOnlyCustomSale": {
+                    "EndingWeekId": 278,
+                    "IsDefaultWeek": true,
+                    "PriceTier": 3,
+                    "Rewards": {
+                        "ArtifactDust": 5000,
+                        "ShardsArtifactPurple": 50,
+                        "ShardsArtifactUltra": 10,
+                        "SlotsTickets": 25
+                    }
+                },
+                "TechnoHeroes": []
+            }
+        }
+    },
+    "status": "OK"
+}
+POST https://2144.playfabapi.com/Client/GetPlayerCombinedInfo?sdk=UnitySDK-2.197.240719&engine=2022.3.60f1&platform=Android HTTP/1.1
+Host: 2144.playfabapi.com
+User-Agent: UnityPlayer/2022.3.60f1 (UnityWebRequest/1.0, libcurl/8.10.1-DEV)
+Accept: */*
+Accept-Encoding: deflate, gzip
+X-ReportErrorAsSuccess: true
+X-PlayFabSDK: UnitySDK-2.197.240719
+X-Authorization: BCA4E7FC8F2053B4-3D7EA51AE24C4BC-E35DEBA7E82517C1-2144-8DD8205BE43645E-Bwbjjg05J2GGtuUO8ftiXBJ1xC0dmoGZWkmwyrijPLE=
+Content-Type: application/json
+X-Unity-Version: 2022.3.60f1
+Content-Length: 1551
+JSON
+ 
+ 
+{
+    "AuthenticationContext": null,
+    "CustomTags": null,
+    "InfoRequestParameters": {
+        "GetCharacterInventories": false,
+        "GetCharacterList": false,
+        "GetPlayerProfile": true,
+        "GetPlayerStatistics": true,
+        "GetTitleData": true,
+        "GetUserAccountInfo": true,
+        "GetUserData": true,
+        "GetUserInventory": true,
+        "GetUserReadOnlyData": false,
+        "GetUserVirtualCurrency": true,
+        "PlayerStatisticNames": null,
+        "ProfileConstraints": null,
+        "TitleDataKeys": null,
+        "UserDataKeys": [
+            "Achievements",
+            "ArenaMatches",
+            "ArenaLog",
+            "ArenaLogDefense",
+            "ArenaData_v2",
+            "AvatarsData",
+            "CollectionData",
+            "DragonsData",
+            "FriendsData",
+            "Teams",
+            "Stalls",
+            "ZoneDrops",
+            "Materials",
+            "TimeStamps",
+            "HeroSlotsData",
+            "DailyGiftData",
+            "HourlyGiftData",
+            "BountiesDataNew",
+            "DailyGrants",
+            "TavernData_v2",
+            "MarketData",
+            "GuildSoloBoss",
+            "GuildAchievements",
+            "GuildMarketPurchases",
+            "SettingsData",
+            "EventsData",
+            "PurchaseData",
+            "MailData",
+            "QuestsDaily",
+            "QuestsWeekly",
+            "FlashSaleData",
+            "WeaponsFormation_v2",
+            "RelicData",
+            "HeroCardData",
+            "ScrollRecords",
+            "TechTreeData",
+            "KittyStats",
+            "KittyRolls",
+            "TechnoArena",
+            "TechnoMatches",
+            "HallOfFame",
+            "RecruitMissions",
+            "HardBoosts",
+            "HardModeData",
+            "BingoData",
+            "SlotsData",
+            "RevokedHeroes",
+            "ClubSmashLocal",
+            "AttackTeamData",
+            "ScrollRecords_Internal",
+            "BattleshipBoard_Internal",
+            "PendantsData",
+            "CharmsData",
+            "CharmsPerks",
+            "_BestTeamRed",
+            "_BestTeamGreen",
+            "_BestTeamYellow",
+            "_BestTeamBlue",
+            "_BestTeamPurpleAndWhite",
+            "_TokenCheck",
+            "_GuildResultsCache",
+            "_ChatStamps",
+            "_GuildId",
+            "_RefreshMe_",
+            "_TEST_HERO_TIERS",
+            "_TEST_WEAPON_TIERS",
+            "_TEST_DRAGON_TIERS",
+            "_TEST_HARDMINIONS_TIERS"
+        ],
+        "UserReadOnlyDataKeys": null
+    },
+    "PlayFabId": "BCA4E7FC8F2053B4"
+}
+HTTP/1.1 200 OK
+content-length: 113224
+content-type: application/json
+date: Wed, 23 Apr 2025 01:25:37 GMT
+server: istio-envoy
+access-control-allow-credentials: true
+access-control-allow-headers: Content-Type, Content-Encoding, X-Authentication, X-Authorization, X-PlayFabSDK, X-ReportErrorAsSuccess, X-SecretKey, X-EntityToken, Authorization, x-ms-app, x-ms-client-request-id, x-ms-user-id, traceparent, tracestate, Request-Id
+access-control-allow-methods: GET, POST
+access-control-allow-origin: *
+content-encoding: deflate
+vary: Accept-Encoding
+x-requestid: c2478f494c0d4d0695372f8f2e763b0b
+x-tracecontext-traceid: 0c9fd155b2fe0be1fada2eacdd00c212
+x-envoy-upstream-service-time: 170
+[decoded deflate] JSON
+ 
+ 
+{
+    "code": 200,
+    "data": {
+        "InfoResultPayload": {
+            "AccountInfo": {
+                "Created": "2024-08-01T19:52:34.172Z",
+                "CustomIdInfo": {
+                    "CustomId": "bbd6e19166a28f91"
+                },
+                "PlayFabId": "BCA4E7FC8F2053B4",
+                "PrivateInfo": {
+                    "Email": "oasamaf@gmail.com"
+                },
+                "TitleInfo": {
+                    "Created": "2024-08-01T19:52:34.172Z",
+                    "DisplayName": "3nvy",
+                    "FirstLogin": "2024-08-01T19:52:34.172Z",
+                    "LastLogin": "2025-04-23T01:25:33.501Z",
+                    "Origination": "CustomId",
+                    "TitlePlayerAccount": {
+                        "Id": "E35DEBA7E82517C1",
+                        "Type": "title_player_account",
+                        "TypeString": "title_player_account"
+                    },
+                    "isBanned": false
+                },
+                "Username": "bca4e7fc8f2053b4"
+            },
+            "CharacterInventories": [],
+            "PlayerProfile": {
+                "DisplayName": "3nvy",
+                "PlayerId": "BCA4E7FC8F2053B4",
+                "PublisherId": "3D7EA51AE24C4BC",
+                "TitleId": "2144"
+            },
+            "PlayerStatistics": [
+                {
+                    "StatisticName": "XpLevel",
+                    "Value": 60,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "ArenaPoints",
+                    "Value": 569,
+                    "Version": 3
+                },
+                {
+                    "StatisticName": "ArenaPointsEven",
+                    "Value": 278000569,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "BuildVersion",
+                    "Value": 297,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "AvatarIndex",
+                    "Value": 86,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "EventCarSmash",
+                    "Value": 276000012,
+                    "Version": 1
+                },
+                {
+                    "StatisticName": "LastLoginInMinutes",
+                    "Value": 2792245,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "AttackTeamPower",
+                    "Value": 40123,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "Progress_Campaign",
+                    "Value": 293,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "DefenseTeamPower",
+                    "Value": 40123,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "ArenaBucketEven",
+                    "Value": 27805005,
+                    "Version": 1
+                },
+                {
+                    "StatisticName": "Progress_Sewer",
+                    "Value": 126,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "FriendCount",
+                    "Value": 7,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "GuildSoloLevel",
+                    "Value": 278000000,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "VipLevel",
+                    "Value": 4,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "GuildBossDamage",
+                    "Value": 274000181,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "ArenaBucketOdd",
+                    "Value": 27705001,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "EventBattleship",
+                    "Value": 277000034,
+                    "Version": 1
+                },
+                {
+                    "StatisticName": "ArenaPointsOdd",
+                    "Value": 277000569,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "ArenaDivision",
+                    "Value": 5,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "EventSlots",
+                    "Value": 278000502,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "Progress_Sewer_Red",
+                    "Value": 7,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "EventMonopoly",
+                    "Value": 275000274,
+                    "Version": 1
+                },
+                {
+                    "StatisticName": "Progress_Sewer_Yellow",
+                    "Value": 6,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "Progress_Sewer_Green",
+                    "Value": 5,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "Progress_Sewer_Blue",
+                    "Value": 6,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "GuildBossDamageTotal",
+                    "Value": 274000001,
+                    "Version": 0
+                },
+                {
+                    "StatisticName": "TechnoPoints",
+                    "Value": 247000250,
+                    "Version": 1
+                }
+            ],
+            "TitleData": {
+                //omitted the various DBs due to huge size and length
+                "BUILD_REQUIRED_VERSION": "297",
+                "BUILD_SUGGEST_ANDROID": "297",
+                "BUILD_SUGGEST_IOS": "297",
+                "BingoWeek": "268",
+                "Event_OneTimeOnlyCustomSale": "{\"ScrollsWeek\":{\"Rewards\":{\"Relics\":15,\"SummonScrolls\":30,\"Gems\":5000,\"EventRockets\":50},\"PriceTier\":3},\"PokerWeek\":{\"Rewards\":{\"Relics\":10,\"PokerChips\":100,\"Gems\":3000,\"EventHammers\":80},\"PriceTier\":2},\"MiscWeek\":{\"Rewards\":{\"ShardsArtifactUltra\":10,\"ShardsArtifactPurple\":50,\"ArtifactDust\":5000,\"SlotsTickets\":25},\"PriceTier\":3},\"OrbsWeek\":{\"Rewards\":{\"Relics\":25,\"Orbs\":15,\"Gems\":4000,\"EventDiceDust\":1500},\"PriceTier\":4},\"Week35\":{\"Rewards\":{\"Orbs\":20,\"Gems\":3000,\"HeroIndex\":44},\"PriceTier\":0}}",
+                "HolidayGifts": "1936",
+                "HolidayWeek": "277",
+                "Links": "{\"Reddit\":\"https://www.reddit.com/r/TapForce\",\"Twitter\":\"https://twitter.com/racecatgames\",\"Discord\":\"https://discord.gg/tap-force\",\"StorePageIOS\":\"https://apps.apple.com/ca/app/tap-force-rpg/id1459276435\",\"StorePageAndroid\":\"https://play.google.com/store/apps/details?id=com.racecat.fight\",\"TermsAndConditions\":\"https://www.tapforcegame.com/terms-conditions\",\"EmailFeedback\":\"racecatgames@gmail.com\"}",
+                "OneDaySale": "{\"rewards\":{\"HeroCard\":1,\"Relics\":40,\"SummonScrolls\":100},\"requirements\":{\"XpLevel\":20},\"priceTierDiscount\":1,\"priceTier\":2,\"dayIndex\":1910,\"value\":1600,\"vendor\":\"bingo_vendor2_valentines\",\"title\":\"spring_sale\",\"bg\":\"spring_splash_bg\"}",
+                "TechnoHeroes": "{\"271\":[75,84,83,81,80],\"275\":[91,90,89,76,71]}",
+                "_Version": "297_013"
+            },
+            "UserData": {
+                "Achievements": {
+                    "LastUpdated": "2025-04-21T10:07:51.917Z",
+                    "Permission": "Private",
+                    "Value": "{\"CampaignLevel\":29,\"CampaignChapter\":7,\"ArenaWins\":5,\"UseSummon\":18,\"XpLevel10\":6,\"Sewer10\":12,\"HeroEvolution\":3,\"HeroSpawnPurple\":8,\"CollectShops\":11,\"ShopUpgrade\":25,\"AccountRegistration\":1,\"Sewer50\":2,\"ArenaRank\":5,\"CampaignZone\":1,\"VipBonus\":2,\"MasteryClassUnique\":1,\"MasteryFactionUnique\":1,\"FactionSewer10\":2,\"Tavern5Stars\":3,\"FriendCrateUpgrade\":2,\"XpLevel50\":1,\"TechnoRun\":1,\"ArtifactSpawnPurple\":1,\"MasteryClass\":1}"
+                },
+                "ArenaData_v2": {
+                    "LastUpdated": "2025-04-23T01:21:13.339Z",
+                    "Permission": "Private",
+                    "Value": "{\"CurrentDivision\":{\"WeekId\":278,\"DivisionIndex\":5,\"DivisionBucketId\":5},\"SeasonResults\":null}"
+                },
+                "ArenaLog": {
+                    "LastUpdated": "2025-03-21T14:26:43.136Z",
+                    "Permission": "Private",
+                    "Value": "[{\"BattleResults\":{\"PvpData\":{\"myEloScore\":567,\"myEloDelta\":-15,\"enemyEloScore\":616,\"enemyEloDelta\":11},\"IsVictorious\":false,\"Version\":1},\"TimeStamp\":\"2024-10-02T05:22:02.591Z\",\"Profile\":{\"PlayFabId\":\"188A5C1254A95FF5\",\"UserName\":\"Thebeast_g\",\"XpLevel\":57,\"Position\":30875,\"LastLogin\":\"0001-01-01T00:00:00.000\",\"ArenaPoints\":605,\"GuildId\":0,\"DefenseTeamPower\":29779,\"AttackTeamPower\":29848,\"AvatarIndex\":76,\"FriendCount\":20,\"TechnoPoints\":247001940,\"GuildBossDamageTotal\":248000016,\"StatValue\":605,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"2A98A123B0E1C986\",\"heroIndex\":35,\"battleIndex\":0},{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"DC2A6C3A52A6179F\",\"heroIndex\":76,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"906D11E61BB79CC1\",\"heroIndex\":45,\"battleIndex\":1},{\"rank\":4,\"level\":100,\"ascension\":0,\"id\":\"FFABF7AF6C95F336\",\"heroIndex\":69,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"84113FC39BBA992C\",\"heroIndex\":44,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"E12D4A61DB02ACF1\",\"heroIndex\":34,\"battleIndex\":5}],\"artifacts\":[{\"owner\":{\"auto\":\"2A98A123B0E1C986\"},\"index\":3,\"level\":0,\"id\":\"4351f0b29e444c028b2147493252f87e\"},{\"owner\":{\"0\":\"DC2A6C3A52A6179F\"},\"index\":14,\"level\":3,\"id\":\"1d807ceaee7e481a8da5933a0563afc8\"},{\"owner\":{\"0\":\"906D11E61BB79CC1\"},\"index\":8,\"level\":2,\"id\":\"dc2d55e170894420a6e563c4745dcde1\"},{\"owner\":{\"auto\":\"FFABF7AF6C95F336\"},\"index\":2,\"level\":0,\"id\":\"a7d253a39cd3482d867811e93fe74751\"},{\"owner\":{\"0\":\"84113FC39BBA992C\"},\"index\":5,\"level\":2,\"id\":\"d0f4a2851c64464cb82d261aa283c370\"},{\"owner\":{\"0\":\"E12D4A61DB02ACF1\"},\"index\":4,\"level\":2,\"id\":\"73ec0b219fa74742871c296b0905f3ce\"}],\"weapons\":{\"Knuckles\":\"2A98A123B0E1C986\",\"Bomb\":\"2A98A123B0E1C986\",\"Shuriken\":\"DC2A6C3A52A6179F\",\"Sai\":\"DC2A6C3A52A6179F\",\"Knife\":\"906D11E61BB79CC1\",\"Katana\":\"906D11E61BB79CC1\",\"Pipe\":\"84113FC39BBA992C\",\"Nunchucks\":\"E12D4A61DB02ACF1\"},\"weaponsLevels\":{\"Knuckles\":4,\"Bomb\":3,\"Shuriken\":3,\"Sai\":5,\"Knife\":4,\"Katana\":3,\"Pipe\":3,\"Nunchucks\":4},\"techboosts\":{\"2A98A123B0E1C986\":[0,0.13,0,0],\"DC2A6C3A52A6179F\":[0.135,0.285,0,0],\"906D11E61BB79CC1\":[0.02,0.17,0,0],\"FFABF7AF6C95F336\":[0,0.11,0,0],\"84113FC39BBA992C\":[0.075,0.225,0,0],\"E12D4A61DB02ACF1\":[0,0.11,0,0]},\"techperks\":{\"2A98A123B0E1C986\":[\"Faction0\"],\"DC2A6C3A52A6179F\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"906D11E61BB79CC1\":[\"Faction0\",\"Generic0\"],\"FFABF7AF6C95F336\":[\"Faction0\"],\"84113FC39BBA992C\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"E12D4A61DB02ACF1\":[\"Faction0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"2A98A123B0E1C986\":[],\"DC2A6C3A52A6179F\":[],\"906D11E61BB79CC1\":[],\"FFABF7AF6C95F336\":[],\"84113FC39BBA992C\":[],\"E12D4A61DB02ACF1\":[]}}},\"ReplayId\":\"7b1f60e70b934ace80afe944231ba558\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":578,\"myEloDelta\":11,\"enemyEloScore\":457,\"enemyEloDelta\":-8},\"IsVictorious\":true,\"Version\":1},\"TimeStamp\":\"2024-10-02T05:22:13.140Z\",\"Profile\":{\"PlayFabId\":\"F8CC12EB42AF86C8\",\"UserName\":\"dk123\",\"XpLevel\":60,\"Position\":42091,\"LastLogin\":\"0001-01-01T00:00:00.000\",\"ArenaPoints\":465,\"GuildId\":0,\"DefenseTeamPower\":31261,\"AttackTeamPower\":31976,\"AvatarIndex\":68,\"FriendCount\":20,\"TechnoPoints\":219001690,\"GuildBossDamageTotal\":222000013,\"StatValue\":31976,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"5D5EE2E72FBA6791\",\"heroIndex\":81,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"EF8A026F266FC98D\",\"heroIndex\":68,\"battleIndex\":1},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"B833ADB65CFCFBD5\",\"heroIndex\":14,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"A72453A62145E527\",\"heroIndex\":82,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"E358129167EF7D0\",\"heroIndex\":79,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"4F5E0DFE4CCEF0C9\",\"heroIndex\":63,\"battleIndex\":5}],\"artifacts\":[{\"owner\":{\"0\":\"5D5EE2E72FBA6791\"},\"index\":7,\"level\":4,\"id\":\"8ffcedce13de4f91b1b7b2916855b31f\"},{\"owner\":{\"0\":\"EF8A026F266FC98D\"},\"index\":4,\"level\":3,\"id\":\"4772a78089504478ae62f82af414c89e\"},{\"owner\":{\"auto\":\"B833ADB65CFCFBD5\"},\"index\":6,\"level\":3,\"id\":\"dd733c28e7f84a4d99c646691b8050bd\"},{\"owner\":{\"auto\":\"A72453A62145E527\"},\"index\":5,\"level\":0,\"id\":\"27b9d77126cf4133b528a267c08971f3\"},{\"owner\":{\"auto\":\"E358129167EF7D0\"},\"index\":5,\"level\":0,\"id\":\"2c497510634c4fe7a0bd1a02ef91159b\"},{\"owner\":{\"auto\":\"4F5E0DFE4CCEF0C9\"},\"index\":5,\"level\":0,\"id\":\"d66dddf219454d97aed12773d320c3dc\"}],\"weapons\":{\"Knuckles\":\"5D5EE2E72FBA6791\",\"Shuriken\":\"5D5EE2E72FBA6791\",\"Nunchucks\":\"EF8A026F266FC98D\",\"Sai\":\"B833ADB65CFCFBD5\",\"Katana\":\"B833ADB65CFCFBD5\",\"Knife\":\"A72453A62145E527\",\"Bomb\":\"A72453A62145E527\",\"Pipe\":\"E358129167EF7D0\"},\"weaponsLevels\":{\"Knuckles\":4,\"Shuriken\":4,\"Nunchucks\":4,\"Sai\":5,\"Katana\":3,\"Knife\":4,\"Bomb\":2,\"Pipe\":4},\"techboosts\":{\"5D5EE2E72FBA6791\":[0.005,0.08,0,0],\"EF8A026F266FC98D\":[0.005,0.08,0,0],\"B833ADB65CFCFBD5\":[0,0.005,0,0],\"4F5E0DFE4CCEF0C9\":[0.005,0.08,0,0]},\"techperks\":{\"5D5EE2E72FBA6791\":[\"Faction0\"],\"EF8A026F266FC98D\":[\"Faction0\"],\"4F5E0DFE4CCEF0C9\":[\"Faction0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"5D5EE2E72FBA6791\":[],\"EF8A026F266FC98D\":[],\"B833ADB65CFCFBD5\":[],\"A72453A62145E527\":[],\"E358129167EF7D0\":[],\"4F5E0DFE4CCEF0C9\":[]}}},\"ReplayId\":\"d338a8ee5fef4c4091241714441841e1\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":478,\"myEloDelta\":-17,\"enemyEloScore\":482,\"enemyEloDelta\":11},\"IsVictorious\":false,\"Version\":1},\"TimeStamp\":\"2025-03-21T14:26:13.413Z\",\"Profile\":{\"PlayFabId\":\"79857866EA201A97\",\"UserName\":\"Skr3t4\",\"XpLevel\":64,\"Position\":29851,\"LastLogin\":\"0001-01-01T00:00:00.000\",\"ArenaPoints\":471,\"GuildId\":0,\"DefenseTeamPower\":36125,\"AttackTeamPower\":39289,\"AvatarIndex\":90,\"FriendCount\":20,\"TechnoPoints\":271001770,\"GuildBossDamageTotal\":272000010,\"StatValue\":39289,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"15FD41DCD3ADD076\",\"heroIndex\":90,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"A140F5EC526257EF\",\"heroIndex\":62,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"331558C76E9EE9F2\",\"heroIndex\":69,\"battleIndex\":1},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"3CF37822C9660CEB\",\"heroIndex\":57,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"65CF59372EB93B25\",\"heroIndex\":81,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"E7E118AD8D6F9F2C\",\"heroIndex\":40,\"battleIndex\":0}],\"artifacts\":[{\"owner\":{\"0\":\"15FD41DCD3ADD076\"},\"index\":5,\"level\":3,\"id\":\"ed1cd05c9f154a67a41e13c79d7c886f\"},{\"owner\":{\"0\":\"A140F5EC526257EF\"},\"index\":5,\"level\":2,\"id\":\"0a0037080cd640929c5b20188ab27604\"},{\"owner\":{\"0\":\"331558C76E9EE9F2\"},\"index\":5,\"level\":1,\"id\":\"74cac80327d64edeaf947f59c1b1f829\"},{\"owner\":{\"0\":\"3CF37822C9660CEB\"},\"index\":7,\"level\":2,\"id\":\"7622a7b7d91d49bd93d88dde7713aeb5\"},{\"owner\":{\"0\":\"65CF59372EB93B25\"},\"index\":5,\"level\":3,\"id\":\"8cea58f3199941b7b247861087894d6c\"},{\"owner\":{\"0\":\"E7E118AD8D6F9F2C\"},\"index\":9,\"level\":1,\"id\":\"8620a5cd17274e8eaf2b5a39b6ca5e77\"}],\"weapons\":{\"Knuckles\":\"15FD41DCD3ADD076\",\"Shuriken\":\"15FD41DCD3ADD076\",\"Knife\":\"331558C76E9EE9F2\",\"Nunchucks\":\"3CF37822C9660CEB\",\"Bomb\":\"3CF37822C9660CEB\",\"Sai\":\"65CF59372EB93B25\",\"Katana\":\"65CF59372EB93B25\",\"Pipe\":\"E7E118AD8D6F9F2C\",\"Kunai\":\"E7E118AD8D6F9F2C\"},\"weaponsLevels\":{\"Knuckles\":3,\"Shuriken\":2,\"Knife\":2,\"Nunchucks\":3,\"Bomb\":4,\"Sai\":3,\"Katana\":2,\"Pipe\":3,\"Kunai\":3},\"techboosts\":{\"15FD41DCD3ADD076\":[0.105,0.255,0,0],\"A140F5EC526257EF\":[0.075,0.15,0,0],\"331558C76E9EE9F2\":[0.055,0.205,0,0],\"3CF37822C9660CEB\":[0.105,0.255,0,0],\"65CF59372EB93B25\":[0.115,0.265,0,0],\"E7E118AD8D6F9F2C\":[0.035,0.11,0,0]},\"techperks\":{\"15FD41DCD3ADD076\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"A140F5EC526257EF\":[\"Faction0\",\"Faction1\"],\"331558C76E9EE9F2\":[\"Faction0\",\"Generic0\"],\"3CF37822C9660CEB\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"65CF59372EB93B25\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"E7E118AD8D6F9F2C\":[\"Faction0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"15FD41DCD3ADD076\":[],\"A140F5EC526257EF\":[],\"331558C76E9EE9F2\":[],\"3CF37822C9660CEB\":[],\"65CF59372EB93B25\":[],\"E7E118AD8D6F9F2C\":[]}}},\"ReplayId\":\"6eb37a9a7b814ca0aed8e7d9aef4d812\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":494,\"myEloDelta\":16,\"enemyEloScore\":468,\"enemyEloDelta\":-10},\"IsVictorious\":true,\"Version\":1},\"TimeStamp\":\"2025-03-21T14:26:27.965Z\",\"Profile\":{\"PlayFabId\":\"2C6EFEC25806CC4F\",\"UserName\":\"Gurendai\",\"XpLevel\":56,\"Position\":49212,\"LastLogin\":\"0001-01-01T00:00:00.000\",\"ArenaPoints\":478,\"GuildId\":0,\"DefenseTeamPower\":33074,\"AttackTeamPower\":33074,\"AvatarIndex\":8,\"FriendCount\":10,\"TechnoPoints\":211000250,\"GuildBossDamageTotal\":206000001,\"StatValue\":478,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"F1CD850C556638D1\",\"heroIndex\":79,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"DB2DA5576B87AED8\",\"heroIndex\":63,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"B0232D4AF706B83C\",\"heroIndex\":77,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"F641F418EAF8CE1F\",\"heroIndex\":50,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"D6CF093B8AE1212D\",\"heroIndex\":58,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"27CE5CC11F3DD261\",\"heroIndex\":60,\"battleIndex\":0}],\"artifacts\":[{\"owner\":{\"0\":\"F1CD850C556638D1\"},\"index\":4,\"level\":3,\"id\":\"047ed1c9ca64489fa3555accd559b7ea\"},{\"owner\":{\"0\":\"DB2DA5576B87AED8\"},\"index\":5,\"level\":0,\"id\":\"e3b32101d505423f87cbabc585f693a7\"},{\"owner\":{\"0\":\"B0232D4AF706B83C\"},\"index\":5,\"level\":3,\"id\":\"5b5aedda8f0c4057a12a5c3efe7d8e32\"},{\"owner\":{\"0\":\"F641F418EAF8CE1F\"},\"index\":4,\"level\":2,\"id\":\"4a2efe4d659949a9bf4c1d08aa336546\"},{\"owner\":{\"0\":\"D6CF093B8AE1212D\"},\"index\":1,\"level\":2,\"id\":\"27caec4cb996484a9b4bb1b86a5c62fc\"},{\"owner\":{\"0\":\"27CE5CC11F3DD261\"},\"index\":8,\"level\":3,\"id\":\"d9a2711148fc4cca9a33652011e5f9c2\"}],\"weapons\":{\"Pipe\":\"F1CD850C556638D1\",\"Knife\":\"DB2DA5576B87AED8\",\"Nunchucks\":\"B0232D4AF706B83C\",\"Sai\":\"F641F418EAF8CE1F\",\"Shuriken\":\"D6CF093B8AE1212D\",\"Knuckles\":\"27CE5CC11F3DD261\"},\"weaponsLevels\":{\"Pipe\":3,\"Knife\":4,\"Nunchucks\":4,\"Sai\":4,\"Shuriken\":3,\"Knuckles\":4},\"techboosts\":{\"F1CD850C556638D1\":[0.045,0.195,0,0],\"DB2DA5576B87AED8\":[0.025,0.175,0,0],\"B0232D4AF706B83C\":[0.055,0.205,0,0],\"F641F418EAF8CE1F\":[0.025,0.175,0,0],\"D6CF093B8AE1212D\":[0.06,0.21,0,0],\"27CE5CC11F3DD261\":[0.06,0.21,0,0]},\"techperks\":{\"F1CD850C556638D1\":[\"Faction0\",\"Generic0\"],\"DB2DA5576B87AED8\":[\"Faction0\",\"Generic0\"],\"B0232D4AF706B83C\":[\"Faction0\",\"Generic0\"],\"F641F418EAF8CE1F\":[\"Faction0\",\"Generic0\"],\"D6CF093B8AE1212D\":[\"Faction0\",\"Generic0\"],\"27CE5CC11F3DD261\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"F1CD850C556638D1\":[],\"DB2DA5576B87AED8\":[],\"B0232D4AF706B83C\":[],\"F641F418EAF8CE1F\":[],\"D6CF093B8AE1212D\":[],\"27CE5CC11F3DD261\":[]}}},\"ReplayId\":\"4c3550a795b94c7fa9f426c272c75b25\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":510,\"myEloDelta\":16,\"enemyEloScore\":484,\"enemyEloDelta\":-10},\"IsVictorious\":true,\"Version\":1},\"TimeStamp\":\"2025-03-21T14:26:42.513Z\",\"Profile\":{\"PlayFabId\":\"5410FEA35C5A4A00\",\"UserName\":\"Xraptor\",\"XpLevel\":46,\"Position\":32804,\"LastLogin\":\"0001-01-01T00:00:00.000\",\"ArenaPoints\":494,\"GuildId\":0,\"DefenseTeamPower\":28528,\"AttackTeamPower\":30580,\"AvatarIndex\":86,\"FriendCount\":17,\"TechnoPoints\":0,\"GuildBossDamageTotal\":240000001,\"StatValue\":494,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"E9C356F45EA13D5E\",\"heroIndex\":70,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"36114875C85D4891\",\"heroIndex\":60,\"battleIndex\":1},{\"rank\":6,\"level\":1,\"ascension\":0,\"id\":\"61B47D641F8F806\",\"heroIndex\":83,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"3127D62DC9332D89\",\"heroIndex\":45,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"8E3C2BADB124E333\",\"heroIndex\":86,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"A18F4AD45FC55102\",\"heroIndex\":63,\"battleIndex\":5}],\"artifacts\":[{\"owner\":{\"0\":\"E9C356F45EA13D5E\"},\"index\":8,\"level\":3,\"id\":\"a6aec35d6eb64d52a9a134e7b3b4bddb\"},{\"owner\":{\"0\":\"36114875C85D4891\"},\"index\":0,\"level\":0,\"id\":\"af2919106bc64889a1663b4f365b61b6\"},{\"owner\":{\"0\":\"3127D62DC9332D89\"},\"index\":12,\"level\":0,\"id\":\"fe44bf86e454471b92a7d21fcf28b057\"},{\"owner\":{\"0\":\"8E3C2BADB124E333\"},\"index\":2,\"level\":2,\"id\":\"6bb0879de33244ffb198cb35bc6e5958\"},{\"owner\":{\"0\":\"A18F4AD45FC55102\"},\"index\":9,\"level\":3,\"id\":\"9392b4a1b2614df0b08f78afbaf45dcf\"}],\"weapons\":{\"Sai\":\"E9C356F45EA13D5E\",\"Shuriken\":\"E9C356F45EA13D5E\",\"Katana\":\"3127D62DC9332D89\",\"Nunchucks\":\"3127D62DC9332D89\",\"Knuckles\":\"8E3C2BADB124E333\"},\"weaponsLevels\":{\"Sai\":4,\"Shuriken\":3,\"Katana\":3,\"Nunchucks\":4,\"Knuckles\":4},\"techboosts\":{\"E9C356F45EA13D5E\":[0.13,0.28,0,0],\"36114875C85D4891\":[0.06,0.135,0,0],\"61B47D641F8F806\":[0.06,0.135,0,0],\"3127D62DC9332D89\":[0.13,0.28,0,0],\"8E3C2BADB124E333\":[0.07,0.145,0,0]},\"techperks\":{\"E9C356F45EA13D5E\":[\"Faction0\",\"Generic0\"],\"36114875C85D4891\":[\"Faction0\"],\"61B47D641F8F806\":[\"Faction0\"],\"3127D62DC9332D89\":[\"Faction0\",\"Generic0\"],\"8E3C2BADB124E333\":[\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"E9C356F45EA13D5E\":[],\"36114875C85D4891\":[],\"61B47D641F8F806\":[],\"3127D62DC9332D89\":[],\"8E3C2BADB124E333\":[],\"A18F4AD45FC55102\":[]}}},\"ReplayId\":\"7a3bc652bd8d40db9f61df5921618515\"}]"
+                },
+                "ArenaLogDefense": {
+                    "LastUpdated": "2025-04-22T23:57:17.058Z",
+                    "Permission": "Private",
+                    "Value": "[{\"BattleResults\":{\"PvpData\":{\"myEloScore\":543,\"myEloDelta\":-16,\"enemyEloScore\":566,\"enemyEloDelta\":12},\"IsVictorious\":false,\"Version\":1},\"TimeStamp\":\"2025-04-16T00:25:15.747Z\",\"Profile\":{\"PlayFabId\":\"CC718890D1924D5C\",\"UserName\":\"HarveyNorman\",\"XpLevel\":64,\"Position\":0,\"LastLogin\":\"2025-04-16T00:25:15.690Z\",\"ArenaPoints\":559,\"GuildId\":0,\"DefenseTeamPower\":39112,\"AttackTeamPower\":40120,\"AvatarIndex\":90,\"FriendCount\":20,\"TechnoPoints\":0,\"GuildBossDamageTotal\":0,\"StatValue\":0,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"EC327735C82FB9B7\",\"heroIndex\":83,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"FB373296BAF59154\",\"heroIndex\":69,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"31402CDD91003EAA\",\"heroIndex\":72,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"1ECD3FDD51C1598A\",\"heroIndex\":90,\"battleIndex\":1},{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"814AA04DF4A73E5\",\"heroIndex\":57,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"5F5C9A87E3D1C4D5\",\"heroIndex\":86,\"battleIndex\":3}],\"artifacts\":[{\"owner\":{\"0\":\"EC327735C82FB9B7\"},\"index\":4,\"level\":3,\"id\":\"c1f4b9a34a724520a6affb9df213948f\"},{\"owner\":{\"auto\":\"FB373296BAF59154\"},\"index\":5,\"level\":2,\"id\":\"de0392731380474ca3637f7a87da1f0d\"},{\"owner\":{\"0\":\"31402CDD91003EAA\"},\"index\":0,\"level\":2,\"id\":\"0bdf9c336c644529bd41b62d8e6146d6\"},{\"owner\":{\"0\":\"1ECD3FDD51C1598A\"},\"index\":4,\"level\":1,\"id\":\"2b1115bc430c4ee292e405c486441a62\"},{\"owner\":{\"0\":\"814AA04DF4A73E5\"},\"index\":12,\"level\":4,\"id\":\"157d85e8686b4c4d91f8f1241cc0b699\"},{\"owner\":{\"0\":\"5F5C9A87E3D1C4D5\"},\"index\":0,\"level\":2,\"id\":\"17928a46bed44b9ab62eadbbb3f7c37e\"}],\"weapons\":{\"Knuckles\":\"EC327735C82FB9B7\",\"Nunchucks\":\"FB373296BAF59154\",\"Katana\":\"FB373296BAF59154\",\"Sai\":\"31402CDD91003EAA\",\"Bomb\":\"31402CDD91003EAA\",\"Pipe\":\"1ECD3FDD51C1598A\",\"Kunai\":\"1ECD3FDD51C1598A\",\"Knife\":\"814AA04DF4A73E5\",\"Claw\":\"814AA04DF4A73E5\",\"Shuriken\":\"5F5C9A87E3D1C4D5\"},\"weaponsLevels\":{\"Knuckles\":2,\"Nunchucks\":3,\"Katana\":3,\"Sai\":4,\"Bomb\":3,\"Pipe\":4,\"Kunai\":3,\"Knife\":4,\"Claw\":2,\"Shuriken\":3},\"techboosts\":{\"EC327735C82FB9B7\":[0.03,0.18,0,0],\"FB373296BAF59154\":[0.04,0.19,0,0],\"31402CDD91003EAA\":[0.035,0.185,0,0],\"1ECD3FDD51C1598A\":[0.04,0.19,0,0],\"814AA04DF4A73E5\":[0.04,0.19,0,0],\"5F5C9A87E3D1C4D5\":[0.03,0.18,0,0]},\"techperks\":{\"EC327735C82FB9B7\":[\"Faction0\",\"Generic0\"],\"FB373296BAF59154\":[\"Faction0\",\"Generic0\"],\"31402CDD91003EAA\":[\"Faction0\",\"Generic0\"],\"1ECD3FDD51C1598A\":[\"Faction0\",\"Generic0\"],\"814AA04DF4A73E5\":[\"Faction0\",\"Generic0\"],\"5F5C9A87E3D1C4D5\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"EC327735C82FB9B7\":[],\"FB373296BAF59154\":[],\"31402CDD91003EAA\":[],\"1ECD3FDD51C1598A\":[],\"814AA04DF4A73E5\":[],\"5F5C9A87E3D1C4D5\":[]}}},\"ReplayId\":\"02ad2c2b04624d74a1f21e1459a26246\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":597,\"myEloDelta\":15,\"enemyEloScore\":555,\"enemyEloDelta\":-11},\"IsVictorious\":true,\"Version\":1},\"TimeStamp\":\"2025-04-16T05:38:01.674Z\",\"Profile\":{\"PlayFabId\":\"3154F50DB852C638\",\"UserName\":\"Slavyan777\",\"XpLevel\":66,\"Position\":0,\"LastLogin\":\"2025-04-16T05:38:01.613Z\",\"ArenaPoints\":582,\"GuildId\":0,\"DefenseTeamPower\":44585,\"AttackTeamPower\":44585,\"AvatarIndex\":90,\"FriendCount\":20,\"TechnoPoints\":0,\"GuildBossDamageTotal\":0,\"StatValue\":0,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"EA3A4435C0CA1894\",\"heroIndex\":78,\"battleIndex\":5},{\"rank\":8,\"level\":179,\"ascension\":0,\"id\":\"DB21AB255EEDF96C\",\"heroIndex\":86,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"DD2B13DFF9EBB304\",\"heroIndex\":79,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"CBA22DB7F2818B8E\",\"heroIndex\":72,\"battleIndex\":2},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"92720C15AC1FDB3F\",\"heroIndex\":12,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"7A9A961CAC66A373\",\"heroIndex\":87,\"battleIndex\":1}],\"artifacts\":[{\"owner\":{\"0\":\"EA3A4435C0CA1894\"},\"index\":0,\"level\":2,\"id\":\"3d53269d60544d30a18417d5200d8d95\"},{\"owner\":{\"0\":\"DB21AB255EEDF96C\"},\"index\":5,\"level\":3,\"id\":\"e4492a2e51a7401ebb6ece6b34e01aa5\"},{\"owner\":{\"0\":\"DD2B13DFF9EBB304\"},\"index\":7,\"level\":3,\"id\":\"d55f1f5251814632a91fa537c9fe41e6\"},{\"owner\":{\"0\":\"CBA22DB7F2818B8E\"},\"index\":3,\"level\":2,\"id\":\"dc6e22839dad4c86bd7d1a4b59bf2c99\"},{\"owner\":{\"0\":\"92720C15AC1FDB3F\"},\"index\":4,\"level\":3,\"id\":\"36d700a57aa94ba3b270dff28471fc8f\"},{\"owner\":{\"0\":\"7A9A961CAC66A373\"},\"index\":5,\"level\":3,\"id\":\"45f0dd313e6e4464972bd96b79153dac\"}],\"weapons\":{\"Pipe\":\"EA3A4435C0CA1894\",\"Shuriken\":\"EA3A4435C0CA1894\",\"Nunchucks\":\"DB21AB255EEDF96C\",\"Katana\":\"DB21AB255EEDF96C\",\"Knuckles\":\"DD2B13DFF9EBB304\",\"Bomb\":\"DD2B13DFF9EBB304\",\"Knife\":\"92720C15AC1FDB3F\",\"Sai\":\"7A9A961CAC66A373\",\"Kunai\":\"7A9A961CAC66A373\"},\"weaponsLevels\":{\"Pipe\":4,\"Shuriken\":3,\"Nunchucks\":3,\"Katana\":3,\"Knuckles\":4,\"Bomb\":3,\"Knife\":3,\"Sai\":4,\"Kunai\":3},\"techboosts\":{\"EA3A4435C0CA1894\":[0.06,0.21,0,0],\"DB21AB255EEDF96C\":[0.025,0.175,0,0],\"DD2B13DFF9EBB304\":[0.045,0.195,0,0],\"CBA22DB7F2818B8E\":[0.055,0.205,0,0],\"92720C15AC1FDB3F\":[0,0.15,0,0],\"7A9A961CAC66A373\":[0.09,0.24,0,0]},\"techperks\":{\"EA3A4435C0CA1894\":[\"Faction0\",\"Generic0\"],\"DB21AB255EEDF96C\":[\"Faction0\",\"Generic0\"],\"DD2B13DFF9EBB304\":[\"Faction0\",\"Generic0\"],\"CBA22DB7F2818B8E\":[\"Faction0\",\"Generic0\"],\"92720C15AC1FDB3F\":[\"Faction0\",\"Generic0\"],\"7A9A961CAC66A373\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"EA3A4435C0CA1894\":[],\"DB21AB255EEDF96C\":[],\"DD2B13DFF9EBB304\":[],\"CBA22DB7F2818B8E\":[],\"92720C15AC1FDB3F\":[],\"7A9A961CAC66A373\":[]}}},\"ReplayId\":\"16ac891ea18249e58b9667bef62481e8\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":538,\"myEloDelta\":-16,\"enemyEloScore\":566,\"enemyEloDelta\":11},\"IsVictorious\":false,\"Version\":1},\"TimeStamp\":\"2025-04-21T22:25:37.529Z\",\"Profile\":{\"PlayFabId\":\"CC4475DEC289051D\",\"UserName\":\"Maba_8533\",\"XpLevel\":64,\"Position\":0,\"LastLogin\":\"2025-04-21T22:25:37.474Z\",\"ArenaPoints\":554,\"GuildId\":0,\"DefenseTeamPower\":44171,\"AttackTeamPower\":44171,\"AvatarIndex\":8,\"FriendCount\":20,\"TechnoPoints\":0,\"GuildBossDamageTotal\":0,\"StatValue\":0,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"61FFAEB959E726ED\",\"heroIndex\":79,\"battleIndex\":2},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"121B9680E83C2B1D\",\"heroIndex\":69,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"38C0D31BCA0B17F9\",\"heroIndex\":74,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"CFDAE84ED62086DC\",\"heroIndex\":42,\"battleIndex\":3},{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"86FCCAAFAFEA83D3\",\"heroIndex\":90,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"7AB31BC60F55BF59\",\"heroIndex\":78,\"battleIndex\":0}],\"artifacts\":[{\"owner\":{\"0\":\"61FFAEB959E726ED\"},\"index\":1,\"level\":2,\"id\":\"ab2098f5eff0444ba8c17a53f36172f5\"},{\"owner\":{\"0\":\"121B9680E83C2B1D\"},\"index\":5,\"level\":2,\"id\":\"83c3e05497cd4ff4b6cf0f092cc1a316\"},{\"owner\":{\"0\":\"38C0D31BCA0B17F9\"},\"index\":5,\"level\":3,\"id\":\"f96423b8b3aa4a89a46e65937c8c33fd\"},{\"owner\":{\"0\":\"CFDAE84ED62086DC\"},\"index\":4,\"level\":3,\"id\":\"5f9930b9494940a389eae6a29ace220b\"},{\"owner\":{\"0\":\"86FCCAAFAFEA83D3\"},\"index\":8,\"level\":3,\"id\":\"99568a35897b4326afa6beb202859603\"},{\"owner\":{\"0\":\"7AB31BC60F55BF59\"},\"index\":7,\"level\":2,\"id\":\"21c54fcbfaa84e8c9aeef8792547cc35\"}],\"weapons\":{\"Pipe\":\"61FFAEB959E726ED\",\"Shuriken\":\"121B9680E83C2B1D\",\"Nunchucks\":\"38C0D31BCA0B17F9\",\"Knife\":\"CFDAE84ED62086DC\",\"Sai\":\"86FCCAAFAFEA83D3\",\"Bomb\":\"86FCCAAFAFEA83D3\",\"Knuckles\":\"7AB31BC60F55BF59\",\"Katana\":\"7AB31BC60F55BF59\"},\"weaponsLevels\":{\"Pipe\":4,\"Shuriken\":4,\"Nunchucks\":4,\"Knife\":5,\"Sai\":4,\"Bomb\":3,\"Knuckles\":5,\"Katana\":4},\"techboosts\":{\"61FFAEB959E726ED\":[0.08,0.23,0,0],\"121B9680E83C2B1D\":[0.075,0.225,0,0],\"38C0D31BCA0B17F9\":[0.08,0.23,0,0],\"CFDAE84ED62086DC\":[0.065,0.155,0,0],\"86FCCAAFAFEA83D3\":[0.14,0.29,0,0],\"7AB31BC60F55BF59\":[0.07,0.22,0,0]},\"techperks\":{\"61FFAEB959E726ED\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"121B9680E83C2B1D\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"38C0D31BCA0B17F9\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"CFDAE84ED62086DC\":[\"Generic0\"],\"86FCCAAFAFEA83D3\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"7AB31BC60F55BF59\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"61FFAEB959E726ED\":[],\"121B9680E83C2B1D\":[],\"38C0D31BCA0B17F9\":[],\"CFDAE84ED62086DC\":[],\"86FCCAAFAFEA83D3\":[],\"7AB31BC60F55BF59\":[]}}},\"ReplayId\":\"8afc1a352e114efb9db8ca8f7b35d4d0\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":610,\"myEloDelta\":-19,\"enemyEloScore\":581,\"enemyEloDelta\":15},\"IsVictorious\":false,\"Version\":1},\"TimeStamp\":\"2025-04-22T22:50:10.167Z\",\"Profile\":{\"PlayFabId\":\"45DDF9A1B736EB5\",\"UserName\":\"TheScout\",\"XpLevel\":68,\"Position\":0,\"LastLogin\":\"2025-04-22T22:50:10.112Z\",\"ArenaPoints\":629,\"GuildId\":0,\"DefenseTeamPower\":39453,\"AttackTeamPower\":40132,\"AvatarIndex\":77,\"FriendCount\":20,\"TechnoPoints\":0,\"GuildBossDamageTotal\":0,\"StatValue\":0,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"54AB7B10EEC7F6D7\",\"heroIndex\":74,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"B9D5FC02A1B40017\",\"heroIndex\":77,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"4EAF6430A2EA6A72\",\"heroIndex\":45,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"46B61563CA64FDBB\",\"heroIndex\":84,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"43455C6A52FCA644\",\"heroIndex\":76,\"battleIndex\":5},{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"CA695A0022844A00\",\"heroIndex\":87,\"battleIndex\":2}],\"artifacts\":[{\"owner\":{\"0\":\"54AB7B10EEC7F6D7\"},\"index\":5,\"level\":2,\"id\":\"51c1c5198bce4e9581055f380cda40fd\"},{\"owner\":{\"0\":\"B9D5FC02A1B40017\"},\"index\":9,\"level\":2,\"id\":\"dc0cefc16e2045a582782b19995d634c\"},{\"owner\":{\"auto\":\"4EAF6430A2EA6A72\"},\"index\":5,\"level\":0,\"id\":\"a832464240b8484484efdc63b5164bd2\"},{\"owner\":{\"0\":\"46B61563CA64FDBB\"},\"index\":4,\"level\":1,\"id\":\"a614d361ff1f4a55b400ecefb1c19b42\"},{\"owner\":{\"0\":\"43455C6A52FCA644\"},\"index\":5,\"level\":2,\"id\":\"f39439b182414e88ba004f0d330ab557\"},{\"owner\":{\"0\":\"CA695A0022844A00\"},\"index\":8,\"level\":3,\"id\":\"40fa424d514249b7915443f3b89b8263\"}],\"weapons\":{\"Sai\":\"54AB7B10EEC7F6D7\",\"Claw\":\"54AB7B10EEC7F6D7\",\"Pipe\":\"B9D5FC02A1B40017\",\"Bomb\":\"B9D5FC02A1B40017\",\"Knuckles\":\"46B61563CA64FDBB\",\"Shuriken\":\"46B61563CA64FDBB\",\"Nunchucks\":\"43455C6A52FCA644\",\"Katana\":\"43455C6A52FCA644\",\"Kunai\":\"CA695A0022844A00\",\"Knife\":\"CA695A0022844A00\",\"Bow\":\"CA695A0022844A00\"},\"weaponsLevels\":{\"Sai\":3,\"Claw\":1,\"Pipe\":4,\"Bomb\":3,\"Knuckles\":4,\"Shuriken\":3,\"Nunchucks\":4,\"Katana\":3,\"Kunai\":3,\"Knife\":4,\"Bow\":1},\"techboosts\":{\"54AB7B10EEC7F6D7\":[0.025,0.175,0,0],\"B9D5FC02A1B40017\":[0,0.15,0,0],\"4EAF6430A2EA6A72\":[0,0.15,0,0],\"46B61563CA64FDBB\":[0.025,0.175,0,0],\"43455C6A52FCA644\":[0.075,0.225,0,0],\"CA695A0022844A00\":[0.03,0.18,0,0]},\"techperks\":{\"54AB7B10EEC7F6D7\":[\"Faction0\",\"Generic0\"],\"B9D5FC02A1B40017\":[\"Faction0\",\"Generic0\"],\"4EAF6430A2EA6A72\":[\"Faction0\",\"Generic0\"],\"46B61563CA64FDBB\":[\"Faction0\",\"Generic0\"],\"43455C6A52FCA644\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"CA695A0022844A00\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"54AB7B10EEC7F6D7\":[],\"B9D5FC02A1B40017\":[],\"4EAF6430A2EA6A72\":[],\"46B61563CA64FDBB\":[],\"43455C6A52FCA644\":[],\"CA695A0022844A00\":[]}}},\"ReplayId\":\"455cd86c942846c5b23c41a9609a5933\"},{\"BattleResults\":{\"PvpData\":{\"myEloScore\":606,\"myEloDelta\":16,\"enemyEloScore\":569,\"enemyEloDelta\":-12},\"IsVictorious\":true,\"Version\":1},\"TimeStamp\":\"2025-04-22T23:57:17.040Z\",\"Profile\":{\"PlayFabId\":\"EB6AC2F85CC6418\",\"UserName\":\"ghhghggg\",\"XpLevel\":55,\"Position\":0,\"LastLogin\":\"2025-04-22T23:57:16.985Z\",\"ArenaPoints\":590,\"GuildId\":0,\"DefenseTeamPower\":36291,\"AttackTeamPower\":40092,\"AvatarIndex\":84,\"FriendCount\":20,\"TechnoPoints\":0,\"GuildBossDamageTotal\":0,\"StatValue\":0,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"76E3886BB25EB6B\",\"heroIndex\":79,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"183972E90FBB58F0\",\"heroIndex\":45,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"59E2D3D9EB3992D3\",\"heroIndex\":73,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"DF727874C0EE6316\",\"heroIndex\":32,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"A803D700538AA02\",\"heroIndex\":62,\"battleIndex\":2},{\"rank\":8,\"level\":180,\"ascension\":0,\"id\":\"37557DF92DECF2FD\",\"heroIndex\":84,\"battleIndex\":0}],\"artifacts\":[{\"owner\":{\"auto\":\"76E3886BB25EB6B\"},\"index\":7,\"level\":3,\"id\":\"0e43d56044ec42f18b757f8fc65ae719\"},{\"owner\":{\"auto\":\"59E2D3D9EB3992D3\"},\"index\":5,\"level\":3,\"id\":\"582cbaa1722343f4ad64ea3f0b8c5ad9\"},{\"owner\":{\"auto\":\"A803D700538AA02\"},\"index\":1,\"level\":1,\"id\":\"82ac095122724f9bbbff8e2896483d0d\"},{\"owner\":{\"auto\":\"37557DF92DECF2FD\"},\"index\":10,\"level\":3,\"id\":\"746b98d499ee43ea8cb47fdf972908e1\"}],\"weapons\":{\"Knife\":\"76E3886BB25EB6B\",\"Katana\":\"76E3886BB25EB6B\",\"Knuckles\":\"183972E90FBB58F0\",\"Pipe\":\"59E2D3D9EB3992D3\",\"Bomb\":\"59E2D3D9EB3992D3\",\"Sai\":\"A803D700538AA02\",\"Nunchucks\":\"37557DF92DECF2FD\",\"Shuriken\":\"37557DF92DECF2FD\"},\"weaponsLevels\":{\"Knife\":4,\"Katana\":3,\"Knuckles\":3,\"Pipe\":3,\"Bomb\":2,\"Sai\":3,\"Nunchucks\":4,\"Shuriken\":3},\"techboosts\":{\"76E3886BB25EB6B\":[0.09,0.24,0.005,0],\"183972E90FBB58F0\":[0.08,0.16,0,0],\"59E2D3D9EB3992D3\":[0,0.04,0,0],\"DF727874C0EE6316\":[0.09,0.24,0.005,0],\"A803D700538AA02\":[0.085,0.235,0,0],\"37557DF92DECF2FD\":[0.16,0.31,0.005,0]},\"techperks\":{\"76E3886BB25EB6B\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"183972E90FBB58F0\":[\"Generic0\",\"Generic1\"],\"DF727874C0EE6316\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"A803D700538AA02\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"37557DF92DECF2FD\":[\"Faction0\",\"Faction1\",\"Generic0\",\"Generic1\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"76E3886BB25EB6B\":[],\"183972E90FBB58F0\":[],\"59E2D3D9EB3992D3\":[],\"DF727874C0EE6316\":[],\"A803D700538AA02\":[],\"37557DF92DECF2FD\":[]}}},\"ReplayId\":\"90d502edb15e46cfa296b7fd150c6ef7\"}]"
+                },
+                "ArenaMatches": {
+                    "LastUpdated": "2025-04-23T01:21:13.339Z",
+                    "Permission": "Private",
+                    "Value": "[{\"PlayFabId\":\"DEBE601606839D9A\",\"UserName\":\"Corvus_9794\",\"XpLevel\":59,\"Position\":30272,\"LastLogin\":\"2024-01-24T09:52:44.004Z\",\"ArenaPoints\":516,\"GuildId\":0,\"DefenseTeamPower\":38951,\"AttackTeamPower\":40099,\"AvatarIndex\":8,\"FriendCount\":15,\"TechnoPoints\":211001480,\"GuildBossDamageTotal\":210000202,\"StatValue\":40099,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":7,\"level\":160,\"id\":\"B75F8A0AEA9415B2\",\"heroIndex\":59,\"battleIndex\":3},{\"rank\":7,\"level\":160,\"id\":\"37E01F1B093DDA20\",\"heroIndex\":67,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"id\":\"5851CD57B8793E1F\",\"heroIndex\":78,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"id\":\"5A5ED72FD9116585\",\"heroIndex\":47,\"battleIndex\":1},{\"rank\":8,\"level\":180,\"id\":\"FD13A83349CAEBFE\",\"heroIndex\":77,\"battleIndex\":0},{\"rank\":7,\"level\":160,\"id\":\"AE5F041FE79146C7\",\"heroIndex\":60,\"battleIndex\":2}],\"artifacts\":[{\"owner\":{\"0\":\"B75F8A0AEA9415B2\"},\"index\":14,\"level\":2,\"id\":\"574f37c3e20149c390e5c6421e359493\"},{\"owner\":{\"0\":\"37E01F1B093DDA20\"},\"index\":7,\"level\":3,\"id\":\"2fff6514c21041e6b4d422c06d6d7f9c\"},{\"owner\":{\"0\":\"5851CD57B8793E1F\"},\"index\":4,\"level\":3,\"id\":\"e9e22cda45c747afbb12bd97c1a1e593\"},{\"owner\":{\"0\":\"5A5ED72FD9116585\"},\"index\":5,\"level\":3,\"id\":\"d80f54931d92442eaa73f7538b3beb03\"},{\"owner\":{\"0\":\"FD13A83349CAEBFE\"},\"index\":6,\"level\":3,\"id\":\"9f0df005e3674f91bd7ed1f356bf8785\"},{\"owner\":{\"auto\":\"AE5F041FE79146C7\"},\"index\":5,\"level\":3,\"id\":\"7de0f8d0bfad47e58e929dd6552545f8\"}],\"weapons\":{\"Sai\":\"B75F8A0AEA9415B2\",\"Shuriken\":\"B75F8A0AEA9415B2\",\"Knife\":\"37E01F1B093DDA20\",\"Knuckles\":\"5A5ED72FD9116585\",\"Pipe\":\"FD13A83349CAEBFE\",\"Katana\":\"FD13A83349CAEBFE\",\"Nunchucks\":\"AE5F041FE79146C7\"},\"weaponsLevels\":{\"Sai\":5,\"Shuriken\":4,\"Knife\":4,\"Knuckles\":5,\"Pipe\":4,\"Katana\":4,\"Nunchucks\":4},\"techboosts\":{\"B75F8A0AEA9415B2\":[0.045,0.195,0,0],\"37E01F1B093DDA20\":[0.105,0.255,0,0],\"5851CD57B8793E1F\":[0.045,0.195,0,0],\"5A5ED72FD9116585\":[0.07,0.18,0,0],\"FD13A83349CAEBFE\":[0.14,0.29,0,0],\"AE5F041FE79146C7\":[0.07,0.17,0,0]},\"techperks\":{\"B75F8A0AEA9415B2\":[\"Faction0\",\"Generic0\"],\"37E01F1B093DDA20\":[\"Faction0\",\"Generic0\"],\"5851CD57B8793E1F\":[\"Faction0\",\"Generic0\"],\"5A5ED72FD9116585\":[\"Generic0\"],\"FD13A83349CAEBFE\":[\"Faction0\",\"Generic0\"],\"AE5F041FE79146C7\":[\"Faction0\"]},\"hardboosts\":{},\"hardperks\":{}}},{\"PlayFabId\":\"5A8BB2E127F6E263\",\"UserName\":\"GuerreroAztek\",\"XpLevel\":78,\"Position\":30256,\"LastLogin\":\"2023-06-19T00:17:03.318Z\",\"ArenaPoints\":441,\"GuildId\":0,\"DefenseTeamPower\":39811,\"AttackTeamPower\":40115,\"AvatarIndex\":75,\"FriendCount\":20,\"TechnoPoints\":1710000170,\"GuildBossDamageTotal\":0,\"StatValue\":40115,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"id\":\"456F97865C82B59A\",\"heroIndex\":70,\"battleIndex\":5},{\"rank\":7,\"level\":160,\"id\":\"84CB600FFBCC84C1\",\"heroIndex\":35,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"id\":\"651E0B994E29E1A3\",\"heroIndex\":74,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"id\":\"6FFA265F0BBE5351\",\"heroIndex\":66,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"id\":\"8DA08A6A217F0563\",\"heroIndex\":68,\"battleIndex\":2},{\"rank\":9,\"level\":200,\"id\":\"4095BEC3F7547A72\",\"heroIndex\":71,\"battleIndex\":0}],\"artifacts\":[{\"owner\":{\"0\":\"456F97865C82B59A\"},\"index\":4,\"level\":3,\"id\":\"02bca2efb1b94e68bde3b8ce0cf9a9f8\"},{\"owner\":{\"0\":\"84CB600FFBCC84C1\"},\"index\":4,\"level\":3,\"id\":\"08626ca2a2cf48499453406bf447f4d1\"},{\"owner\":{\"0\":\"651E0B994E29E1A3\"},\"index\":4,\"level\":3,\"id\":\"af540240fbc04b4aa690588be6bb248a\"},{\"owner\":{\"0\":\"6FFA265F0BBE5351\"},\"index\":4,\"level\":3,\"id\":\"68e56544a01d41d9a316413c0629b2eb\"},{\"owner\":{\"0\":\"8DA08A6A217F0563\"},\"index\":4,\"level\":3,\"id\":\"0a193d37822945f3ba6975f5680788c0\"},{\"owner\":{\"0\":\"4095BEC3F7547A72\"},\"index\":12,\"level\":4,\"id\":\"95a9a022f4d441379059e2662d7926ba\"}],\"weapons\":{\"Knuckles\":\"456F97865C82B59A\",\"Pipe\":\"84CB600FFBCC84C1\",\"Bomb\":\"84CB600FFBCC84C1\",\"Sai\":\"651E0B994E29E1A3\",\"Katana\":\"6FFA265F0BBE5351\",\"Knife\":\"8DA08A6A217F0563\",\"Nunchucks\":\"4095BEC3F7547A72\",\"Shuriken\":\"4095BEC3F7547A72\"},\"weaponsLevels\":{\"Knuckles\":6,\"Pipe\":5,\"Bomb\":4,\"Sai\":5,\"Katana\":5,\"Knife\":6,\"Nunchucks\":5,\"Shuriken\":5},\"techperks\":{\"456F97865C82B59A\":[\"Faction0\",\"Generic0\"],\"84CB600FFBCC84C1\":[\"Faction0\",\"Generic0\"],\"651E0B994E29E1A3\":[\"Faction0\",\"Generic0\"],\"6FFA265F0BBE5351\":[\"Faction0\",\"Generic0\"],\"8DA08A6A217F0563\":[\"Faction0\",\"Generic0\"],\"4095BEC3F7547A72\":[\"Faction0\",\"Generic0\"]}}},{\"PlayFabId\":\"743DB97E72460ED8\",\"UserName\":\"KoRuRin\",\"XpLevel\":68,\"Position\":30220,\"LastLogin\":\"2023-03-20T15:35:23.568Z\",\"ArenaPoints\":442,\"GuildId\":0,\"DefenseTeamPower\":0,\"AttackTeamPower\":40155,\"AvatarIndex\":73,\"FriendCount\":20,\"TechnoPoints\":1670000300,\"GuildBossDamageTotal\":0,\"StatValue\":40155,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"id\":\"D52D4A6BB58F94FE\",\"heroIndex\":43,\"battleIndex\":5},{\"rank\":7,\"level\":160,\"id\":\"87EEB834212F591D\",\"heroIndex\":61,\"battleIndex\":1},{\"rank\":6,\"level\":140,\"id\":\"73C98C322A9AC906\",\"heroIndex\":46,\"battleIndex\":3},{\"rank\":7,\"level\":160,\"id\":\"D4D1173BA2412F51\",\"heroIndex\":17,\"battleIndex\":4},{\"rank\":7,\"level\":160,\"id\":\"74CF8E675812C46B\",\"heroIndex\":15,\"battleIndex\":2},{\"rank\":9,\"level\":200,\"id\":\"2796A29C297F4D0C\",\"heroIndex\":63,\"battleIndex\":0}],\"artifacts\":[{\"owner\":\"D52D4A6BB58F94FE\",\"index\":4,\"level\":3,\"id\":\"ada03376c38e4f19baaf299dae9bd206\"},{\"owner\":\"87EEB834212F591D\",\"index\":5,\"level\":3,\"id\":\"e656cf83eb234e8c865e32a1137dacb3\"},{\"owner\":\"73C98C322A9AC906\",\"index\":5,\"level\":3,\"id\":\"e35b5a736f274cdaa01954380e6cf63c\"},{\"owner\":\"D4D1173BA2412F51\",\"index\":5,\"level\":3,\"id\":\"81bbec90bd674dd0841cc9defe94bafc\"},{\"owner\":\"74CF8E675812C46B\",\"index\":5,\"level\":3,\"id\":\"e36e9a6afa5c40febfc5917275cb572a\"},{\"owner\":\"2796A29C297F4D0C\",\"index\":6,\"level\":3,\"id\":\"37d0fca4d5e64266a83813bac54c7cab\"}],\"weapons\":{\"Knife\":\"D52D4A6BB58F94FE\",\"Bomb\":\"D52D4A6BB58F94FE\",\"Nunchucks\":\"87EEB834212F591D\",\"Sai\":\"D4D1173BA2412F51\",\"Shuriken\":\"74CF8E675812C46B\",\"Pipe\":\"74CF8E675812C46B\",\"Knuckles\":\"2796A29C297F4D0C\",\"Katana\":\"2796A29C297F4D0C\"},\"techperks\":{\"D52D4A6BB58F94FE\":[\"Faction0\",\"Generic0\"],\"87EEB834212F591D\":[\"Faction0\",\"Generic0\"],\"73C98C322A9AC906\":[\"Faction0\",\"Generic0\"],\"D4D1173BA2412F51\":[\"Faction0\",\"Generic0\"],\"74CF8E675812C46B\":[\"Faction0\",\"Generic0\"],\"2796A29C297F4D0C\":[\"Faction0\",\"Faction1\",\"Generic0\",\"Generic1\"]}}},{\"PlayFabId\":\"AFCA69E6F208A346\",\"UserName\":\"Silxx\",\"XpLevel\":62,\"Position\":33161,\"LastLogin\":\"2024-10-18T13:22:31.093Z\",\"ArenaPoints\":570,\"GuildId\":0,\"DefenseTeamPower\":45306,\"AttackTeamPower\":45306,\"AvatarIndex\":48,\"FriendCount\":1,\"TechnoPoints\":183000190,\"GuildBossDamageTotal\":216000012,\"StatValue\":570,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":9,\"level\":200,\"ascension\":0,\"id\":\"33805C9C3EE1E447\",\"heroIndex\":34,\"battleIndex\":3},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"9D2BC3031BCDE097\",\"heroIndex\":68,\"battleIndex\":1},{\"rank\":9,\"level\":200,\"ascension\":0,\"id\":\"3AA54D505CD19B54\",\"heroIndex\":72,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"A3E1EB27679BD50C\",\"heroIndex\":76,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"58E95DFB44346C96\",\"heroIndex\":52,\"battleIndex\":4},{\"rank\":4,\"level\":100,\"ascension\":0,\"id\":\"30383618529BC389\",\"heroIndex\":57,\"battleIndex\":5}],\"artifacts\":[{\"owner\":{\"0\":\"33805C9C3EE1E447\"},\"index\":15,\"level\":4,\"id\":\"6e65588a99b4480db9ff39fdeafad97b\"},{\"owner\":{\"0\":\"9D2BC3031BCDE097\"},\"index\":6,\"level\":3,\"id\":\"63995d7ed4ac48ba89e7f5e17a352e92\"},{\"owner\":{\"0\":\"3AA54D505CD19B54\"},\"index\":9,\"level\":4,\"id\":\"4295c5e5b69e48f68779406d8dfc5d7c\"},{\"owner\":{\"0\":\"A3E1EB27679BD50C\"},\"index\":12,\"level\":4,\"id\":\"1aa0e4f178014677976f4b1b4922931c\"},{\"owner\":{\"0\":\"58E95DFB44346C96\"},\"index\":6,\"level\":2,\"id\":\"c9ee11c3d225445b88c98e6757f670ae\"},{\"owner\":{\"auto\":\"30383618529BC389\"},\"index\":9,\"level\":0,\"id\":\"c3db5fe99f6749179b7be663edb4c651\"}],\"weapons\":{\"Nunchucks\":\"33805C9C3EE1E447\",\"Shuriken\":\"33805C9C3EE1E447\",\"Knuckles\":\"9D2BC3031BCDE097\",\"Pipe\":\"3AA54D505CD19B54\",\"Sai\":\"A3E1EB27679BD50C\",\"Knife\":\"30383618529BC389\"},\"weaponsLevels\":{\"Nunchucks\":5,\"Shuriken\":4,\"Knuckles\":5,\"Pipe\":5,\"Sai\":6,\"Knife\":5},\"techboosts\":{\"33805C9C3EE1E447\":[0.09,0.24,0,0],\"9D2BC3031BCDE097\":[0.205,0.355,0.025,0],\"3AA54D505CD19B54\":[0.115,0.265,0.025,0],\"A3E1EB27679BD50C\":[0.1,0.225,0.025,0],\"58E95DFB44346C96\":[0,0.095,0,0],\"30383618529BC389\":[0.05,0.175,0,0]},\"techperks\":{\"33805C9C3EE1E447\":[\"Faction0\",\"Generic0\"],\"9D2BC3031BCDE097\":[\"Faction0\",\"Faction1\",\"Generic0\",\"Generic1\"],\"3AA54D505CD19B54\":[\"Faction0\",\"Faction1\",\"Generic0\"],\"A3E1EB27679BD50C\":[\"Faction0\",\"Faction1\"],\"30383618529BC389\":[\"Faction0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"33805C9C3EE1E447\":[],\"9D2BC3031BCDE097\":[],\"3AA54D505CD19B54\":[],\"A3E1EB27679BD50C\":[],\"58E95DFB44346C96\":[],\"30383618529BC389\":[]}}},{\"PlayFabId\":\"13D69A941A3E4338\",\"UserName\":\"PWH\",\"XpLevel\":69,\"Position\":30239,\"LastLogin\":\"2023-09-27T06:53:32.423Z\",\"ArenaPoints\":532,\"GuildId\":0,\"DefenseTeamPower\":40130,\"AttackTeamPower\":40130,\"AvatarIndex\":75,\"FriendCount\":20,\"TechnoPoints\":195002060,\"GuildBossDamageTotal\":196000012,\"StatValue\":40130,\"ClubSmashPoints\":0,\"ClubSmashDamage\":0,\"ClubSmashDamageTotal\":0,\"FriendTag\":\"None\",\"Team\":{\"heroes\":[{\"rank\":6,\"level\":140,\"id\":\"3F89E18B11715362\",\"heroIndex\":66,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"id\":\"986D3951AB140303\",\"heroIndex\":44,\"battleIndex\":0},{\"rank\":8,\"level\":180,\"id\":\"C1226AE5735C0DC1\",\"heroIndex\":57,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"id\":\"FDAE7CFC0120401C\",\"heroIndex\":78,\"battleIndex\":5},{\"rank\":6,\"level\":140,\"id\":\"AE873630CD9D9BAE\",\"heroIndex\":77,\"battleIndex\":1},{\"rank\":8,\"level\":180,\"id\":\"844078266EA3639C\",\"heroIndex\":75,\"battleIndex\":3}],\"artifacts\":[{\"owner\":{\"0\":\"3F89E18B11715362\"},\"index\":6,\"level\":3,\"id\":\"7d3ca49c117d461d8968ee23d53c1ef0\"},{\"owner\":{\"0\":\"986D3951AB140303\"},\"index\":4,\"level\":1,\"id\":\"7aa269988cb14fde9dbf609113737e7d\"},{\"owner\":{\"0\":\"C1226AE5735C0DC1\"},\"index\":13,\"level\":4,\"id\":\"be54aa78ed814fe7823047d11ec71f87\"},{\"owner\":{\"0\":\"FDAE7CFC0120401C\"},\"index\":8,\"level\":2,\"id\":\"8f96700f4d6a4f19aedb07a07d503c2b\"},{\"owner\":{\"0\":\"AE873630CD9D9BAE\"},\"index\":12,\"level\":2,\"id\":\"b90de0d38fb540ffb0cff69180f7b8f2\"},{\"owner\":{\"0\":\"844078266EA3639C\"},\"index\":9,\"level\":3,\"id\":\"3479dc3298aa437283b60edf78bb88de\"}],\"weapons\":{\"Knuckles\":\"3F89E18B11715362\",\"Bomb\":\"3F89E18B11715362\",\"Nunchucks\":\"986D3951AB140303\",\"Kunai\":\"986D3951AB140303\",\"Sai\":\"C1226AE5735C0DC1\",\"Shuriken\":\"C1226AE5735C0DC1\",\"Knife\":\"AE873630CD9D9BAE\",\"Pipe\":\"844078266EA3639C\",\"Katana\":\"844078266EA3639C\"},\"weaponsLevels\":{\"Knuckles\":4,\"Bomb\":2,\"Nunchucks\":4,\"Kunai\":1,\"Sai\":5,\"Shuriken\":3,\"Knife\":4,\"Pipe\":4,\"Katana\":2},\"techperks\":{\"3F89E18B11715362\":[\"Faction0\",\"Generic0\"],\"986D3951AB140303\":[\"Generic0\"],\"C1226AE5735C0DC1\":[\"Faction0\",\"Generic0\"],\"FDAE7CFC0120401C\":[\"Faction0\",\"Generic0\",\"Generic1\"],\"844078266EA3639C\":[\"Faction0\",\"Faction1\",\"Generic0\",\"Generic1\"]}}}]"
+                },
+                "AttackTeamData": {
+                    "LastUpdated": "2025-03-21T14:26:43.136Z",
+                    "Permission": "Private",
+                    "Value": "{\"heroes\":[{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"239EFC845C0879D9\",\"heroIndex\":87,\"battleIndex\":0},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"3F3295F39886FBA4\",\"heroIndex\":79,\"battleIndex\":1},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"5A0AEBFAF3CCD145\",\"heroIndex\":67,\"battleIndex\":2},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"15C57C9DFC92282C\",\"heroIndex\":83,\"battleIndex\":3},{\"rank\":7,\"level\":160,\"ascension\":0,\"id\":\"5CFB5AFDB2724C9A\",\"heroIndex\":80,\"battleIndex\":4},{\"rank\":6,\"level\":140,\"ascension\":0,\"id\":\"9EE118605D50931B\",\"heroIndex\":86,\"battleIndex\":5}],\"artifacts\":[{\"owner\":{\"0\":\"239EFC845C0879D9\"},\"index\":5,\"level\":3,\"id\":\"6ddfd818725240f680fb52e560a6cadf\"},{\"owner\":{\"auto\":\"5A0AEBFAF3CCD145\"},\"index\":8,\"level\":3,\"id\":\"e6942d47d48d47f6a6572ded73248213\"},{\"owner\":{\"auto\":\"15C57C9DFC92282C\"},\"index\":1,\"level\":0,\"id\":\"ac8ea2694a0649328b2dcb8cea863b40\"},{\"owner\":{\"auto\":\"5CFB5AFDB2724C9A\"},\"index\":12,\"level\":4,\"id\":\"5e1f6b3170074db396c7a0fe5058563a\"},{\"owner\":{\"0\":\"9EE118605D50931B\"},\"index\":5,\"level\":3,\"id\":\"ccd66e83b3904e22ac18f34a825a731e\"}],\"weapons\":{\"Pipe\":\"239EFC845C0879D9\",\"Nunchucks\":\"5A0AEBFAF3CCD145\",\"Sai\":\"15C57C9DFC92282C\",\"Knife\":\"5CFB5AFDB2724C9A\",\"Shuriken\":\"5CFB5AFDB2724C9A\",\"Knuckles\":\"9EE118605D50931B\",\"Katana\":\"9EE118605D50931B\"},\"weaponsLevels\":{\"Pipe\":3,\"Nunchucks\":3,\"Sai\":4,\"Knife\":4,\"Shuriken\":4,\"Knuckles\":5,\"Katana\":4},\"techboosts\":{\"239EFC845C0879D9\":[0.005,0.155,0,0],\"3F3295F39886FBA4\":[0.005,0.155,0,0],\"5A0AEBFAF3CCD145\":[0.025,0.175,0,0],\"15C57C9DFC92282C\":[0,0.15,0,0],\"5CFB5AFDB2724C9A\":[0.025,0.175,0,0],\"9EE118605D50931B\":[0.025,0.175,0,0]},\"techperks\":{\"239EFC845C0879D9\":[\"Faction0\",\"Generic0\"],\"3F3295F39886FBA4\":[\"Faction0\",\"Generic0\"],\"5A0AEBFAF3CCD145\":[\"Faction0\",\"Generic0\"],\"15C57C9DFC92282C\":[\"Faction0\",\"Generic0\"],\"5CFB5AFDB2724C9A\":[\"Faction0\",\"Generic0\"],\"9EE118605D50931B\":[\"Faction0\",\"Generic0\"]},\"hardboosts\":{},\"hardperks\":{},\"ascensionPerks\":{\"239EFC845C0879D9\":[],\"3F3295F39886FBA4\":[],\"5A0AEBFAF3CCD145\":[],\"15C57C9DFC92282C\":[],\"5CFB5AFDB2724C9A\":[],\"9EE118605D50931B\":[]}}"
+                },
+                "AvatarsData": {
+                    "LastUpdated": "2025-04-21T10:06:20.606Z",
+                    "Permission": "Private",
+                    "Value": "[3,1,17,9,8,25,7,0,11,13,22,15,23,14,30,18,6,20,10,16,5,2,31,21,4,28,19,26,12,41,38,1023,79,27,80,24,29,33,1015,83,77,53,1025,1017,1041,1012,82,85,68,67,57,1020,87,49,74,1016,1080,1013,1027,48,86,1086,1019,42,1087,1085,1024,62,1067,44,1022,1042,76,54,1026,46,1077,1038,1021,34,1018,45,1079,1031,1029,1076,59,61,1045,1083,69,50,81,1049,63,1034,64,1063,1074,1061,1057,1059,1014,36,65,1069,1028,72,1081,1054,1036,88,1046,1030,89,1062,1050,71,51,1089,58,39,75,1071,1048,37,66,84,1039,60]"
+                },
+                "BattleshipBoard_Internal": {
+                    "LastUpdated": "2025-04-22T16:31:43.504Z",
+                    "Permission": "Private",
+                    "Value": "[[8,0],[50,42,34],[9,10,11],[40,32,24,16],[21,29,37,45]]"
+                },
+                "BountiesDataNew": {
+                    "LastUpdated": "2024-08-02T11:43:54.324Z",
+                    "Permission": "Private",
+                    "Value": "{\"MissionClaims\":[15,5,10,0,13,6,2,1,12,11,16,3,4,7,14,17,8,9,19,18],\"XpClaims\":[0,1,2,3,4,5,6],\"CampaignClaims\":[0,1,2,3,4,5,6],\"ClaimedFinal\":[0,1,2]}"
+                },
+                "ClubSmashLocal": {
+                    "LastUpdated": "2025-04-16T04:26:02.133Z",
+                    "Permission": "Private",
+                    "Value": "{\"WeekId\":277,\"Defeats\":0,\"Refreshies\":5,\"BossTickets\":0,\"SmashTickets\":0,\"MilestoneBoss\":0,\"MilestoneLocal\":0,\"BossAttackBonus\":0,\"PurchasedSmashTickets\":0,\"CollectionDailyTickets\":0,\"CollectionDailyTicketsBoss\":0,\"DailyResultCollections\":[],\"_clubSmashPointsProxy\":0,\"_smashTotalPointsProxy\":0,\"Wins\":[0,0,0,0]}"
+                },
+                "CollectionData": {
+                    "LastUpdated": "2025-04-23T01:21:17.24Z",
+                    "Permission": "Private",
+                    "Value": "{\"CampaignAchievement\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"ArenaMilestone\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"SewerAchievement\":[0,1,2,3,4,5,6,7,8,9,10,11],\"DailySale\":[0,1,2,3,4,5,6],\"HallOfFame\":[0],\"TechnoMilestone\":[0],\"GlobeShop1\":[6]}"
+                },
+                "DailyGiftData": {
+                    "LastUpdated": "2025-04-23T01:19:56.836Z",
+                    "Permission": "Private",
+                    "Value": "{\"DayStreak\":114,\"EventWelcomeLastCollected\":278,\"EventDailyGiftRollTomorrow\":2,\"EventDailyGiftRoll\":5,\"EventDailyGiftLastCollected\":1939,\"DailyLast\":114,\"DailyMilestone\":7,\"XpMilestone\":2}"
+                },
+                "DailyGrants": {
+                    "LastUpdated": "2025-04-23T01:20:43.384Z",
+                    "Permission": "Private",
+                    "Value": "{\"TavernCollections\":\"[6,5,4,0,1,3,2]\",\"VipDailyCollection\":\"2025-04-23T01:20:16.652Z\",\"DailySummon\":\"2025-04-23T01:20:27.776Z\",\"DailyGuildRoll\":\"2025-04-23T01:20:43.365Z\"}"
+                },
+                "DragonsData": {
+                    "LastUpdated": "2025-04-22T16:34:43.612Z",
+                    "Permission": "Private",
+                    "Value": "[{\"owner\":{\"0\":\"239EFC845C0879D9\"},\"index\":5,\"level\":3,\"id\":\"6ddfd818725240f680fb52e560a6cadf\"},{\"owner\":{\"0\":\"9EE118605D50931B\"},\"index\":5,\"level\":3,\"id\":\"ccd66e83b3904e22ac18f34a825a731e\"},{\"owner\":{},\"index\":12,\"level\":4,\"id\":\"5e1f6b3170074db396c7a0fe5058563a\"},{\"owner\":{},\"index\":8,\"level\":3,\"id\":\"e6942d47d48d47f6a6572ded73248213\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"ac8ea2694a0649328b2dcb8cea863b40\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"0af09c1450e740778aaf3a815432e055\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"ee75f52dda034d238c382de150643c5c\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"1ae2a95cfc1449d99a4b80b9a519b65e\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"a8f9687f6db44905b3082d59cdb1ba06\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"a43f7a23ab874530b10be83687bf167a\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"0575e3fa74f94ab4a21154a5c601bc73\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"9f3178a72cac4fb1921c032841e1550e\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"c22bc6f67df04b40a01dd2a8a9572835\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"dad0e25854304c55937cce32ee51ff58\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"40f12caad57b4888b18b73a2b9811629\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"cb27379f989b4fefa6ea63a9ec377848\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"93bbe10dc9d84e1083fc7ed8bc77d3d2\"},{\"owner\":{},\"index\":5,\"level\":0,\"id\":\"eb90cf3c3c884868957b28d2ad14b6a5\"},{\"owner\":{},\"index\":4,\"level\":0,\"id\":\"c64be0270a524830a0eeab70f14c0ef1\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"02963f7cd97342ebad4271a8895263f5\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"f83fd3ef1ac44f239326a57efe117a25\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"4ed46cc7935c44b58e7e3dea393d014c\"},{\"owner\":{},\"index\":5,\"level\":0,\"id\":\"0135e5c6c9e8401e9fa3ddd60c5ac2a1\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"962baa603189450a827a96be8938eb15\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"51f16e9eb63948709f7811070f7afa35\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"1397e988771444cabfdcb0143ade4d08\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"b36409b7e2a349aaa65aabce789cde1f\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"a9427649c05e4d7386845ebd79919298\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"e7f559f9bd0247fea94e6d64838e89d3\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"cd39c17b56804da79a3ad275b9d3eea4\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"a6a40b3364844d29b4cf96d99fe4cfcf\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"23c9d4074e0e4777973919fd3997fbd1\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"4e64fecea2fb480bb2a9c10a4e48febe\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"4f9094c3f62a4587b3825f8ae99b079c\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"1f555afa7b9d4f3ea0321d5e8ec6eb36\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"b6fbeabfae524f6b9da7cdb5277a5b1a\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"8a26dd8b09924233a8be8f70ef8e77ed\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"2e135ca25bff4e9884522c811c58190e\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"e8effc9048d641a3b1024c21e5b63a50\"},{\"owner\":{},\"index\":2,\"level\":0,\"id\":\"c22c38bbef43461289cc3d04fce44e62\"},{\"owner\":{},\"index\":5,\"level\":0,\"id\":\"bdcf16d369144ae9943d32c0ac8973df\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"efae8db5546d41818b882193b650d837\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"40006b6ce9024a66a5c6caaa9d6474eb\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"54c8c82a074642c0944fda25dfc8272c\"},{\"owner\":{},\"index\":5,\"level\":0,\"id\":\"5ddd1ae1ddd34bfb995512f14579acbf\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"9f45b7da13ba4f1891193aeca6f64ecc\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"db182070c5d446918a0537cf85ec2534\"},{\"owner\":{},\"index\":3,\"level\":0,\"id\":\"a0d18f3b7f0d486ca30646f081875de2\"},{\"owner\":{},\"index\":1,\"level\":0,\"id\":\"092a733639b443eeb9025b17fbb4c56e\"},{\"owner\":{},\"index\":0,\"level\":0,\"id\":\"132aa65e8a9044c5bf99961eca92930a\"}]"
+                },
+                "EventsData": {
+                    "LastUpdated": "2025-04-23T01:22:23.392Z",
+                    "Permission": "Private",
+                    "Value": "{\"MonthlyMiscArena\":{\"StartedWith\":109,\"EndingWeekId\":278,\"Collections\":[]},\"MonthlyMiscFusion\":{\"StartedWith\":188,\"EndingWeekId\":278,\"Collections\":[0,1]},\"MonthlyMiscShops\":{\"StartedWith\":14379,\"EndingWeekId\":278,\"Collections\":[0,1,2,3]},\"MonthlyMiscTavern4Stars\":{\"StartedWith\":39,\"EndingWeekId\":278,\"Collections\":[0,1,2,3]},\"MonthlyMiscTavern5Stars\":{\"StartedWith\":9,\"EndingWeekId\":278,\"Collections\":[0]},\"MonthlyMiscAll\":{\"StartedWith\":93,\"EndingWeekId\":278,\"Collections\":[0,1]},\"MonthlyOrbs\":{\"StartedWith\":256,\"EndingWeekId\":279,\"Collections\":[1,0,2]},\"MonthlyPokerChips\":{\"StartedWith\":2052,\"EndingWeekId\":280,\"Collections\":[6,5,4,3,2,1,0,7]},\"MonthlySummons\":{\"StartedWith\":1152,\"EndingWeekId\":281,\"Collections\":[]},\"BiWeeklyCard\":{\"StartedWith\":113,\"EndingWeekId\":279,\"Collections\":[0]},\"OneTimeOnlyCustomSale\":{\"StartedWith\":113,\"EndingWeekId\":278,\"Collections\":[]},\"NewCurrencyDailies\":{\"StartedWith\":113,\"EndingWeekId\":278,\"Collections\":[2,1,0],\"ExtraData\":{\"Quests\":[{\"Type\":6,\"Requirement\":277,\"StartedWith\":276},{\"Type\":2,\"Requirement\":1155,\"StartedWith\":1152},{\"Type\":1,\"Requirement\":367955,\"StartedWith\":367455},{\"Type\":4,\"Requirement\":341,\"StartedWith\":338}],\"EventBounties\":3,\"EventBountiesMilestone\":1}},\"ValuePackageMisc\":{\"StartedWith\":113,\"EndingWeekId\":278,\"Collections\":[]}}"
+                },
+                "FriendsData": {
+                    "LastUpdated": "2025-04-23T01:25:36.231Z",
+                    "Permission": "Private",
+                    "Value": "{\"CurrentWeek\":278,\"Searchees\":[{\"PlayFabId\":\"B727EED78C251229\",\"UserName\":\"lipwiks\",\"XpLevel\":43,\"Position\":355,\"LastLogin\":\"2025-04-23T01:18:46.060Z\",\"ArenaPoints\":318,\"AttackTeamPower\":26152,\"AvatarIndex\":55,\"StatValue\":2792238,\"FriendCount\":19,\"FriendTag\":\"None\"},{\"PlayFabId\":\"BFD8BD2923FB17C7\",\"UserName\":\"Unlucky666\",\"XpLevel\":143,\"Position\":356,\"LastLogin\":\"2025-04-23T01:18:05.779Z\",\"ArenaPoints\":1609,\"AttackTeamPower\":180806,\"AvatarIndex\":66,\"StatValue\":2792238,\"FriendCount\":19,\"FriendTag\":\"None\"},{\"PlayFabId\":\"D022C82F3C4D14E6\",\"UserName\":\"Tester_8037\",\"XpLevel\":63,\"Position\":359,\"LastLogin\":\"2025-04-23T01:18:09.739Z\",\"ArenaPoints\":558,\"AttackTeamPower\":38296,\"AvatarIndex\":76,\"StatValue\":2792238,\"FriendCount\":0,\"FriendTag\":\"None\"},{\"PlayFabId\":\"75F588444997295B\",\"UserName\":\"Keliante\",\"XpLevel\":37,\"Position\":374,\"LastLogin\":\"2025-04-22T19:53:14.409Z\",\"ArenaPoints\":292,\"AttackTeamPower\":16204,\"AvatarIndex\":3,\"StatValue\":2792237,\"FriendCount\":10,\"FriendTag\":\"None\"},{\"PlayFabId\":\"497B38B6728AC5F3\",\"UserName\":\"Titan_160\",\"XpLevel\":39,\"Position\":381,\"LastLogin\":\"2025-04-23T01:17:33.082Z\",\"ArenaPoints\":313,\"AttackTeamPower\":20540,\"AvatarIndex\":91,\"StatValue\":2792237,\"FriendCount\":10,\"FriendTag\":\"None\"},{\"PlayFabId\":\"7A50AF65F6F280C\",\"UserName\":\"ItsDarck\",\"XpLevel\":36,\"Position\":393,\"LastLogin\":\"2025-04-23T01:17:10.696Z\",\"ArenaPoints\":299,\"AttackTeamPower\":16737,\"AvatarIndex\":90,\"StatValue\":2792237,\"FriendCount\":6,\"FriendTag\":\"None\"},{\"PlayFabId\":\"6ED9F2253A42C57\",\"UserName\":\"PotogusDAce\",\"XpLevel\":320,\"Position\":394,\"LastLogin\":\"2025-04-23T01:17:35.704Z\",\"ArenaPoints\":2265,\"AttackTeamPower\":240733,\"AvatarIndex\":89,\"StatValue\":2792237,\"FriendCount\":19,\"FriendTag\":\"None\"},{\"PlayFabId\":\"F32ED5937621BCFC\",\"UserName\":\"CHL_FAIXA\",\"XpLevel\":326,\"Position\":396,\"LastLogin\":\"2025-04-23T01:17:39.861Z\",\"ArenaPoints\":2882,\"AttackTeamPower\":235319,\"AvatarIndex\":17,\"StatValue\":2792237,\"FriendCount\":19,\"FriendTag\":\"None\"}],\"CollectionFriends\":null}"
+                },
+                "GuildAchievements": {
+                    "LastUpdated": "2025-04-19T08:22:13.172Z",
+                    "Permission": "Private",
+                    "Value": "{\"Best_GuildSoloDamage\":14,\"Guild_Defeat\":8,\"Guild_SoloDefeat\":17,\"Guild_SoloSpawn\":7,\"Guild_Damage\":8,\"Count_GuildRolls\":16,\"Guild_Slayer\":5,\"Guild_MVP\":3}"
+                },
+                "GuildSoloBoss": {
+                    "LastUpdated": "2025-04-23T01:17:36.158Z",
+                    "Permission": "Private",
+                    "Value": "{\"hp\":600000,\"hpCap\":600000,\"weekId\":278,\"level\":0,\"typeIndex\":0,\"result\":{\"hp\":600000,\"hpCap\":600000,\"weekId\":276,\"level\":0,\"typeIndex\":1,\"minionIndex\":6,\"soloMilestoneCollection\":0,\"bossMilestoneCollection\":4,\"purchaseIndex\":0},\"minionIndex\":5,\"soloMilestoneCollection\":0,\"bossMilestoneCollection\":0,\"purchaseIndex\":0,\"collectedBosses\":[]}"
+                },
+                "HallOfFame": {
+                    "LastUpdated": "2025-04-16T04:26:02.257Z",
+                    "Permission": "Private",
+                    "Value": "{\"Arena\":18077,\"Slots\":9897,\"SoloBoss\":9628,\"Monopoly\":3577,\"TechnoArena\":17234,\"CarSmash\":7043,\"Battleship\":3529,\"GuildBoss\":12692}"
+                },
+                "HeroCardData": {
+                    "LastUpdated": "2025-04-16T04:31:04.822Z",
+                    "Permission": "Private",
+                    "Value": "[87,90,44,76]"
+                },
+                "HeroSlotsData": {
+                    "LastUpdated": "2025-04-17T07:41:53.359Z",
+                    "Permission": "Private",
+                    "Value": "{\"Slots\":210,\"Purchases\":11}"
+                },
+                "HourlyGiftData": {
+                    "LastUpdated": "2025-04-23T01:20:56.021Z",
+                    "Permission": "Private",
+                    "Value": "{\"Streak\":153,\"CollectTime\":\"2025-04-23T07:20:56.049Z\"}"
+                },
+                "KittyRolls": {
+                    "LastUpdated": "2025-04-23T01:24:11.367Z",
+                    "Permission": "Private",
+                    "Value": "{\"RecruitShardsBlue\":[22,19,19,15,19,25,15,25,13,22,20,16,21,13,27,17,23,14,25,28,23,21,25,29,30,21,14,15,31,20,28,24,28,22,16,17,22,18,19,20,23,14,24,19,20,25,19,30,19,14],\"Tavern\":[100,107,0,100,0,6,8,0,106,100,0,304,7,108,8,8,0,0,7,0,0,200,8,8,303,7,7,100,6,8,0,7,6,106,6,0,8,6,300,8,7,8,0,0,8,0,0,7,6,0,106,106,7,106,107,0,107,106,108,6,6,7,100,201,100,6,6,108,8,300,208,100,106,209,107,8,209,100,6,0,8,209,0,200,6,200,203,0,107,203,8,0,8,100,7,0,108,8,7,7],\"DojoSpin\":[4,4,4,6,1,9,2,0,4,4,4,13,4,4,0,0,4,4,4,4,7,2,6,7,1,7,4,4,4,4,2,0,4,6,7,4,4,4,4,6,0,2,1,4,6,7,2,1,2,4,7,4,1,1,6,0,0,0,4,0,1,2,4,7,2,4,9,0,3,6,2,4,6,7,7,7,0,2,13,7,0,1,4,7,2,2,0,7,7,13,4,1,7,2,8,1,0,5,6,0],\"CasinoSpin\":[0,2,2,2,3,2,8,2,0,1,3,0,0,0,0,0,0,0,3,8,3,4,2,2,2,2,3,4,4,1,0,2,0,2,1,3,8,0,0,8,8,2,3,3,0,3,5,1,0,3,2,3,2,0,9,4,8,3,3,1,0,4,2,8,4,3,0,0,2,2,3,8,0,2,0,3,1,2,0,3,0,4,0,0,1,1,0,0,4,2,2,1,1,2,0,0,3,0,4,3],\"EventMonopoly\":[4,7,4,21,10,26,52,28,52,52,7,9,30,23,56,28,1,32,27,37,27,52,57,11,12,47,45,29,44,44,11,2,24,49,24,45,26,42,32,27,59,12,52,10,17,31,55,56,5,42],\"EventMonopolyCave\":[7,3,0,6,0],\"Materials\":[7,4,0,13,4,2,1,8,7,4,5,7,0,5,6,0,5,10,4,3,5,8,5,4,3,4,0,1,8,7,7,3,13,3,12,4,8,0,4,4,3,5,1,0,13,8,4,6,12,5],\"ArtifactsPurple\":[15,8,8,7,8,6,6,6,9,9],\"ArtifactsBlue\":[1,3,2,1,2,5,3,2,0,1,2,1,3,1,1,2,4,1,1,1,0,1,3,2,3,4,3,2,0,3,0,1,1,2,5,2,4,0,3,0,2,1,0,1,2,1,2,3,2,0],\"MutagenRolls\":[123001,310206,231003,132003,321008,201303,302105,230106,23105,302101,302104,120301,120304,102302,31215,230102,31206,310205,231001,102303,13202,302102,302110,21305,132002,31210,231002,201303,310202,312004,123003,130206,231012,130202,103201,21302,12303,120302,13205,310201,301207,12304,23105,12305,31210,310201,102301,12305,12307,120307,201303,12303,320102,210301,203108,123004,32104,231004,130201,21304,132001,320102,13204,310201,23101,23102,301204,210303,210305,32102,21305,21301,32101,12306,210303,132003,32101,132001,32106,102303,120309,32111,203103,203104,123013,123001,213003,310207,103203,23101,130211,132004,31202,320103,210306,31204,130202,31203,321009,320105],\"SuperMutagenRolls\":[321011,321010,102310,102312,231010,103211,102310,210310,120313,102311,120311,32110,21311,203113,213011,302113,123010,213013,123011,13213,23110,132010,320110,12312,301211,203110,23113,210313,123012,312013,301210,12310,312014,231011,12310,302112,301212,130210,210311,23113,12311,32110,301211,31211,130213,130213,132010,320112,12310,31210],\"SlotsSpins\":[541523412,34423143,503142241,235240324,245124132,341231423,420143301,534013203,140245034,15420023,235430410,42120301,143013253,130025503,412254520,125354203,203102134,142415123,21032041,145540523,543354204,413120301,52435213,452130241,253104312,241142213,350410512,42340435,502514134,253012154,350431520,451154350,452240241,534512205,235025035,423041312,123014512,510251342,21015304,352401420,413143143,21532452,204015425,312432452,401451125,502430510,320521315,13541415,130105430,234032240],\"ArtifactsUltra\":[16,10,16,13,13,11,16,16,13,11],\"ClubSmashRolls\":[120,2031,3143,340,1040,3324,3104,340,23,1231],\"SmashBossRolls\":[102,210,21,222,0,422,422,0,21,222],\"RecruitShardsPurple\":[22,74,30,89,12,17,65,48,70,66,26,19,31,85,27,90,38,68,30,18,38,82,63,80,27,54,78,14,17,87,72,15,43,38,74,25,84,69,56,84,17,54,24,50,35,35,66,15,14,19],\"CharmShardsRolls\":[10,30,40,50,5,1,4,20,400,100,2,5,3,200,5,20,2,30,20,4,30,45000,3,4,4,200,5,4,40,3,20,5,30,4,20,20,5,1,2,1,2,5,3,30,3,10,10,4,20,4],\"RecruitOrbs\":[0,15,1,3,6,5,18,2,24,7,32,82,29,7,4,8,24,8,15,14,12,18,17,0,28,28,12,6,15,1,3,4,28,67,20,5,20,18,22,20,30,4,85,15,8,0,18,37,5,1,2,33,6,23,12,12,15,6,4,24,2,24,8,3,8,15,23,78,2,4,7,17,23,24,8,0,6,3,16,31,2,8,3,31,0,7,29,4,2,79,20,23,3,20,13,23,3,16,14,30],\"CharmSpins\":[11,7,3,12,2,0,3,2,3,0,0,6,12,0,2,0,0,12,2,0],\"RecruitScrolls\":[14,1,25,5,0,1,30,2,1,21,11,6,10,22,5,0,1,0,5,17,3,18,6,32,19,10,11,6,42,6,9,27,17,7,8,5,10,27,18,6,18,5,1,11,9,10,7,0,20,11,10,16,1,9,18,21,16,25,10,3,10,24,30,15,0,9,0,5,21,0,21,8,26,2,26,6,14,9,15,7,13,10,19,10,21,6,22,10,79,1,23,9,7,2,12,27,11,9,8,1,25,1,28,9,10,15,39,21,26,24,15,31,0,8,21,9,0,29,38,2,10,13,3,8,10,8,80,21,9,17,6,2,9,9,15,29,8,21,11,12,6,2,21,4,23,6,23,1,3,12,0,25,7,8,21,14,1,10,3,29,9,8,23,28,23,31,7,11,1,6,25,20,11,1,7,27,28,4,8,11,0,12,72,12,6,4,20,2,9,2,31,19,5,2,2,16,10,25,16,28]}"
+                },
+                "KittyStats": {
+                    "LastUpdated": "2025-04-23T01:23:18.463Z",
+                    "Permission": "Private",
+                    "Value": "{\"Count_Summon\":1158,\"Count_Orbs\":277,\"Count_Poker\":2650,\"Count_FriendCratesCollected\":5,\"Count_ShopCollections\":1238,\"Count_ShopOpenings\":1238,\"Count_Tavern3Stars\":186,\"Count_Tavern4Stars\":52,\"Count_Tavern5Stars\":10,\"Count_Fusions\":915,\"Count_FusionsElite\":227,\"Count_ArenaWins\":109,\"Count_ArenaTickets\":157,\"Count_GuildRolls\":304,\"Count_MarketPurchases\":339,\"Count_HeroSpawnPurple\":70,\"Count_ArtifactSpawnPurple\":2,\"Count_PurpleShards\":3500,\"Count_PizzaSpent\":17651,\"Count_Recruit\":1882,\"Count_GlobePurchases\":12,\"BonusSummons\":7,\"BonusOrbs\":2,\"BonusShards\":0,\"Guild_SoloDefeat\":165,\"Guild_SoloDamage_v2\":258,\"Guild_SoloSpawn\":45,\"Guild_SoloLucky\":0,\"Guild_Defeat\":63,\"Guild_Slayer\":21,\"Guild_MVP\":17,\"Guild_RotatingCollections\":6,\"Guild_LastCollectedWeek\":274,\"Guild_DailyKeysData\":1100,\"Guild_WeeklyKeysData\":278,\"GemsSpent\":368355,\"DailyPoints\":18960,\"DailyWelcomeBack\":1939,\"QuestsDailyCompletions\":656,\"QuestsDailyCollections\":5,\"QuestsWeeklyCompletions\":0,\"QuestsWeeklyCollections\":1,\"AchievementMilestonePoints\":148,\"AchievementMilestoneProgress\":17,\"GamePassLastDay\":0,\"GamePassGranted\":0,\"GamePassClaimed\":0,\"PurchaseTier\":0,\"OrbSelection\":59,\"FreeValuePackageWeek\":0,\"BeginnersQuests\":999,\"VipDailyRoll\":2,\"FriendCrateRoll\":2,\"WeekIndex\":278,\"FlashSaleTier\":0,\"FirstLoginDay\":1674,\"KittyBools\":0,\"Unlocks\":1535,\"GoldBillions\":0,\"HolidayCollection\":0,\"TechnoLastCollection\":0,\"TechnoRun\":250,\"TechnoEvent\":250,\"DesertCooldown\":0,\"ArenaRefreshies\":0,\"HardBoostSpins\":0,\"HardBoostTopCollections\":0,\"HardBoostTopCollectionsStart\":0,\"HardBoostTopCollectionsLastDay\":0,\"HardModeSpinsS\":0,\"HardModeSpinsA\":0,\"HardModeSpinsB\":0,\"HardModeSpinsC\":0,\"HardModeCardLastDay\":0,\"HardModeCardCollection\":0,\"HardModeCardLastDayPremium\":0,\"HardModeCardCollectionPremium\":0,\"HardModeUnlockDay\":0,\"AscensionUnlockDay\":0,\"ChatBadgeIndex\":0,\"Best_GuildBossDamageTotal\":1,\"Best_GuildSoloLevel\":49,\"Best_GuildSoloDamage\":258,\"Best_EventBattleship\":34,\"Best_EventMonopoly\":310,\"Best_EventCarSmash\":12,\"Best_ArenaPoints\":569,\"Best_TechnoPoints\":250,\"Best_SlotsPoints\":2476,\"Best_GuildBossDmgOneFight\":199,\"SummonBadLuckCounter\":17,\"OrbsBadLuckCounter\":10,\"Guild_LastCollectedWeekRank\":275,\"CampaignStuckDay\":1939,\"HardModeStuckDay\":0,\"OrbsRecordElite\":24,\"OrbsRecordUsed\":277,\"BattleshipHits\":429,\"BattleshipMisses\":512,\"KittyRollLastCheck\":1091,\"KittyRollLastCheckArti\":16,\"LastUpdate\":297,\"ArenaSize\":165946,\"CALL_ID\":561,\"DEV_WEEKOFFSET\":0,\"ERROR_CHECK_WEEK\":0,\"_bt64\":46562306,\"_bd64\":17920,\"_sd64\":0,\"_bs64\":0,\"_dm64\":44992,\"BestScoreDayIdCheck\":1730,\"Best_GuildSoloLevel_NEW\":33,\"_bb64\":64224604,\"BuggyFixWeek\":275}"
+                },
+                "MailData": {
+                    "LastUpdated": "2025-04-09T05:09:08.081Z",
+                    "Permission": "Private",
+                    "Value": "[{\"Rewards\":{\"EventDiceDust\":1500},\"TimeStamp\":\"2024-08-21T15:32:00.325Z\",\"Message\":\"We apologize for the issue with the Dino Eggs package. Please accept these Eggs as compensation.\",\"Title\":\"Dino Eggs\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":146417520},{\"Rewards\":{\"Gold\":8200},\"TimeStamp\":\"2024-09-11T14:05:43.094Z\",\"Message\":\"mail_event_ended_info\",\"Title\":\"event_ended\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":148226744},{\"Rewards\":{\"ShardsHeroPurple\":10},\"TimeStamp\":\"2024-09-18T05:07:24.925Z\",\"Message\":\"mail_boss_rewards_msg\",\"Title\":\"guild_milestone_title_boss\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":148799245},{\"Rewards\":{\"Gems\":500,\"VIP\":20},\"TimeStamp\":\"2024-09-26T05:07:44.905Z\",\"Message\":\"mail_newbuild_msg\",\"Title\":\"mail_newbuild_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":149490464},{\"Rewards\":{\"Gems\":500,\"VIP\":20},\"TimeStamp\":\"2024-10-03T05:11:26.738Z\",\"Message\":\"mail_newbuild_msg\",\"Title\":\"mail_newbuild_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":150095486},{\"Rewards\":{\"Gems\":1000},\"TimeStamp\":\"2024-10-08T05:09:55.427Z\",\"Message\":\"mail_longgone_msg\",\"Title\":\"mail_longgone_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":150527395},{\"Rewards\":{\"Gems\":500,\"VIP\":20},\"TimeStamp\":\"2025-03-05T15:25:51.881Z\",\"Message\":\"mail_newbuild_msg\",\"Title\":\"mail_newbuild_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":163351551},{\"Rewards\":{\"Gems\":2000},\"TimeStamp\":\"2025-03-05T15:25:52.237Z\",\"Message\":\"mail_churn_5_msg\",\"Title\":\"mail_churn_5_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":163351552},{\"Rewards\":{\"Gold\":5000},\"TimeStamp\":\"2025-03-12T06:05:17.325Z\",\"Message\":\"mail_event_ended_info\",\"Title\":\"event_ended\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":163922717},{\"Rewards\":{\"Gems\":500,\"VIP\":20},\"TimeStamp\":\"2025-03-16T19:30:55.301Z\",\"Message\":\"mail_newbuild_msg\",\"Title\":\"mail_newbuild_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":164316655},{\"Rewards\":{\"ShardsHeroPurple\":5},\"TimeStamp\":\"2025-03-19T06:04:40.208Z\",\"Message\":\"mail_boss_rewards_msg\",\"Title\":\"guild_milestone_title_boss\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":164527480},{\"Rewards\":{\"Gems\":500,\"VIP\":20},\"TimeStamp\":\"2025-03-25T06:12:49.953Z\",\"Message\":\"mail_newbuild_msg\",\"Title\":\"mail_newbuild_title\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":165046369},{\"Rewards\":{\"Gold\":100000},\"TimeStamp\":\"2025-04-02T11:52:17.885Z\",\"Message\":\"mail_event_ended_info\",\"Title\":\"event_ended\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":165757937},{\"Rewards\":{\"Gold\":5000},\"TimeStamp\":\"2025-04-09T05:08:24.251Z\",\"Message\":\"mail_event_ended_info\",\"Title\":\"event_ended\",\"IsCollected\":true,\"ExtraData\":null,\"Id\":166338504}]"
+                },
+                "MarketData": {
+                    "LastUpdated": "2025-04-23T01:20:22.924Z",
+                    "Permission": "Private",
+                    "Value": "[{\"type\":\"Ooze\",\"amount\":1800,\"cost\":500,\"index\":-1,\"isPurchased\":false},{\"type\":\"PokerChips\",\"amount\":10,\"cost\":750,\"index\":-1,\"isPurchased\":true},{\"type\":\"ShardsHeroPurple\",\"amount\":5,\"cost\":800,\"index\":-1,\"isPurchased\":false},{\"type\":\"Orbs\",\"amount\":1,\"cost\":900,\"index\":-1,\"isPurchased\":false},{\"type\":\"PokerChips\",\"amount\":1,\"cost\":0,\"index\":-1,\"isPurchased\":true},{\"type\":\"ArtifactDust\",\"amount\":500,\"cost\":650,\"index\":-1,\"isPurchased\":false},{\"type\":\"ShardsHeroPurple\",\"amount\":10,\"cost\":1350,\"index\":-1,\"isPurchased\":false},{\"type\":\"ShardsHeroBlue\",\"amount\":200,\"cost\":1750,\"index\":-1,\"isPurchased\":false}]"
+                },
+                "Materials": {
+                    "LastUpdated": "2025-04-23T01:24:11.367Z",
+                    "Permission": "Private",
+                    "Value": "{\"8\":6,\"9\":2,\"0\":8,\"3\":13,\"2\":5,\"7\":16,\"4\":8,\"5\":20,\"6\":3,\"1\":10,\"10\":8,\"13\":5,\"12\":4,\"14\":6,\"11\":2}"
+                },
+                "PurchaseData": {
+                    "LastUpdated": "2025-04-23T01:21:32.014Z",
+                    "Permission": "Private",
+                    "Value": "{\"GoldPackage\":[{\"index\":0,\"time\":\"2025-04-23T01:21:32.000Z\",\"extraData\":null}]}"
+                },
+                "QuestsDaily": {
+                    "LastUpdated": "2025-04-23T01:22:04.087Z",
+                    "Permission": "Private",
+                    "Value": "[{\"Type\":\"OpenShops\",\"StartedWith\":1237,\"IsCollected\":false,\"Requirement\":1242},{\"Type\":\"UseClawMachine\",\"StartedWith\":2614,\"IsCollected\":true,\"Requirement\":2616},{\"Type\":\"GetTavern3Star\",\"StartedWith\":247,\"IsCollected\":true,\"Requirement\":248},{\"Type\":\"UseSummon\",\"StartedWith\":1152,\"IsCollected\":true,\"Requirement\":1153},{\"Type\":\"HeroSpawnBlue\",\"StartedWith\":0,\"IsCollected\":true,\"Requirement\":1},{\"Type\":\"SpendArenaTickets\",\"StartedWith\":157,\"IsCollected\":false,\"Requirement\":160},{\"Type\":\"MarketPurchase\",\"StartedWith\":338,\"IsCollected\":true,\"Requirement\":339},{\"Type\":\"LevelUpHero\",\"StartedWith\":0,\"IsCollected\":true,\"Requirement\":1},{\"Type\":\"BattleSewer\",\"StartedWith\":0,\"IsCollected\":false,\"Requirement\":1},{\"Type\":\"BattleCampaign\",\"StartedWith\":0,\"IsCollected\":true,\"Requirement\":1},{\"Type\":\"GuildShopRoll\",\"StartedWith\":303,\"IsCollected\":true,\"Requirement\":304}]"
+                },
+                "QuestsWeekly": {
+                    "LastUpdated": "2025-04-23T01:21:22.501Z",
+                    "Permission": "Private",
+                    "Value": "[{\"Type\":\"MarketPurchase\",\"StartedWith\":338,\"IsCollected\":false,\"Requirement\":343},{\"Type\":\"ZoneShopPurchase\",\"StartedWith\":12,\"IsCollected\":false,\"Requirement\":13},{\"Type\":\"ArenaWins\",\"StartedWith\":109,\"IsCollected\":false,\"Requirement\":124},{\"Type\":\"HeroFusion\",\"StartedWith\":906,\"IsCollected\":true,\"Requirement\":908},{\"Type\":\"UseSummon\",\"StartedWith\":1152,\"IsCollected\":false,\"Requirement\":1172},{\"Type\":\"HeroSpawnPurple\",\"StartedWith\":70,\"IsCollected\":false,\"Requirement\":71},{\"Type\":\"GetTavern4Star\",\"StartedWith\":61,\"IsCollected\":true,\"Requirement\":62},{\"Type\":\"GuildShopRoll\",\"StartedWith\":303,\"IsCollected\":false,\"Requirement\":313},{\"Type\":\"GuildSoloBoss\",\"StartedWith\":165,\"IsCollected\":false,\"Requirement\":166},{\"Type\":\"GuildBoss\",\"StartedWith\":63,\"IsCollected\":false,\"Requirement\":64},{\"Type\":\"UseOrbs\",\"StartedWith\":276,\"IsCollected\":false,\"Requirement\":279}]"
+                },
+                "RecruitMissions": {
+                    "LastUpdated": "2025-04-23T01:22:18.867Z",
+                    "Permission": "Private",
+                    "Value": "{\"WeekIndex\":275,\"History\":{\"White\":{\"Super\":9},\"Red\":{\"Super\":29,\"Base\":32,\"Elite\":3},\"Blue\":{\"Base\":43,\"Super\":20,\"Elite\":2},\"Green\":{\"Super\":31,\"Base\":34,\"Elite\":4},\"Purple\":{\"Super\":13,\"Elite\":1},\"Yellow\":{\"Base\":45,\"Super\":18,\"Elite\":3}},\"Collections\":{\"Red\":[3,0,6,7],\"Green\":[6,3,7,0],\"Yellow\":[6,0,3,7],\"Purple\":[0,3,6,1,4],\"Blue\":[6,0,3]},\"Milestones\":[0,1,2,3]}"
+                },
+                "RelicData": {
+                    "LastUpdated": "2025-04-23T01:17:36.28Z",
+                    "Permission": "Private",
+                    "Value": "{\"Purchases\":[],\"PromoHeroes\":[79,84,47,43,61,38,81,42,62,68,57,88,70,32,45]}"
+                },
+                "RevokedHeroes": {
+                    "LastUpdated": "2025-04-23T01:23:01.974Z",
+                    "Permission": "Private",
+                    "Value": "[\"2E76EBEF010AB554\",\"6199E4C20EC5C245\",\"FE68955A26A580C2\",\"F2993881ADFC0032\",\"55A1DCEF44F3FE12\",\"F721D68B74A17077\",\"48039E5DE7218565\",\"17B89A5F85DCF948\",\"F9775E82F2429F7A\",\"F1410A071BFEDEE0\",\"58EF5AA9CE9AD26\",\"202B53630C41D20E\",\"2420AFEEB7BF397A\",\"B82614DB926EECC8\",\"2F567B89048664F4\",\"5D443E17DA38FF6F\",\"F9623EEE32444C1A\",\"B6E8747A1D173285\",\"37112E80119B07F1\",\"8F013D362979166B\",\"78A0E3255224E9F2\",\"149882490334C166\",\"332A915D48A433E1\",\"4FFCCCABE011F667\",\"F7B02D49A7AD83E1\",\"E970B1F09673CE30\",\"DC80685212A49DD6\",\"6387BFD56990A053\",\"A88CFA20A7D52382\",\"6AAAF14B4CF9C91E\",\"91158BAD92231F3E\",\"EA08174916355DD3\",\"FDD66AE9132DDC90\",\"F985884628CE1FC2\",\"86EBFE0D9A3FB4B6\",\"68F6F168BD00A686\",\"21F7D71A1077D7BA\",\"B48BF16EF42B0DA0\",\"ED9542AEDB0D7B44\",\"6E3BDCC3FB7B1989\",\"CC58319BCC4FC434\",\"5A3602AC9958F842\",\"CD1B2A8D8D48B8C4\",\"6CC5C54B690F030\",\"C5CE79307A504097\",\"9AD514877D003943\",\"382BCA3CD86D738D\",\"FAA18F03994B1615\",\"314511F3CD966D3B\",\"2BC30D051D898B8\",\"C3A19E934265B7BC\",\"C1ED15C05A4E22CB\",\"C82AF36A5B35CC1F\",\"C0726965AFB17577\",\"F70E6609D012A939\",\"5CBDF8537C2E8EA3\",\"26D768A00A198DDE\",\"6875A083C0123B12\",\"6923EE8DFCF72B8D\",\"4787D920E5002756\",\"91BBD5F7320A2FDE\",\"B150A869C18FB5D\",\"405015ACEC351335\",\"54B16AA7ABDF4236\",\"200191CFA77A392\",\"6D0D15614BFA9B5A\",\"E5F51658B0449D8E\",\"E147CE9CB2C8ADA6\",\"FC71291F927F8D1E\",\"1C289A24698D110D\",\"6D627FFD091842C9\",\"94F700A001C818D2\",\"8B99D7F6E21B3EF1\",\"C505FCD81BF499B2\",\"7FFC32BF95FB9E14\",\"3952952F522B08C\",\"2C09C6A5CC5E7913\",\"25DD6373BD90CA93\",\"546E68C84040F3B1\",\"D4E204B0DCFCA173\",\"73F5720160BCA3B5\",\"1F4FAA4392F1D455\",\"4947F9B4F893F6DD\",\"FBA0ADA7CA51E1A6\",\"F5088666A8093BB9\",\"2A7DFF707F7D4A6F\",\"6757EB5DA985A026\",\"59591C4CCB5C16B9\",\"9E3F576449C88AA\",\"6B2929757BCFEB7B\",\"DA39A94238F98E6F\",\"C73ACFEDD9B10FD5\",\"9836C7C210E0BCE9\",\"1E0022B416B8200D\",\"7AB41107BA30ACC4\",\"A00196D506706D9F\",\"6AAFD9429AF9F935\",\"5A5097AAD5BC646F\",\"F769ACF4773119BE\",\"2201BA2FF361606A\",\"553E553CBF794877\",\"DEBAA96250BF3153\",\"4D6CA0FC0136EA16\",\"A08D3C7A38E092E\",\"5B79AEDD9B97AB0\",\"91763980A50448AC\",\"B4961C5D33EE02A4\",\"B0C39662A10A555D\",\"A9CE25AECC8F554A\",\"885EB988F6E8361D\",\"5488817D663E48B\",\"9695762D129FB653\",\"2F23E7666314E397\",\"331E7A7640413DB8\",\"B9E34E7AF99FB93B\",\"E3FD3241F15CA8E3\",\"3E34FE6752D4A1AD\",\"F83D252F22E5044D\",\"8CF71714DD652AC6\",\"7AE1EF86B9D2CBA3\",\"47DA8C0CEAA62BEC\",\"CB8F14EA0C7EFD9C\",\"1F1E01F888AED1C6\",\"711E0D08DC738021\",\"A8F631742EC95138\",\"106941C550FDBF7A\",\"A7203FFB05E5396A\",\"8C72F2B34D3835C4\",\"A4B9806A492B88CB\",\"54EBA8A299EE04B\",\"C9C2DAE699A2C4F6\",\"D18EA729260A87DA\",\"B761352C165688E0\",\"EC092B83215AA468\",\"C58F8188DDF86B3D\",\"D485AEC0F48CF992\",\"203DF939F0C35C00\",\"F43DC7B38F5B6334\",\"436C84456C79338D\",\"18B6802B8276E4B1\",\"8175D4070AE40A8F\",\"D69D523AD6A2CB2\",\"359D4F43D631D09D\",\"FB207EEA7BFC3EF\",\"2F249D6286DB3AF\",\"333306B30EB4AFF5\",\"695937C5BFCAA03A\",\"70C4264D07E93B03\",\"EA83673673365F7\",\"63D30FD5A4CCA2DD\",\"C2D1CC9CACCE9612\",\"382A97B2316C4890\",\"54905E0B40B503D5\",\"9B1D2E2C9E243CE9\",\"7519A90A7338B486\",\"959705D7DB2B4088\",\"F3AC0E55DC621B48\",\"30DA4EE786B86487\",\"A91150080690813C\",\"8BF904B5D394046E\",\"7A8673F0659701B1\",\"85BA7302C00BAA08\",\"438C14D0F63F2832\",\"CBCB2053C387DD2F\",\"958CDEDF3FF83110\",\"99B8DED33F7E78FF\",\"3A1246633B82A38C\",\"4740AB7572A395BD\",\"632A94DA93B05436\",\"F48F499D26B25AE6\",\"3B6E614447A7649B\",\"BB597AD5AAC2297C\",\"ED08203B11558660\",\"BE610C80F5C96623\",\"13E1EE4F507BFE2F\",\"4011920B0654E254\",\"C08B33BBB3B27BFC\",\"D3FA252462497A92\",\"DA8AD4CF7978C9EE\",\"4489EFD7A2CCDE4\",\"814EB54DD3AA0AD4\",\"52F37F518EE306AD\",\"5E668B11671DB0A6\",\"DC1ADCDF2AAF0B60\",\"5DFDDD47F562ECDB\",\"5C693E1781CA2BB0\",\"EC63C5210DF48717\",\"FADBC9D5518F4265\",\"FF29106A44EC1C74\",\"778DC7AD22B82C02\",\"4AC837491561D08\",\"73E5B47FA57888F1\",\"72CCD1D8F182C717\",\"4337400177FB0354\",\"D367E1CB9C5C24F8\",\"28FA50AAD459896C\",\"714601535B142C2\",\"7D679A1D247D1CEA\",\"1440DA92C81DCF2C\",\"7D4F8AB3E9708864\",\"BDECCC39B6E62186\",\"6D6F9B1573FD0519\",\"7E20DE8D110A1A6D\",\"C28DBF06049FFF6B\",\"CD5EF4F9985BAE\",\"64C292AE100D4749\",\"691C86C69F9708AD\",\"818E6CAA00926BCB\",\"F7559CFD77D1E8C7\",\"61B214E09AFAF16D\",\"B60934F9D1C758FA\",\"A0AB59C534AB36A2\",\"A79B28B4227201CF\",\"988EDF2B007BC3F7\",\"1E5A315AD309A634\",\"911F910A854BD8EA\",\"5905DF190F0761F\",\"3370D22984C1CE2B\",\"2EA74F9F71634C9D\",\"7FFF06486DFFEAA4\",\"5F08D931173A2BC7\",\"95D16D89DD442079\",\"4A5AF58F4803C795\",\"1D1661FDC53C5650\",\"B8909F16FAD814B9\",\"8879961334E16433\",\"8AB99F43B9E6AFA4\",\"302EA5FFAF6E825D\",\"2664E76DDD7AFDCB\",\"185A27C793E85E89\",\"FC1119FC5430BE9D\",\"245C5717DE8CC631\",\"CED273DB94B0630F\",\"908BA4284FC817BE\",\"399D34283A4D141\",\"F24A835BDB9223A1\",\"863B635330097891\",\"B7C8FE9DC8034779\",\"861D2B28964837DF\",\"E50491A4228C2569\",\"49CCDBB01DCD71BA\",\"A961089530F412FF\",\"888DA459A9BA3B5C\",\"7E83DBDFF843EBA\",\"13CFB8FBB6905062\",\"A6392024E8B47985\",\"E12B802B64E71281\",\"6F539F09DCC6977A\",\"2642381B61244936\",\"89B2FE11E926F61B\",\"714BEF09E9ACC84F\",\"ABBF560AEFB697A3\",\"812C1C4FF9EA8E2D\",\"4D3F0EBF0DD91F47\",\"905203674BD07A1E\",\"E8F1B321A2205559\",\"A680478113D6EFE8\",\"EDC89636EF4C228\",\"E356E3570E2B6976\",\"8A62E385C020733B\",\"D353FDEA396BBC4B\",\"5577771EDCF585FD\",\"7D757BC44842B58D\",\"1CA0F5DB47E58EB6\",\"2110E996F41883AB\",\"6F8533357A6899F0\",\"49FE055DA5E9CE6\",\"CBC72CEF60428462\",\"443BC13D31EB3D64\",\"71A46A973B9BBCA8\",\"7F0EFBA320219E1E\",\"9E807946C40C4031\",\"4C1D37D80C4C39BC\",\"A7254FB2BC6C89B2\",\"695DACD963D81EB9\",\"EF21016F984DCBF\",\"749CCF57CCC1D856\",\"307060B6D5974AB4\",\"4F0A0C1BF4AC78BB\",\"DFC4961CCE66BD1F\",\"CA89201CB0BAFD2C\",\"27E19361DA14AE0C\",\"9825E3374A17B82E\",\"9EDC8D3D7B66BDC3\",\"2806AEB19489CA5C\",\"EFB74DDD5B04D35E\",\"13D9D5BC003B26D7\",\"FDA1E3D21C882BD9\",\"535C41A106F1AA03\",\"E32F9BCE9B5C700B\",\"291775B2206DD04C\",\"176F05DA3D83F120\",\"B2CC7AAAD08A716E\",\"B37F9100AFDE955\",\"B73D52BFFAEA20EB\",\"42F8677409045D6B\",\"C7AC793A26FAFB44\",\"E88F6067864966AC\",\"7C83B88BC642D5EF\",\"18149C39DB622A63\",\"AAFB6A68DB82FB39\",\"D41C412A59513227\",\"4877DC1C8AD8A5B5\",\"7A0E234F7B17EF92\",\"5190BB8A086A1510\",\"7CF8BAA246524857\",\"2F87D91E8522B843\",\"C8D2B49522CE8ED5\",\"6FB13132F9ADB8B3\",\"D2D6CDD45572EEFC\",\"18499A992BD53D11\",\"D1549921703D1A3D\",\"98AE1BADC8AF86A6\",\"414026EAF765ECB4\",\"A345EAA485E9E1CD\",\"132ECFAB49B61BDF\",\"185C92AB24A72539\",\"9E4A5F19D3181062\",\"7E8094288C93CFA6\",\"1E4C6B678AA3D2B1\",\"4048546081FD0C25\",\"90CC52E4561BE6FE\",\"E6CA35CC7572B20A\",\"FA60C82D9815E1A4\",\"44978B2C14E805C0\",\"7286806BD1A568E7\",\"A34CF297577A542D\",\"B3382BB403803C5B\",\"2BA262D045B19E73\",\"C265BBBF028DD5D8\",\"8AC3DF4EDCD21CE3\",\"85064112F2243CC9\",\"7D458E7E2AAD9BDD\",\"AB90694CEE6009E4\",\"7073022E5C850BD5\",\"2AC326AEBEB71A4F\",\"23E93C9484F72B21\",\"3996936484AF4353\",\"569F86C6FCFE0F82\",\"A30FF1244744032\",\"B6A72FD931F9BD78\",\"2A09CF844B6E6996\",\"BAD336DC4FD1195B\",\"A8F445DD281C995D\",\"2C1B91D91791EC99\",\"7B8EEB424F7FCBF9\",\"78C43407F575A349\",\"E51078F5C7770116\",\"BD57D6FF71E9548F\",\"6FD67FB382ADE207\",\"EBC9CC6AC98FA240\",\"C82562EE603F9B2D\",\"5AB77C3BC8EBF394\",\"FDF1858F0DF6F1E8\",\"28E8F7D94256E25D\",\"50547914D8A4BD80\",\"3E5D06275D2DE78D\",\"4D6F8363659627A3\",\"C75B1F2BBC8D5884\",\"F6237ABA0F9426D\",\"71107E747208C8ED\",\"FCD79AE594F3C7AB\",\"E6094F8A9FB4BBE3\",\"EA1BABB87F6478EE\",\"EF987EBCD825C04C\",\"3A900ACB30AC41D6\",\"5A59A812DB0DB411\",\"23E11DE76EA855BE\",\"8E481CC71D693975\",\"D848172C0B0BBC12\",\"66DF0194E35F6DB1\",\"B6C3CB245A4AECB9\",\"65B3F387C85F96FE\",\"618E656F0BCD405E\",\"4818FD9F33634CF8\",\"A70847650B8484D2\",\"AF9969E7E13FD515\",\"2974957DABA51447\",\"2E14B2B701C08E1A\",\"B9AA3F5E192713D6\",\"A314B876E42AC56D\",\"417B7044C896AA4E\",\"5C35555FBB8D739E\",\"CBDA468A7A093BEF\",\"594A05A30C7C20\",\"DBD36C15915E37B4\",\"C8FE2F52BB8B03F5\",\"F3B7E73F1872DDA1\",\"722EFEE7A4BC3C90\",\"443BA4513E488EA3\",\"F1BA68EAD1588B4\",\"277912E895DE6615\",\"41EAD181471554E1\",\"200FFDEC6A68A7AA\",\"47F66873892D6FC1\",\"858AC6AB690333D6\",\"D3A648AEC5B75A73\",\"BA850D0E6A92C8EB\",\"31BE3608C11CCCB4\",\"F9EAD1B8119C33EA\",\"53E59F85BE9A71B8\",\"5190602399E67519\",\"8B2C5FCF49CA6567\",\"1FBE86977D447CD6\",\"EBEDB6E11AFE2A7\",\"C5CB8A00FB39E3A0\",\"97EE14DF0867FDE0\",\"F9519D6D99D81CF3\",\"1653303BAF7EDE8C\",\"246BC7B4E7BC4D9\",\"5C7D272200A1C2F5\",\"7995CBD907DD4ED0\",\"FC94A508761826C6\",\"4F7D4AC1E85D5CC2\",\"37185677910704A2\",\"8A9D78C8BF856B8E\",\"C005D8A91D2DFB52\",\"B05F5625E77F45EC\",\"E45D165910B1D095\",\"E447EA218F2FC386\",\"32EA9ECA6E1F47AC\",\"1AA8B97421AC48A8\",\"A50CABE2C6AA412D\",\"E81FAB3997DB7F27\",\"2CAD7E6D9A63D4BF\",\"FA9BF9CC9E17D1CA\",\"A1AF03C34BE8380B\",\"DBCCB3A1E0572A2E\",\"A3A9A55EF93E0505\",\"BED7A5B8F540E768\",\"7DAAAF853314DD7E\",\"7C4303C30E7571E0\",\"EA3FB17C9FC5F71F\",\"11F530BAE486FE35\",\"1B084EB9A9214D5E\",\"1963A7FED49179E6\",\"2212232FD2CD77B4\",\"509B0FBAEE1225B8\",\"73F37A6C831BE13E\",\"28B324BEA1CCE115\",\"7AA4DB46F2B93FCA\",\"7032B604053ADE56\",\"CF832689F2058346\",\"109E4256E3DE90F0\",\"A95E457DDEA431DE\",\"D577D0C6805F5F0A\",\"59800EDE551AAB4C\",\"85C0B26F94ED37CB\",\"BC75E82E27F0526A\",\"BC0C680DC2901E1F\",\"19B99F7827DEDBF9\",\"C3BCF2C9AE63D174\",\"4A67338103466EC2\",\"BE2FC975EECBF06F\",\"1924487E5FD80339\",\"486B75609C756CA9\",\"E101214B193CD3AB\",\"8CFDF6666798069B\",\"8DF33FE2AD4E713A\",\"F594903327E5C623\",\"A10695CA6C26EA35\",\"62243C2CCCED7BDB\",\"17B1BB7F495ABF2\",\"311F0D0D2657A049\",\"61C0C4CE996EB503\",\"B1E045766A3969A1\",\"145C21E82E3EA28\",\"2880619C324064D6\",\"EA02C1F9C4E78C93\",\"74FF9E0B2015E7D\",\"9A1290535D8E96CC\",\"A39C4F0D932AD3A\",\"44C671D30CAA33FD\",\"B57847D13E519333\",\"31C4DA44AB8DAFBC\",\"36083F342FC3AAA8\",\"1A12CC77A67C039D\",\"A78C5BA40311B0DD\",\"7033B8391117BA57\",\"BE3A87EB312B2657\",\"A5443409626C4763\",\"EFA5CA17E4C30A7F\",\"D0A294C0CC45A436\",\"D5B828E9CA723A1B\",\"761D74CDEA6A403B\",\"317FD6F8166B8BF3\",\"2A6D847C11897898\",\"DA418C66E35EE470\",\"6FA84F3B89D02326\",\"1C43BB22E60226A\",\"37B797605DF9CE3D\",\"D02DF1FFC8AF0995\",\"B55EEB84FB405B76\",\"212DD62BD8ED3F83\",\"E8283EB83BC400A1\",\"2BB43B80EA1D2058\",\"423A580C608DF364\",\"206AD7F5D33D5AC6\",\"6FE1F360375F84D5\",\"80FB5BEA8CFD2856\"]"
+                },
+                "ScrollRecords": {
+                    "LastUpdated": "2025-04-23T01:25:36.231Z",
+                    "Permission": "Private",
+                    "Value": "{}"
+                },
+                "SettingsData": {
+                    "LastUpdated": "2024-09-15T19:23:17.687Z",
+                    "Permission": "Private",
+                    "Value": "{\"SfxVolume\":0,\"Sfx\":false,\"MusicVolume\":0,\"Music\":false,\"NotificationsSave\":7,\"BattleSpeed\":3}"
+                },
+                "SlotsData": {
+                    "LastUpdated": "2025-04-23T01:19:52.411Z",
+                    "Permission": "Private",
+                    "Value": "{\"WeekId\":278,\"Points\":502,\"SpinIndex\":20,\"Milestones\":2,\"StarMilestones\":0,\"DailyRewardIndex\":1939,\"FactionUpgrades\":[0,0,0,1,2,1]}"
+                },
+                "Stalls": {
+                    "LastUpdated": "2025-04-23T01:20:55.593Z",
+                    "Permission": "Private",
+                    "Value": "{\"0\":{\"Stars\":4,\"Level\":20,\"OpenCount\":190,\"OpenTime\":\"2025-04-22T16:31:24.531Z\"},\"1\":{\"Stars\":4,\"Level\":19,\"OpenCount\":188,\"OpenTime\":\"2025-04-22T16:31:24.532Z\"},\"2\":{\"Stars\":5,\"Level\":19,\"OpenCount\":188,\"OpenTime\":\"2025-04-22T16:31:24.532Z\"},\"3\":{\"Stars\":4,\"Level\":19,\"OpenCount\":185,\"OpenTime\":\"2025-04-22T16:31:24.533Z\"},\"4\":{\"Stars\":5,\"Level\":18,\"OpenCount\":170,\"OpenTime\":\"2025-04-22T16:31:27.353Z\"},\"5\":{\"Stars\":4,\"Level\":17,\"OpenCount\":161,\"OpenTime\":\"2025-04-22T16:31:16.705Z\"},\"6\":{\"Stars\":4,\"Level\":15,\"OpenCount\":145,\"OpenTime\":\"2025-04-22T16:31:16.705Z\"},\"7\":{\"Stars\":3,\"Level\":4,\"OpenCount\":35,\"OpenTime\":\"2025-04-23T01:20:55.575Z\"}}"
+                },
+                "TavernData_v2": {
+                    "LastUpdated": "2025-04-23T01:20:06.923Z",
+                    "Permission": "Private",
+                    "Value": "[100,8,7,7,108,6,300,8]"
+                },
+                "Teams": {
+                    "LastUpdated": "2025-03-31T14:54:31.843Z",
+                    "Permission": "Private",
+                    "Value": "{\"0\":{\"0\":\"239EFC845C0879D9\",\"1\":\"3F3295F39886FBA4\",\"2\":\"5A0AEBFAF3CCD145\",\"3\":\"CE0C76B4C5504C17\",\"4\":\"5CFB5AFDB2724C9A\",\"5\":\"9EE118605D50931B\"},\"Red\":{\"4\":\"5CFB5AFDB2724C9A\",\"0\":\"E6322B2C2716B1FF\",\"1\":\"79C11872F94FA414\",\"2\":\"9F14699608AD8B34\",\"5\":\"1CB79783C519D4AC\",\"3\":\"239EFC845C0879D9\"},\"Yellow\":{\"1\":\"D1A655344BCE63B5\",\"0\":\"45B32324D760149C\",\"3\":\"B3F01682B33DB443\",\"2\":\"9EE118605D50931B\",\"4\":\"D6C6F46064BB49C0\",\"5\":\"7DF1EB4FC9A50842\"},\"Green\":{\"0\":\"55BFE087388858C9\",\"1\":\"F5513FDDF3A5F1C7\",\"2\":\"AC07BD72B5509559\",\"3\":\"31EF158A3B7C243D\",\"4\":\"92D163049DB7E183\",\"5\":\"15C57C9DFC92282C\"},\"Blue\":{\"0\":\"3F3295F39886FBA4\",\"1\":\"D1440353BA353B81\",\"2\":\"288542B2893B9324\",\"3\":\"F33F90738E4F022B\",\"4\":\"2D4B2BBC5218CAB5\",\"5\":\"7E34E43968036BF5\"}}"
+                },
+                "TechTreeData": {
+                    "LastUpdated": "2025-03-15T08:51:33.453Z",
+                    "Permission": "Private",
+                    "Value": "{\"Red\":15,\"Blue\":15,\"Tank\":16,\"Brawler\":15,\"Support\":15,\"Green\":15,\"Yellow\":15,\"Finisher\":20,\"Mage\":20}"
+                },
+                "TechnoArena": {
+                    "LastUpdated": "2025-04-08T05:10:36.621Z",
+                    "Permission": "Private",
+                    "Value": "{\"teamCacheIndex\":-1,\"teamCache\":[],\"weekId\":275,\"division\":-1,\"currentRun\":-1,\"topbar\":0,\"bundle\":0,\"gift\":1924,\"fights\":[],\"hps\":[],\"hpMaxs\":[],\"collectedHeroes\":[],\"savedFormation\":[],\"divisionRecord\":[],\"heroAscensions\":[],\"heroIndexes\":[],\"heroLevels\":[],\"heroRanks\":[],\"dragonLevels\":[],\"dragonIndexes\":[],\"weaponLevels\":[],\"weaponIndexes\":[],\"techBoosts\":[],\"techPerks\":[],\"hardBoosts\":[],\"ascensionPerks\":[],\"hardPerks\":[],\"opponents\":[],\"opponentsRecord\":[],\"fightsRecord\":[],\"auto\":false}"
+                },
+                "TimeStamps": {
+                    "LastUpdated": "2025-04-23T01:17:36.158Z",
+                    "Permission": "Private",
+                    "Value": "{\"ArenaTicket\":\"2025-04-23T04:31:03.777Z\",\"LastTicketCollection\":\"2025-04-23T01:16:03.777Z\",\"BeginnerSale\":\"2024-08-08T19:52:35.858Z\",\"DailyRefresh\":\"2025-04-24T00:00:00.000Z\",\"Monthly\":\"2025-05-04T00:00:00.000Z\",\"DiamondFundDeadline\":\"2024-08-29T00:00:00.000Z\",\"GuildJoined\":\"2025-03-07T06:51:56.652Z\"}"
+                },
+                "WeaponsFormation_v2": {
+                    "LastUpdated": "2024-08-23T08:36:56.997Z",
+                    "Permission": "Private",
+                    "Value": "{\"0\":{\"2\":\"9E15BDD82BA7D7D1\",\"1\":\"239EFC845C0879D9\",\"3\":\"15C57C9DFC92282C\",\"4\":\"9EE118605D50931B\",\"0\":\"55BFE087388858C9\",\"6\":\"9EE118605D50931B\"}}"
+                },
+                "ZoneDrops": {
+                    "LastUpdated": "2025-04-22T16:31:25.134Z",
+                    "Permission": "Private",
+                    "Value": "{\"0\":480,\"1\":810}"
+                },
+                "_BestTeamBlue": {
+                    "LastUpdated": "2024-08-22T00:09:07.702Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_BestTeamGreen": {
+                    "LastUpdated": "2024-08-21T23:11:45.903Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_BestTeamPurpleAndWhite": {
+                    "LastUpdated": "2025-03-05T15:25:53.259Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_BestTeamRed": {
+                    "LastUpdated": "2024-08-21T23:13:40.191Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_BestTeamYellow": {
+                    "LastUpdated": "2024-08-22T23:55:07.689Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_ChatStamps": {
+                    "LastUpdated": "2025-04-23T01:22:57.161Z",
+                    "Permission": "Private",
+                    "Value": "{\"Global\":\"2025-04-23T01:22:52.773Z\",\"Guild\":\"2025-03-31T14:54:17.234Z\"}"
+                },
+                "_GuildId": {
+                    "LastUpdated": "2025-03-08T08:59:29.195Z",
+                    "Permission": "Private",
+                    "Value": ""
+                },
+                "_TokenCheck": {
+                    "LastUpdated": "2025-04-23T01:25:35.607Z",
+                    "Permission": "Private",
+                    "Value": "mwyrijPLE="
+                }
+            },
+            "UserDataVersion": 8850,
+            "UserInventory": [
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Cyber Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Eve",
+                    "ItemInstanceId": "9A3C352F8A8E1B24",
+                    "PurchaseDate": "2025-04-23T01:23:18.515Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Brute",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Geno",
+                    "ItemInstanceId": "2914B444FAFAF2D3",
+                    "PurchaseDate": "2025-04-23T01:22:26.957Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Football Player",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Cooper",
+                    "ItemInstanceId": "20D3D47E0DC72942",
+                    "PurchaseDate": "2025-04-23T01:22:26.957Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Schoolgirl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Alice",
+                    "ItemInstanceId": "52D1D747C3D046",
+                    "PurchaseDate": "2025-04-23T01:22:10.392Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Honda",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Hiroshi",
+                    "ItemInstanceId": "12F7E6A7BCB11A7D",
+                    "PurchaseDate": "2025-04-23T01:22:10.392Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Honda",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Hiroshi",
+                    "ItemInstanceId": "2F69FB76E17AEFFE",
+                    "PurchaseDate": "2025-04-23T01:22:10.392Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Axel",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Ash",
+                    "ItemInstanceId": "69D06D9CA189D084",
+                    "PurchaseDate": "2025-04-23T01:20:28.778Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Schoolgirl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Alice",
+                    "ItemInstanceId": "FC56BD0DC73184D9",
+                    "PurchaseDate": "2025-04-23T01:20:28.778Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Bigbiker",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Rash",
+                    "ItemInstanceId": "9A86C09F6DBF291B",
+                    "PurchaseDate": "2025-04-22T16:34:14.444Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "2"
+                    },
+                    "DisplayName": "Roller Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Roxy",
+                    "ItemInstanceId": "9F0033B4A4485CAE",
+                    "PurchaseDate": "2025-04-22T16:34:14.444Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Policeman",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Stone",
+                    "ItemInstanceId": "EDE745087F9072C7",
+                    "PurchaseDate": "2025-04-22T16:34:14.444Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Militarygirl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Elena",
+                    "ItemInstanceId": "D9A8572FCD3497F4",
+                    "PurchaseDate": "2025-04-22T16:34:14.444Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "FreeSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "2"
+                    },
+                    "DisplayName": "Mohawk",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Mohawk",
+                    "ItemInstanceId": "8C018345DFC7F2F5",
+                    "PurchaseDate": "2025-04-22T16:34:14.418Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroBlue",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Gen",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Zen",
+                    "ItemInstanceId": "52889A2B189485EF",
+                    "PurchaseDate": "2025-04-21T10:08:00.163Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "3"
+                    },
+                    "DisplayName": "Cyber Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Eve",
+                    "ItemInstanceId": "DF585D806A0DFFBE",
+                    "PurchaseDate": "2025-04-21T10:07:59.333Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "1"
+                    },
+                    "DisplayName": "Gangster Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Gigi",
+                    "ItemInstanceId": "125AEC31FACA3381",
+                    "PurchaseDate": "2025-04-21T10:07:59.333Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Policeman",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Stone",
+                    "ItemInstanceId": "C538A50104892506",
+                    "PurchaseDate": "2025-04-21T10:07:59.333Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroPurple",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "4"
+                    },
+                    "DisplayName": "Bigbiker",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Rash",
+                    "ItemInstanceId": "7FA9FE9D7A813077",
+                    "PurchaseDate": "2025-04-21T10:07:33.482Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "Orb",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Demon Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Lilith",
+                    "ItemInstanceId": "50837C7E4FD8CAF5",
+                    "PurchaseDate": "2025-04-21T10:06:22.454Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "Orb",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Ryu",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Kenshi",
+                    "ItemInstanceId": "DB91136EE5316B0C",
+                    "PurchaseDate": "2025-04-21T10:06:22.454Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "Orb",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Punkboy",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Zedd",
+                    "ItemInstanceId": "D165CDA8D0E5A92D",
+                    "PurchaseDate": "2025-04-21T10:06:22.454Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "Orb",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "3"
+                    },
+                    "DisplayName": "Big Bear",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Guerra",
+                    "ItemInstanceId": "B8EC207A6A3C8963",
+                    "PurchaseDate": "2025-04-21T10:06:22.454Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Nurse",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Natsu",
+                    "ItemInstanceId": "AD4E60F3C276698F",
+                    "PurchaseDate": "2025-04-21T10:06:20.718Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "3"
+                    },
+                    "DisplayName": "Muay Thai",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Hado",
+                    "ItemInstanceId": "FE3A6F955145F11C",
+                    "PurchaseDate": "2025-04-21T10:06:20.698Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Crocodile",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Leo",
+                    "ItemInstanceId": "26E36E009FDE7A9A",
+                    "PurchaseDate": "2025-04-21T10:06:20.698Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "ShardsHeroPurple",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "4"
+                    },
+                    "DisplayName": "Schoolgirl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Alice",
+                    "ItemInstanceId": "3F44E3398D5BB03C",
+                    "PurchaseDate": "2025-04-20T05:21:53.243Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "CustomData": {
+                        "Rank": "1"
+                    },
+                    "DisplayName": "Gangster Girl",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Gigi",
+                    "ItemInstanceId": "F5ABC2B23EBF9A9E",
+                    "PurchaseDate": "2025-04-20T05:21:51.98Z",
+                    "UnitPrice": 0
+                },
+                {
+                    "Annotation": "CommonSummon",
+                    "CatalogVersion": "Fight_001",
+                    "DisplayName": "Punkboy",
+                    "ItemClass": "Hero",
+                    "ItemId": "hero_Zedd",
+                    "ItemInstanceId": "E34BC23C5D1B7444",
+                    "PurchaseDate": "2025-04-20T05:21:51.98Z",
+                    "UnitPrice": 0
+                }
+            ],
+            "UserReadOnlyDataVersion": 0,
+            "UserVirtualCurrency": {
+                "A0": 0,
+                "A1": 35,
+                "A2": 10,
+                "AC": 13650,
+                "AD": 974,
+                "AS": 0,
+                "AT": 3,
+                "BH": 0,
+                "BS": 0,
+                "BT": 0,
+                "C0": 0,
+                "C2": 0,
+                "CB": 0,
+                "CS": 0,
+                "DI": 0,
+                "EH": 0,
+                "FB": 19,
+                "GC": 205,
+                "GE": 24360,
+                "GK": 25,
+                "GM": 158,
+                "GO": 448700,
+                "GS": 25,
+                "GX": 2618,
+                "H0": 10,
+                "H1": 40,
+                "HC": 0,
+                "IA": 0,
+                "M0": 0,
+                "OR": 0,
+                "OZ": 57225,
+                "PC": 0,
+                "RE": 136,
+                "RO": 0,
+                "SC": 0,
+                "SI": 5000,
+                "SM": 0,
+                "ST": 0,
+                "T1": 860,
+                "T2": 465,
+                "TC": 2755,
+                "TI": 238,
+                "TR": 97,
+                "TT": 3,
+                "TY": 0,
+                "VI": 3850,
+                "XP": 4431
+            },
+            "UserVirtualCurrencyRechargeTimes": {}
+        },
+        "PlayFabId": "BCA4E7FC8F2053B4"
+    },
+    "status": "OK"
+}

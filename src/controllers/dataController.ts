@@ -1,7 +1,7 @@
 import Database from "better-sqlite3";
 
 // Open (or create) the same database file (using "game.db")
-const db = new Database("game.db", { verbose: console.log });
+const db = new Database("game.db");
 
 // ───────────────────────────────
 // Create Tables if They Do Not Exist

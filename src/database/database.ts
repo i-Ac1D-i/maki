@@ -3,7 +3,7 @@ import Database from "better-sqlite3";
 
 // Open (or create) the SQLite database file "game.db"
 // The 'verbose' option is useful during development to log queries.
-const db = new Database("game.db", { verbose: console.log });
+export const db = new Database("game.db");
 
 // Create tables if they don't exist
 db.exec(`

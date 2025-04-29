@@ -3,7 +3,7 @@ import Database from "better-sqlite3";
 import { createDefaultPlayerData } from "../account/createDefaultPlayerData";
 import { createDefaultHeroes } from "../account/defaultHeroes";
 // Initialize (or open) the database; "game.db" will be created if it doesn’t exist.
-const db = new Database("game.db", { verbose: console.log });
+const db = new Database("game.db");
 
 // Create the Accounts table if it doesn't already exist.
 // Columns: playFabId (PK), customId, tokenCheck, tokenExpiration, created, lastLogin.
@@ -139,17 +139,18 @@ export function createAccount(
   customId: string,
   entityId: string,
   tokenCheck: string,
-  tokenExpiration: string
+  tokenExpiration: string,
+  sessionTicket: string = ""
 ): string {
   const displayName = "GUEST_" + Math.floor(Math.random() * 1000000);
   const stmt = db.prepare(`
-    INSERT INTO Accounts (playFabId, customId, entityId, tokenCheck, tokenExpiration, created, lastLogin, displayName)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO Accounts (playFabId, customId, entityId, tokenCheck, tokenExpiration, created, lastLogin, displayName, sessionTicket)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const currentTime = now();
-  stmt.run(playFabId, customId, entityId, tokenCheck, tokenExpiration, currentTime, currentTime, displayName);
+  stmt.run(playFabId, customId, entityId, tokenCheck, tokenExpiration, currentTime, currentTime, displayName, sessionTicket);
   createDefaultPlayerData(playFabId);
-  createDefaultHeroes(playFabId);
+  //createDefaultHeroes(playFabId);
   return displayName;
 }
 

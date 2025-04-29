@@ -3,7 +3,7 @@ import { getAccountByCustomId, generatePlayFabId, generateEntityToken, generateS
 import config from "../../config";
 export const LoginWithCustomID = (req: Request, res: Response) => {
     console.log("LoginWithCustomID", req.body);
-    const account = getAccountByCustomId(req.body.customId);
+    const account = getAccountByCustomId(req.body.CustomId);
     let playFabId: string;
     let entity: Entity = {
         Id: "",
@@ -27,6 +27,7 @@ export const LoginWithCustomID = (req: Request, res: Response) => {
         tokenCheck = generateTokenCheck();
         created = new Date().toISOString();
         displayName = createAccount( playFabId, req.body.CustomId, entity.Id, tokenCheck, entityToken.TokenExpiration);
+        //displayName = ""
         isNew = true;
     } else {
         playFabId = account.playFabId;
@@ -49,16 +50,19 @@ export const LoginWithCustomID = (req: Request, res: Response) => {
           },
           "InfoResultPayload": {
               "AccountInfo": {
-                  "Created": created,
+                  "Created": "2024-08-01T19:52:34.172Z", //created ,
                   "CustomIdInfo": {
                       "CustomId": req.body.CustomId
                   },
                   "PlayFabId": playFabId,
-                  "PrivateInfo": {},
+                  "PrivateInfo": {
+                    "Email": "test@testing.com"
+                  },
                   "TitleInfo": {
-                      "Created": created,
-                      "FirstLogin": created,
-                      "LastLogin": created,
+                      "DisplayName": displayName,
+                      "Created": "2024-08-01T19:52:34.172Z", //created ,
+                      "FirstLogin": "2024-08-01T19:52:34.172Z", //created ,
+                      "LastLogin": new Date().toISOString(),
                       "Origination": "CustomId",
                       "TitlePlayerAccount": {
                           "Id": entity.Id,
@@ -66,19 +70,20 @@ export const LoginWithCustomID = (req: Request, res: Response) => {
                           "TypeString": entity.TypeString
                       },
                       "isBanned": false
-                  }
+                  },
+                  "Username": playFabId
               },
               "CharacterInventories": [],
               "UserDataVersion": 0,
               "UserInventory": [],
               "UserReadOnlyDataVersion": 0,
-              "DisplayName": displayName
           },
-          "NewlyCreated": isNew,
+          "LastLoginTime": new Date().toISOString(),
+          "NewlyCreated": false,
           "PlayFabId": playFabId,
           "SessionTicket": sessionTicket,
           "SettingsForUser": {
-              "GatherDeviceInfo": true,
+              "GatherDeviceInfo": false,
               "GatherFocusInfo": false,
               "NeedsAttribution": false
           },

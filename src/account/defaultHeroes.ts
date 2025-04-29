@@ -31,65 +31,88 @@ export function createDefaultHeroes(playFabId: string): void {
 
   // Array of default hero definitions (without itemInstanceId and purchaseDate).
   // We follow the keys required by our InventoryItem interface:
-  // playFabId, itemId, displayName, catalogVersion, itemInstanceId, purchaseDate, unitPrice, annotation
-  const defaultHeroes: Omit<InventoryItem, "playFabId" | "itemInstanceId" | "purchaseDate">[] = [
+  // playFabId, ItemId, DisplayName, CatalogVersion, itemInstanceId, purchaseDate, UnitPrice, annotation
+  const defaultHeroes: Omit<InventoryItem, "playFabId" | "ItemInstanceId" | "PurchaseDate">[] = [
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Mohawk",
-      itemId: "hero_Mohawk",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Mohawk",
+      ItemId: "hero_Mohawk",
+      UnitPrice: 0,
     },
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Police Girl",
-      itemId: "hero_Sarah",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Police Girl",
+      ItemId: "hero_Sarah",
+      UnitPrice: 0,
     },
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Ninjaboy",
-      itemId: "hero_Sasuke",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Ninjaboy",
+      ItemId: "hero_Sasuke",
+      UnitPrice: 0,
     },
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Ryu",
-      itemId: "hero_Kenshi",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Ryu",
+      ItemId: "hero_Kenshi",
+      UnitPrice: 0,
     },
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Mai",
-      itemId: "hero_Maki",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Mai",
+      ItemId: "hero_Maki",
+      UnitPrice: 0,
     },
     {
-      annotation: "CommonSummon",
-      catalogVersion: "Fight_001",
-      displayName: "Army Guy",
-      itemId: "hero_Mortar",
-      unitPrice: 0,
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Army Guy",
+      ItemId: "hero_Mortar",
+      UnitPrice: 0,
     },
+    {
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Muay Thai",
+      ItemId: "hero_Hado",
+      UnitPrice: 0,
+    },
+    {
+      Annotation: "CommonSummon",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Army Guy",
+      ItemId: "hero_Mortar",
+      UnitPrice: 0,
+    },
+    {
+      Annotation: "ShardsHeroBlue",
+      CatalogVersion: "Fight_001",
+      DisplayName: "Cyber Girl",
+      ItemClass: "Hero",
+      ItemId: "hero_Eve",
+      UnitPrice: 0
+  }
   ];
 
   // For each hero in the list, generate an instanceId and create an inventory record.
   defaultHeroes.forEach(hero => {
     const inventoryEntry: InventoryItem = {
       playFabId: playFabId,
-      itemId: hero.itemId,
-      displayName: hero.displayName,
-      catalogVersion: hero.catalogVersion,
+      ItemId: hero.ItemId,
+      DisplayName: hero.DisplayName,
+      CatalogVersion: hero.CatalogVersion,
+      ItemClass: hero.ItemClass ?? "",
       // Generate a new unique instance id for each hero:
-      itemInstanceId: generateInstanceId(),
+      ItemInstanceId: generateInstanceId(),
       // Set purchase date as now
-      purchaseDate: now,
-      unitPrice: hero.unitPrice,
-      annotation: hero.annotation,
+      PurchaseDate: now,
+      UnitPrice: hero.UnitPrice,
+      Annotation: hero.Annotation,
     };
     addInventoryItem(inventoryEntry);
   });

@@ -1,5 +1,5 @@
 @echo off echo Starting Tap Force Server Emulator... 
-start cmd /k "npx tsx src/index.ts" 
+start cmd /k "npx tsx src/app.ts" 
 echo Starting mitmweb proxy... 
 start cmd /k "mitmweb --mode wireguard -s src/mitmproxy/redirect_traffic.py --ssl-insecure --listen-port 8081" 
 echo Both processes have been started. 
